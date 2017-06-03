@@ -1,0 +1,85 @@
+Premise: You are a futuristic space explorer who has landed on an alien world
+
+Inventory & Crafting:
+- invenotry crafting grid -> micro fabricator
+- crafting table -> macro fabricator
+- furnace -> atomic forge
+- enchanting table -> AI programmer
+- brewing stand -> nanomachine fabricator
+- inventory -> hyperspace storage unit
+
+
+Basic Resources:
+- coal -> thorium
+- coal block -> nuclear fuel cell
+- charcoal -> hydrocarbon fuel cell
+- log -> coral segment
+- wood planks -> biocarbon plates
+- stick -> carbon fiber rob
+- iron ingot/nugget -> steel ingot/nugget
+- diamond -> Hafnium
+- wool -> polymer fiber
+- string -> polymer thread
+- flint -> quartz crystal
+- lapis -> catalite
+- ender pearl -> teleport beacon
+- ender eye -> invader scanner
+- quartz -> Trinitite
+- fish -> worm
+- milk -> honey
+- bed -> cloning tube
+- grass -> algae
+
+Common Items:
+- torch -> nuclear lantern
+
+Plants
+- trees -> tree coral
+- leaves -> polyps
+- apple -> coral egg
+- flowers -> ground coral
+
+
+Animals:
+- farm animals have insectoid appearance
+- sheep -> Grazer
+- cow -> Zaphid
+- chicken -> Buzzer
+- pig -> Grubgrub
+- Llama -> Spitter
+- other animals are recognizable, but changed to look more spacey (more eyes, neon colors, etc.)
+- rabbit -> Hopper
+- wolf -> Star Dog
+- cat -> Nyan Cat
+- parrot -> Avion
+- polar bear -> Womper
+- bat -> Cave Squeaker
+
+
+Tools:
+- Armors all look like space suits
+- wooden/leather, gold, stone, iron, diamond -> improvised, fancy, primitive, (standard), plasma/forcefield
+- chainmail -> cybernetic
+- bucket -> hyperstorage canister
+- bow -> bolt gun
+- arrow -> bolt
+
+
+Monsters:
+- undead -> cyborgs
+- Illagers -> Replicants
+- creepers -> bombots
+- arthropods -> robots
+- enderman -> Invader (ender -> invader)
+- zombie pigman -> prospector
+- blaze -> probe
+- ghast -> defense drone
+- spawner -> invader beacon
+
+Villagers:
+- villagers are bird-like aliens (nose is bird beak) called Avids
+
+Ender Materials:
+- starship materials (slightly evil looking)
+- end stone -> asteroid stone
+- end portal blocks -> invader mothership beacon

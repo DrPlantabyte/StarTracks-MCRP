@@ -56,6 +56,9 @@ def main():
 		fout.write(sha1_hash)
 		fout.close()
 		# done
+	world_dir = str(this_dir) + os.sep + "world"
+	world_zip = "distributables" + os.sep + "world.zip"
+	zipFiles(world_dir, listFiles(world_dir), world_zip, zipfile.ZIP_DEFLATED)
 
 def zipFiles(source_root, file_list, dest_file, compression):
 	# note: Minecraft is bad at handling compressed zip files

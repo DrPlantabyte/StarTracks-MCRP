@@ -8,6 +8,15 @@ Will you free the bird-like people of this once-great world? Or conquer them in 
 
 # Installation
 Simply download one of the release .zip files and put it in the *resourcepacks* folder inside your Minecraft profile folder (default location is *~/.minecraft* where ~ is either your home directory (unix-like computers) or *AppData/Roaming* (windows computers).
+## Spacesuit Physics
+To enable spacesuit physics, copy the contents of the *world* folder extracted from *world.zip* into your saved game or server world folder. Then execute the command **/function startracks:init** (you may need to run the reload command first). This will install the *startracks:spacesuit_update* function into the game.
+
+While active, spacesuit physics will allow any player wearing any helmet to breath underwater. However, if you are *not* wearing a full suit of armor in other dimensions, you will suffocate quickly.
+
+To create a zone of breathable air (in creative mode), set the blocks at Y+128 (~128) to minecraft:barrier blocks (or other non-air block).
+
+To disable spacesuit physics, execute the command **/gamerule gameLoopFunction - **.
+
 ## Building the resource pack
 To compile this resource pack, you must have the following programs installed on your computer:
 - Python 3+

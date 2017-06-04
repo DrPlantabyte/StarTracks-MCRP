@@ -10,7 +10,10 @@ scoreboard players set @a hasHelmet 1 {Inventory:[{Slot:103b,id:"minecraft:golde
 scoreboard players set @a hasHelmet 1 {Inventory:[{Slot:103b,id:"minecraft:iron_helmet"}]}
 scoreboard players set @a hasHelmet 1 {Inventory:[{Slot:103b,id:"minecraft:diamond_helmet"}]}
 # air check
+## no air in the end (or void-exposed regions of the overworld)
 execute @a ~ ~ ~ execute @p[r=1] ~ ~ ~ detect ~ 0 ~ minecraft:air * scoreboard players set @a hasAir 0
+## no air in the nether
+execute @a ~ ~ ~ execute @p[r=1] ~ ~ ~ detect ~ 127 ~ minecraft:bedrock * scoreboard players set @a hasAir 0
 ##
 
 # helmet air supply

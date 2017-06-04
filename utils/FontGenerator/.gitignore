@@ -1,0 +1,4 @@
+*.png
+build/**
+.gradle/**
+.nb-gradle/private/**

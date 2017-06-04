@@ -10,3 +10,5 @@ build/**
 ~*.tmp
 # gedit and notepad++
 *~
+/utils/FontGenerator/.nb-gradle/
+/utils/FontGenerator/build/

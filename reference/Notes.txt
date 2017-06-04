@@ -1,15 +1,34 @@
 Premise: You are a futuristic space explorer who has landed on an alien world
 
+TODO list:
+- bedrock texture (make it look like simmering hawaiian lava)
+- tree textures (make it look like alien coral)
+- block textures: all ender things, all nether things, woods and ores, redstone, levers, buttons, pressure plates, containers, ores, coal
+- space suit textures (armor)
+- item textures: flint and steel, bow, coal, charcoal, meats (funny colors), books, dyes
+- soundFX
+- torch model
+- apple items
+- entity textures (all of them)
+- milk -> honey
+- tool item models
+- tulip flowers (make look like colored orbs)
+- flowers
+- cool looking (floating) signs
+
+
 Inventory & Crafting:
 - invenotry crafting grid -> micro fabricator
 - crafting table -> macro fabricator
 - furnace -> atomic forge
-- enchanting table -> AI programmer
+- enchanting table -> cybernetic research lab
 - brewing stand -> nanomachine fabricator
 - inventory -> hyperspace storage unit
+- anvil -> repair robot
 
 
 Basic Resources:
+- oak, spruce, birch, jungle, acacia, dark oak -> red, blue, yellow, green, purple, black
 - coal -> thorium
 - coal block -> nuclear fuel cell
 - charcoal -> hydrocarbon fuel cell
@@ -29,6 +48,14 @@ Basic Resources:
 - milk -> honey
 - bed -> cloning tube
 - grass -> algae
+- netherwart -> ³²Si Crystals
+- quartz -> Dilithium
+- redstone -> Kinectite
+- glowstone -> lumenite
+- book -> tablet computer
+- writable book -> journal
+- book shelf -> data core
+- cocoa -> Epiphyte
 
 Common Items:
 - torch -> nuclear lantern
@@ -39,6 +66,15 @@ Plants
 - apple -> coral egg
 - flowers -> ground coral
 
+Other Blocks:
+- netherrack -> Hyperstone
+- nether brick -> Hypersteel Plates (multiple sci-fi metal plate textures)
+- red nether brick -> Hypersteel Structure (multiple sci-fi metal plate textures)
+- soulsand -> living sand
+- rail -> monorail
+- pumpkin -> star gourd
+- watermelon -> star melon
+- lilypad -> algal biofilm
 
 Animals:
 - farm animals have insectoid appearance
@@ -63,6 +99,7 @@ Tools:
 - bucket -> hyperstorage canister
 - bow -> bolt gun
 - arrow -> bolt
+- bed -> regeneration pod
 
 
 Monsters:

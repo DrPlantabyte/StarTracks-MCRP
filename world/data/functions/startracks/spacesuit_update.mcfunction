@@ -27,6 +27,7 @@ scoreboard players add @a hasAir 1 {Inventory:[{Slot:102b,id:"minecraft:chainmai
 scoreboard players add @a hasAir 1 {Inventory:[{Slot:102b,id:"minecraft:golden_chestplate"}]}
 scoreboard players add @a hasAir 1 {Inventory:[{Slot:102b,id:"minecraft:iron_chestplate"}]}
 scoreboard players add @a hasAir 1 {Inventory:[{Slot:102b,id:"minecraft:diamond_chestplate"}]}
+scoreboard players add @a hasAir 1 {Inventory:[{Slot:102b,id:"minecraft:minecraft:elytra"}]}
 # space leggings check
 scoreboard players add @a hasAir 1 {Inventory:[{Slot:101b,id:"minecraft:leather_leggings"}]}
 scoreboard players add @a hasAir 1 {Inventory:[{Slot:101b,id:"minecraft:chainmail_leggings"}]}

@@ -90,6 +90,7 @@ Animals:
 - parrot -> Avion
 - polar bear -> Womper
 - bat -> Cave Squeaker
+- horse -> swiftbeast
 
 
 Tools:

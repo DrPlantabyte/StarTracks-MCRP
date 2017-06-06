@@ -103,11 +103,18 @@ def copyInto(src, dst):
 	for root, dirs, files in os.walk(src):
 		rel_dirpath = os.path.relpath(root, start=src)
 		for f in files:
-			dst_filepath = dst + os.sep + rel_dirpath + os.sep + f
-			src_filepath = root + os.sep + f
-			makeParentDir(dst_filepath)
-			print('Copying file', str(src_filepath), 'to', str(dst_filepath))
-			shutil.copyfile(src_filepath, dst_filepath)
+			if(f.endswith('.svg')):
+				# common SVG files at fixed resolution
+				dst_filepath = dest_dir + os.sep + rel_dirpath + os.sep + name.replace('.svg','.png')
+				src_filepath = root_dir + os.sep + name
+				convertSVG(src_filepath, dst_filepath, 64)
+			else:
+				# normal files
+				dst_filepath = dst + os.sep + rel_dirpath + os.sep + f
+				src_filepath = root + os.sep + f
+				makeParentDir(dst_filepath)
+				print('Copying file', str(src_filepath), 'to', str(dst_filepath))
+				shutil.copyfile(src_filepath, dst_filepath)
 def convertSVGDir(src_dir, dest_dir, mc_resolution):
 	# use inkscape commandline
 	for root_dir, dirs, files in os.walk(src_dir):

@@ -28,6 +28,7 @@ def main():
 	for res in tex_resolutions:
 		# setup build dir
 		src = 'x'+str(res)
+		print('\nBuilding texture pack at',src,'resoultion...\n')
 		src_dir = str(this_dir) + os.sep + src
 		svg_dir = str(this_dir) + os.sep + 'svg'
 		com_dir = str(this_dir) + os.sep + 'common'
@@ -44,6 +45,7 @@ def main():
 		the_files = listFiles(build_dir)
 		zipFiles(build_dir, the_files, zip_file, zipfile.ZIP_STORED)
 		# calculate sha1 hash for servers
+		print('Hashing ',zip_file,' with SHA1...')
 		hasher = hashlib.sha1()
 		with open(zip_file, 'rb') as f:
 			while True:
@@ -52,13 +54,17 @@ def main():
 					break
 				hasher.update(data)
 		sha1_hash = hasher.hexdigest()
+		print('...done. Hash = ',sha1_hash)
 		fout = open(zip_file+'_sha1.txt','w')
 		fout.write(sha1_hash)
 		fout.close()
 		# done
+		print('\n...done building texture pack',src)
 	world_dir = str(this_dir) + os.sep + "world"
 	world_zip = "distributables" + os.sep + "world.zip"
+	print('Building world data...')
 	zipFiles(world_dir, listFiles(world_dir), world_zip, zipfile.ZIP_DEFLATED)
+	print('...done!')
 
 def zipFiles(source_root, file_list, dest_file, compression):
 	# note: Minecraft is bad at handling compressed zip files
@@ -87,10 +93,11 @@ def remakeDir(dirpath):
 				os.remove(root_dir + os.sep + f)
 		for root_dir, dirs, files in os.walk(dirpath):
 			for d in dirs:
-				os.remove(root_dir + os.sep + d)
+				shutil.rmtree(root_dir + os.sep + d)
 	os.makedirs(dirpath, exist_ok=True)
 def makeParentDir(dirpath):
-	parent_path =os.path.dirname(os.path.realpath(dirpath))
+	print('Recreating directory', str(dirpath))
+	parent_path = os.path.dirname(os.path.realpath(dirpath))
 	os.makedirs(parent_path, exist_ok=True)
 def copyInto(src, dst):
 	for root, dirs, files in os.walk(src):
@@ -99,6 +106,7 @@ def copyInto(src, dst):
 			dst_filepath = dst + os.sep + rel_dirpath + os.sep + f
 			src_filepath = root + os.sep + f
 			makeParentDir(dst_filepath)
+			print('Copying file', str(src_filepath), 'to', str(dst_filepath))
 			shutil.copyfile(src_filepath, dst_filepath)
 def convertSVGDir(src_dir, dest_dir, mc_resolution):
 	# use inkscape commandline
@@ -116,5 +124,6 @@ def convertSVG(src_filepath, dst_filepath, mc_resolution):
 	scaler = mc_resolution / 16
 	dpi = source_dpi * scaler
 	makeParentDir(dst_filepath)
+	print('Rendering', str(src_filepath), 'to', str(dst_filepath))
 	subprocess.call(['C:\\Program Files\\Inkscape\\inkscape.exe','--export-png', str(dst_filepath), '--export-area-page', '--export-dpi', str(dpi), str(src_filepath)])
 main()

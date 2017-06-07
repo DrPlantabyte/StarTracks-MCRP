@@ -105,8 +105,8 @@ def copyInto(src, dst):
 		for f in files:
 			if(f.endswith('.svg')):
 				# common SVG files at fixed resolution
-				dst_filepath = dest_dir + os.sep + rel_dirpath + os.sep + name.replace('.svg','.png')
-				src_filepath = root_dir + os.sep + name
+				dst_filepath = dst + os.sep + rel_dirpath + os.sep + f.replace('.svg','.png')
+				src_filepath = root + os.sep + f
 				convertSVG(src_filepath, dst_filepath, 64)
 			else:
 				# normal files

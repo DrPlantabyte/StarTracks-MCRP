@@ -1168,7 +1168,7 @@ item.cauldron.name=Cistern
 item.brewingStand.name=Nanomachine Fabricator
 item.eyeOfEnder.name=Invader Locator
 item.speckledMelon.name=Golden Star Melon
-item.monsterPlacer.name=Invader Teleport
+item.monsterPlacer.name=Summon
 item.expBottle.name=Bottle o' Chemistry
 item.fireball.name=Fire Charge
 item.writingBook.name=Journal Tablet
@@ -1240,7 +1240,7 @@ item.shulkerShell.name=Subspace Shell
 item.ironNugget.name=Steel Nugget
 item.knowledgeBook.name=Knowledge Tablet
 
-container.inventory=Inventory
+container.inventory=Personal Subspace Inventory
 container.hopper=Hopper
 container.crafting=Fabricator
 container.dispenser=Dispenser

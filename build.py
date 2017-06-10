@@ -10,12 +10,15 @@ from sys import platform
 if platform == 'linux' or platform == 'linux2':
 	# linux
 	inkscape_path = 'inkscape'
+	imagemagick_path = 'magick'
 elif platform == 'darwin':
 	# OS X (I don't actually know where OSX puts executables these days)
 	inkscape_path = 'inkscape'
+	imagemagick_path = 'magick'
 elif platform == 'win32' or platform == 'win64':
 	# Windows...
 	inkscape_path = 'C:\\Program Files\\Inkscape\\inkscape.exe'
+	imagemagick_path = 'C:\\Program Files\\ImageMagick-7.0.5-Q16\\magick.exe'
 
 
 this_dir = os.path.dirname(os.path.realpath(__file__))
@@ -132,5 +135,8 @@ def convertSVG(src_filepath, dst_filepath, mc_resolution):
 	dpi = source_dpi * scaler
 	makeParentDir(dst_filepath)
 	print('Rendering', str(src_filepath), 'to', str(dst_filepath))
-	subprocess.call(['C:\\Program Files\\Inkscape\\inkscape.exe','--export-png', str(dst_filepath), '--export-area-page', '--export-dpi', str(dpi), str(src_filepath)])
+	subprocess.call([inkscape_path,'--export-png', str(dst_filepath), '--export-area-page', '--export-dpi', str(dpi), str(src_filepath)])
+	if( "blocks" not in str(dst_filepath) ):
+		# remove transparency, unless it is a block texture
+		subprocess.call([imagemagick_path,'convert', str(dst_filepath), '-channel', 'alpha', '-threshold', '50%', str(dst_filepath)])
 main()

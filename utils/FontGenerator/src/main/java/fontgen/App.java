@@ -50,11 +50,16 @@ public class App {
 		}
 		try {
 			Reader in = new InputStreamReader(new FileInputStream("sga.txt"), utf8);
-			in.read(asciiSgaPage);
+			int size = in.read(asciiSgaPage);
+			int so = size;
+			while (size < asciiSgaPage.length){
+				asciiSgaPage[size] = asciiSgaPage[size % so];
+				size++;
+			}
 		} catch (IOException ex) {
 			Logger.getLogger(App.class.getName()).log(Level.SEVERE, "Reference file ascii.txt not found", ex);
 		}
-		shuffle(asciiSgaPage);
+		//shuffle(asciiSgaPage);
 		
 		int gridSize = 32;
 		int fontSize = (int)(gridSize * (72.0/90.0));

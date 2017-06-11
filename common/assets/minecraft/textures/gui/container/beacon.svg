@@ -79,9 +79,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2"
-     inkscape:cx="147.01604"
-     inkscape:cy="141.87364"
+     inkscape:zoom="5.6568542"
+     inkscape:cx="87.33483"
+     inkscape:cy="141.98202"
      inkscape:document-units="px"
      inkscape:current-layer="layer3"
      showgrid="true"
@@ -92,7 +92,8 @@
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:snap-smooth-nodes="true"
-     inkscape:snap-global="true">
+     inkscape:snap-global="true"
+     inkscape:snap-text-baseline="true">
     <inkscape:grid
        type="xygrid"
        id="grid4485"
@@ -2969,28 +2970,15 @@
          id="path6852"
          inkscape:connector-curvature="0" />
     </g>
-    <image
-       y="-32.808334"
-       x="1.0583333"
-       id="image4895"
-       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAAAMCAYAAADbGBuzAAAABmJLR0QA/wD/AP+gvaeTAAAACXBI
-WXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4QYIFiY2T/d2twAAAB1pVFh0Q29tbWVudAAAAAAAQ3Jl
-YXRlZCB3aXRoIEdJTVBkLmUHAAACXklEQVRIx+2Wy2/aQBDGvy1UjZrkENQCJpjFBvch9Rik5sZ/
-XyQ4VmqrFGObZ2ib9pS6VNb2EAZ212vzaI+dC2J2vOP57fetzLrdrsCOuJ3fMRwRq18xACBe/x4T
-P+6+pXLVGt/7+d+rn7nrrscFAMynXxkAFGlh9DlUhn56eg4AqFglUbFK4hAoKw3AyZOTg6CYIMix
-mIU7oewCkRUbIM1WI7ewXL3AcvFdyVWsklFd42C2gWc3a5kKvPnkK5C9l+661lXq+u/6Sl3numPu
-Gy4ZgaCT18O/CY0Ha10+EwoQxpjIs0y5eqFAIRi7hpfXyT7bwbeKoCHl4U2D63XVGofNyyJLFTIA
-1+PC9bgwQRFCqJahRDCM4LQf6JKNyD4mS5gg1LkFAJiE81yVtF84AIBBT7XI1dsr4/9Bb5CrEqfd
-WNs/SuX0OrnGaBmTdZw2FwRKHtBEVl4jIDIMUkqSJGi27Ew1ysN3rjuZFqa+0WgK2tc0/PaOjOB6
-XIHy4f3H3UCCYQQAjFTCGBPBcMwAoFAoZDaUIZgiSRJwt46/iXIl3aPhXOJfRjFrIRiOGZ1ks2WL
-YDhmSZKkoJjuHlkNW+XZYp8Xov3y1JHVN/QnTO6p3F3x/V77MV53FKuE/kQplE+V1mQo+n2hg9D3
-kfennHw3kGWi0RTcrQuTPWRlyDm9fxzf4/WbVwCg2CMvV3yg8yiTXOhPNi/O3TpCfwKTUkyW0eHq
-gCmel6v4slwoltjXCqa6fq+Ps7PzoyzDmnbrqAcJSJZED90r73vFpJDUp8HtLJU7FErx8Sn+hxZ/
-AGxtNmn0Ode4AAAAAElFTkSuQmCC
-"
-       style="image-rendering:optimizeSpeed"
-       preserveAspectRatio="none"
-       height="1.5875016"
-       width="8.9958429" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.62277775px;line-height:6.61458302px;font-family:Xolonium;-inkscape-font-specification:'Xolonium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#404040;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       x="1.5875"
+       y="-31.75"
+       id="text4581"><tspan
+         sodipodi:role="line"
+         id="tspan4885"
+         x="1.5875"
+         y="-31.75">Reagent</tspan></text>
   </g>
 </svg>

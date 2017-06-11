@@ -16,6 +16,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.nio.charset.Charset;
+import java.util.Arrays;
+import java.util.HashSet;import java.util.Set;
+
 import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -31,7 +34,7 @@ import javax.swing.JPanel;
  */
 public class App {
 
-	static final String fontName = "Xolonium";
+	static final String[] fontList = {"Xolonium", "sans-serif", "Arial", "Liberation Sans", "Microsoft JhengHei", "Microsoft YaHei" };
 	/**
 	 * @param args the command line arguments
 	 */
@@ -39,6 +42,9 @@ public class App {
 		final Charset ascii = Charset.forName("US-ASCII");
 		final Charset latin = Charset.forName("ISO-8859-1");
 		final Charset utf8 = Charset.forName("UTF-8");
+		
+		final Set<Character> slightShift = new HashSet();
+		slightShift.addAll(Arrays.asList('[','{','(','>','\\','o','m','z','x','S'));
 		
 		char[] asciiPage = new char[16*16];
 		char[] asciiSgaPage = new char[16*16];
@@ -61,13 +67,11 @@ public class App {
 		}
 		//shuffle(asciiSgaPage);
 		
-		int gridSize = 32;
+		int gridSize = 8*6;
 		int fontSize = (int)(gridSize * (72.0/90.0));
 		int glyphOffset = (int)(-0.25*gridSize);
 		int gridCount = 16;
 		int imgSize = gridSize * gridCount;
-		Font font = new Font(fontName, Font.PLAIN, fontSize);
-		Font backupFont = new Font("Arial", Font.PLAIN, fontSize);
 		
 		BufferedImage bimg = new BufferedImage(imgSize, imgSize, BufferedImage.TYPE_INT_ARGB);
 		Graphics2D painter = bimg.createGraphics();
@@ -79,11 +83,13 @@ public class App {
 			for(int x = 0; x < gridCount; x++){
 				char c = asciiPage[i];
 				System.out.print("'");
-				Font f = font.canDisplay(c) ? font : backupFont;
+				Font f = getFont(c,fontSize);
 				if(!Character.isWhitespace(c)){
 					painter.setFont(f);
+					int dx = 2;
+					if(slightShift.contains(c)) dx += 1;
 					painter.drawString(String.valueOf(c), 
-							x * gridSize + 1, 
+							x * gridSize + dx, 
 							(y+1) * gridSize + glyphOffset);
 					System.out.print(c);
 				} else {
@@ -107,11 +113,13 @@ public class App {
 			for(int x = 0; x < gridCount; x++){
 				char c = asciiSgaPage[i];
 				System.out.print("'");
-				Font f = font.canDisplay(c) ? font : backupFont;
+				Font f = getFont(c,fontSize);
 				if(!Character.isWhitespace(c)){
 					painter.setFont(f);
+					int dx = 2;
+					if(slightShift.contains(c)) dx += 1;
 					painter.drawString(String.valueOf(c), 
-							x * gridSize + 1, 
+							x * gridSize + dx, 
 							(y+1) * gridSize + glyphOffset);
 					System.out.print(c);
 				} else {
@@ -137,11 +145,13 @@ public class App {
 				for(int x = 0; x < gridCount; x++){
 					char c = (char)((prefixByte << 8 ) | (y << 4) | (x));
 					System.out.print("'");
-					Font f = font.canDisplay(c) ? font : backupFont;
+					Font f = getFont(c,fontSize);
 					if(!Character.isWhitespace(c)){
 						painter.setFont(f);
+						int dx = 2;
+						if(slightShift.contains(c)) dx += 1;
 						painter.drawString(String.valueOf(c), 
-								x * gridSize + 1, 
+								x * gridSize + dx, 
 								(y+1) * gridSize + glyphOffset);
 						System.out.print(c);
 					} else {
@@ -189,5 +199,24 @@ public class App {
 			carr[j] = temp;
 		}
 	}
+
 	
+	private static Font[] fontCache = null;
+	
+	private static Font getFont(char c, int size) {
+		if (fontCache == null) {
+			fontCache = new Font[fontList.length];
+			for (int i = 0; i < fontList.length; i++) {
+				fontCache[i] = new Font(fontList[i], Font.PLAIN, size);
+			}
+		}
+		for (int i = 0; i < fontList.length; i++) {
+			Font font = fontCache[i];
+			if(font.canDisplay(c)){
+				return font;
+			}
+		}
+		return fontCache[0];
+	}
+
 }

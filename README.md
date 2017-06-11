@@ -8,6 +8,10 @@ Will you free the bird-like people of this once-great world? Or conquer them in 
 
 # Installation
 Simply download one of the release .zip files and put it in the *resourcepacks* folder inside your Minecraft profile folder (default location is *~/.minecraft* where ~ is either your home directory (unix-like computers) or *AppData/Roaming* (windows computers).
+
+## Warning!
+You must set your **GUI Scale** to **normal** or **large** in the **Video Settings...** menu screen (text will not be legible if the GUI scale is set to *small* ).
+
 ## Spacesuit Physics
 To enable spacesuit physics, copy the contents of the *world* folder extracted from *world.zip* into your saved game or server world folder. Then execute the command **/function startracks:init** (you may need to run the reload command first). This will install the *startracks:spacesuit_update* function into the game.
 

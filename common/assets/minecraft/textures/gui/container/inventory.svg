@@ -152,10 +152,10 @@
      inkscape:window-width="1680"
      units="px"
      showgrid="true"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer4"
      inkscape:document-units="px"
-     inkscape:cy="147.37968"
-     inkscape:cx="-29.629176"
+     inkscape:cy="186.0666"
+     inkscape:cx="73.014567"
      inkscape:zoom="2.0000001"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
@@ -840,6 +840,16 @@
        preserveAspectRatio="none"
        height="14.552085"
        width="38.364582" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.6227777px;line-height:6.61458254px;font-family:Xolonium;-inkscape-font-specification:'Xolonium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#404040;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="11.112499"
+       y="-59.79583"
+       id="text4581"><tspan
+         sodipodi:role="line"
+         id="tspan6035"
+         x="11.112499"
+         y="-59.79583">Gear</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
@@ -1014,39 +1024,12 @@
        id="path4597"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccccc" />
-    <image
-       y="-60.854172"
-       x="10.847917"
-       id="image4626"
-       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAICAYAAACVm43oAAAABmJLR0QA/wD/AP+gvaeTAAAACXBI WXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4QYFCiwaYJZwFwAAAB1pVFh0Q29tbWVudAAAAAAAQ3Jl YXRlZCB3aXRoIEdJTVBkLmUHAAABYUlEQVQ4y42TPZLCMAyFn2wnZAaGBlJzBmq4ATdPQ80NaKBg xvzYONqCWCMH2N1XKR7J77Ok0G63g/ee8YuezycZY+SbiCSezWYSTyaTjzmPx0Piy+UCAKiqCgBw PB4Lr9VqBQBwGWo6ndLtdpOE+/1emKSUAADGGDC/3uGcw/V6lZwMlqE+Af0GBQD7/f51dz5gZjHX xVp93wvQUMO6/nw+51rKUMYYzg/KUj6k72/bltu2LcG898Urm6YpxhtCoGwQY4RzjgcTqqoK1lrE GHncqRijmFtrC9gxFAAcDgcqwLSMMQJS1zXr87Gstdz3vXRTjzLGiPEdWsvlEsMayUqs12t479/B FouFxKfT6W20KSWklPQ4SZ8PIFKXoUII1HUdAGC73X792fLk3LcEDaWl93DUORmV7khe+q7rsNls 8F+5EALVdc1ExJq4aRr9u5Puglau05rP56RH+VeXPukHEZu5AOR1ir0AAAAASUVORK5CYII= "
-       style="display:inline;image-rendering:optimizeSpeed"
-       preserveAspectRatio="none"
-       height="1.0583333"
-       width="5.0270834" />
     <path
        sodipodi:nodetypes="ccccc"
        inkscape:connector-curvature="0"
        id="path4646"
        d="m 19.314583,-58.737497 h -0.529165 v 16.13958 h 0.529165 z"
        style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.13229166px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    <image
-       y="-45.905212"
-       x="33.866665"
-       id="image4671"
-       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEcAAAALCAYAAAAtKpAIAAAABmJLR0QA/wD/AP+gvaeTAAAACXBI WXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4QYFCy0qXpYbzQAAAB1pVFh0Q29tbWVudAAAAAAAQ3Jl YXRlZCB3aXRoIEdJTVBkLmUHAAABhElEQVRIx9VWMdPCIAxNvusmY9mdZHf1J/QXd+/sLpN7PKc6 8y2mR2MCqNfBd9eBJEB4pC/gMAzweDwSFLDb7RA+wPV6NX3e+9WeRIT3+30ZhxBSaW/O+dPcWtBt tUmJGEkKAEBOTI7z+WxNreZ7PB6/IycfzPNcDHbOrW5NI5V93nuTCK2C+r5HAIAY48rPFXS5XFCz p5RW89j+zGWJl/NlbA6O7SQxTICFUqU9qwVrv1AOeTjLb8Gal5MRQkghhCRtWpxZOe8ir7Tb7VYl o+/7l1jG4XAoHtby1+zSpq0vY3n89y0xzjmVGCJC/uRcTV9ijCYxLf7WyrKI0NbuthRerpRfRUdE 6L1PiJikiLW08v1+LzWpqjNEBCGEpgQ5r5bu9Al4fS2fjg/fKshMlNXZpJ/XG8cRTqfTEjdNEwLA YiOil87mvVe1IxdS6dfsLbYY46sg880752Ce52I7rxFX0qacmBq0Z0BNsL+Fdgk4DMOm/+04jm/F a8RsAeuNkz8f/gEx4feURunmhwAAAABJRU5ErkJggg== "
-       style="image-rendering:optimizeSpeed"
-       preserveAspectRatio="none"
-       height="1.4552083"
-       width="9.3927078" />
-    <image
-       y="-44.185425"
-       x="33.866665"
-       id="image4682"
-       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAAAICAYAAAC4aaJSAAAABmJLR0QA/wD/AP+gvaeTAAAACXBI WXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4QYFCy0Z4UZ62wAAAB1pVFh0Q29tbWVudAAAAAAAQ3Jl YXRlZCB3aXRoIEdJTVBkLmUHAAABQElEQVRIx8VWMbKFIAzczHgCB64gva0WHp5L6BVg7Kzzmx8H eQHl+Wf+dpI1JpsFoWVZGBWs60p4Aeccv8nT9z0AwFrLABBCeFVPK/Z9L8a6mkjOOXbO8VsBv4UI 95+o1UDiPGZWBSIi1TniqDu35ryWPKnLxHk1To3Xwn3K6/KFbdty9wEAhmG4xEpOLRVeGs63eWKM sNaytZbTZrVtrTX/9BjQeLL24bwYo/qyxFMBS02mXOHk4rXkEaHyPLIrmJnSuktO0fLVhlzjqc67 QwgBADDPMwOA9/78mKzVoDj7PBbyn0MNv42dz8aYS7N3W17ixpiLUETEmhs1c3VPLOu9p2mairxS bBxHHMfxsZYijUsjf4WWfClXBnHH6/ItkE4zd5aGJ25L8wOg2pWmdF2Qukp1PjnnWuK5gEn9J34A cIfvED8XP3AAAAAASUVORK5CYII= "
-       style="image-rendering:optimizeSpeed"
-       preserveAspectRatio="none"
-       height="1.0583334"
-       width="10.451041" />
     <path
        sodipodi:nodetypes="ccccc"
        inkscape:connector-curvature="0"
@@ -1505,5 +1488,21 @@
          inkscape:transform-center-x="0.016018185"
          inkscape:transform-center-y="-0.0036194624" />
     </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.62277773px;line-height:6.61458254px;font-family:Xolonium;-inkscape-font-specification:'Xolonium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#404040;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       x="33.866665"
+       y="-44.714581"
+       id="text4581-0"><tspan
+         sodipodi:role="line"
+         id="tspan6049">Crafting</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.62277773px;line-height:6.61458254px;font-family:Xolonium;-inkscape-font-specification:'Xolonium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#404040;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       x="33.866665"
+       y="-43.127083"
+       id="text4581-1"><tspan
+         sodipodi:role="line"
+         id="tspan6059">Database</tspan></text>
   </g>
 </svg>

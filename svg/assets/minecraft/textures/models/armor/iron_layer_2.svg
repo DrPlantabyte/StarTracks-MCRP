@@ -307,6 +307,17 @@
        y2="3.9687507"
        gradientUnits="userSpaceOnUse"
        gradientTransform="translate(-8.0000008e-8,-0.26458332)" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4532"
+       id="radialGradient5474"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.2499999,-5.3572599e-8,1.0714453e-7,0.62500398,7.1437503,293.95729)"
+       cx="1.0583334"
+       cy="-1.0583327"
+       fx="1.0583334"
+       fy="-1.0583327"
+       r="1.0583334" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -315,9 +326,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="11.313708"
-     inkscape:cx="18.938399"
-     inkscape:cy="28.040869"
+     inkscape:zoom="22.627416"
+     inkscape:cx="10.755288"
+     inkscape:cy="14.025823"
      inkscape:document-units="px"
      inkscape:current-layer="layer4"
      showgrid="true"
@@ -385,8 +396,7 @@
      inkscape:label="BG"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-288.53332)"
-     sodipodi:insensitive="true">
+     transform="translate(0,-288.53332)">
     <path
        inkscape:connector-curvature="0"
        id="path4647"
@@ -498,6 +508,16 @@
        id="path4641"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" />
+    <path
+       style="display:inline;opacity:1;fill:#8a8a8a;fill-opacity:1;stroke:none;stroke-width:0.18708928;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 7.4083334,292.76665 v 1.05834 h 2.1166667 v -1.05834 z"
+       id="path5470"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path5472"
+       d="m 7.4083334,292.76665 v 1.05834 h 2.1166667 v -1.05834 z"
+       style="display:inline;opacity:1;fill:url(#radialGradient5474);fill-opacity:1;stroke:none;stroke-width:0.18708928;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
   </g>
   <g
      inkscape:groupmode="layer"

@@ -17,7 +17,7 @@ execute @a ~ ~ ~ execute @p[r=1] ~ ~ ~ detect ~ 127 ~ minecraft:bedrock * scoreb
 ##
 
 # helmet air supply
-execute @a[score_hasHelmet_min=1] ~ ~ ~ effect @p[r=1] minecraft:water_breathing 1 0
+execute @a[score_hasHelmet_min=1] ~ ~ ~ effect @p[r=1] minecraft:water_breathing 1 0 true
 scoreboard players add @a[score_hasHelmet_min=1] hasAir 1
 # for space, you need to be wearing a whole suit
 # space chest check

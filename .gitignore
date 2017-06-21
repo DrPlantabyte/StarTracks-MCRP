@@ -12,3 +12,5 @@ build/**
 *~
 /utils/FontGenerator/.nb-gradle/
 /utils/FontGenerator/build/
+# windows metadata files
+*.ini

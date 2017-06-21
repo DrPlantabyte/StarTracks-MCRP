@@ -1,0 +1,12 @@
+{
+ "entity.villager.ambient":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"mob/villager/idle1",
+	"mob/villager/idle2",
+	"mob/villager/idle3"
+    ]
+  }
+}

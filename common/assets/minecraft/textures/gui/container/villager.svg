@@ -41,11 +41,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="6.5131164"
-     inkscape:cx="174.4094"
-     inkscape:cy="228.88669"
+     inkscape:zoom="13.026233"
+     inkscape:cx="146.86351"
+     inkscape:cy="229.14023"
      inkscape:document-units="px"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="layer2"
      showgrid="true"
      units="px"
      inkscape:window-width="1680"
@@ -125,7 +125,7 @@
        id="rect4638"
        inkscape:connector-curvature="0" />
     <path
-       style="opacity:1;fill:#242424;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="m 46.566666,229.26665 h 9.525 v 10.05417 h -9.525 z"
        id="path4685"
        inkscape:connector-curvature="0" />
@@ -155,7 +155,7 @@
     <path
        inkscape:connector-curvature="0"
        id="path4533"
-       d="m 5.2916667,-53.181249 35.9833413,0 c 0.586314,0 1.058325,-0.472014 1.058325,-1.058328 v -2.116677 c 0,-0.586311 -0.472011,-1.058325 -1.058325,-1.058325 l -35.9833413,0 c -0.5863134,0 -1.0583274,0.472014 -1.0583274,1.058325 v 2.116677 c 0,0.586314 0.472014,1.058328 1.0583274,1.058328 z"
+       d="m 5.55625,-53.18125 h 35.454167 c 0.586314,0 1.058325,-0.472014 1.058325,-1.058328 v -2.116677 c 0,-0.586311 -0.472011,-1.058325 -1.058325,-1.058325 H 5.55625 c -0.5863134,0 -1.0583274,0.472014 -1.0583274,1.058325 v 2.116677 c 0,0.586314 0.472014,1.058328 1.0583274,1.058328 z"
        style="display:inline;opacity:1;fill:#cc99cc;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        sodipodi:nodetypes="sssssssss" />
     <path

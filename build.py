@@ -5,23 +5,26 @@ import subprocess
 import hashlib
 import zipfile
 
+this_dir = os.path.dirname(os.path.realpath(__file__))
+
 # executable locations
 from sys import platform
 if platform == 'linux' or platform == 'linux2':
 	# linux
 	inkscape_path = 'inkscape'
 	imagemagick_path = 'magick'
+	png_optimizer_path = 'optipng'
 elif platform == 'darwin':
 	# OS X (I don't actually know where OSX puts executables these days)
 	inkscape_path = 'inkscape'
 	imagemagick_path = 'magick'
+	png_optimizer_path = 'optipng'
 elif platform == 'win32' or platform == 'win64':
 	# Windows...
 	inkscape_path = 'C:\\Program Files\\Inkscape\\inkscape.exe'
 	imagemagick_path = 'C:\\Program Files\\ImageMagick-7.0.5-Q16\\magick.exe'
+	png_optimizer_path = os.path.join(this_dir,'bin\\optipng.exe')
 
-
-this_dir = os.path.dirname(os.path.realpath(__file__))
 
 tex_resolutions = [16, 32, 64, 128]
 project_dirs=[]
@@ -111,6 +114,7 @@ def copyInto(src, dst):
 				dst_filepath = dst + os.sep + rel_dirpath + os.sep + f.replace('.svg','.png')
 				src_filepath = root + os.sep + f
 				convertSVG(src_filepath, dst_filepath, 64)
+				optimizePNG(dst_filepath)
 			else:
 				# normal files
 				dst_filepath = dst + os.sep + rel_dirpath + os.sep + f
@@ -118,6 +122,8 @@ def copyInto(src, dst):
 				makeParentDir(dst_filepath)
 				print('Copying file', str(src_filepath), 'to', str(dst_filepath))
 				shutil.copyfile(src_filepath, dst_filepath)
+				if(f.endswith('.png')):
+					optimizePNG(dst_filepath)
 def convertSVGDir(src_dir, dest_dir, mc_resolution):
 	# use inkscape commandline
 	for root_dir, dirs, files in os.walk(src_dir):
@@ -139,4 +145,8 @@ def convertSVG(src_filepath, dst_filepath, mc_resolution):
 	if( "blocks" not in str(dst_filepath) ):
 		# remove transparency, unless it is a block texture
 		subprocess.call([imagemagick_path,'convert', str(dst_filepath), '-channel', 'alpha', '-threshold', '50%', str(dst_filepath)])
-main()
+def optimizePNG(filepath):
+	subprocess.call([png_optimizer_path,'-clobber', '-fix', '-force', '-o2', str(filepath)])
+#
+if __name__ == "__main__":
+	main()

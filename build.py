@@ -4,6 +4,7 @@ import os
 import subprocess
 import hashlib
 import zipfile
+import time
 
 this_dir = os.path.dirname(os.path.realpath(__file__))
 
@@ -113,6 +114,8 @@ def copyInto(src, dst):
 				# common SVG files at fixed resolution
 				dst_filepath = dst + os.sep + rel_dirpath + os.sep + f.replace('.svg','.png')
 				src_filepath = root + os.sep + f
+				if(alreadyExists(src_filepath, dst_filepath)):
+					print("Skipping ", src_filepath)
 				convertSVG(src_filepath, dst_filepath, 64)
 				optimizePNG(dst_filepath)
 			else:
@@ -120,6 +123,8 @@ def copyInto(src, dst):
 				dst_filepath = dst + os.sep + rel_dirpath + os.sep + f
 				src_filepath = root + os.sep + f
 				makeParentDir(dst_filepath)
+				if(alreadyExists(src_filepath, dst_filepath)):
+					print("Skipping ", src_filepath)
 				print('Copying file', str(src_filepath), 'to', str(dst_filepath))
 				shutil.copyfile(src_filepath, dst_filepath)
 				if(f.endswith('.png')):
@@ -134,7 +139,19 @@ def convertSVGDir(src_dir, dest_dir, mc_resolution):
 				name = f
 				dst_filepath = dest_dir + os.sep + rel_dirpath + os.sep + name.replace('.svg','.png')
 				src_filepath = root_dir + os.sep + name
+				if(alreadyExists(src_filepath, dst_filepath)):
+					print("Skipping ", src_filepath)
 				convertSVG(src_filepath, dst_filepath, mc_resolution)
+def alreadyExists(src_filepath, dst_filepath):
+	""" 
+	returns True if destination file exists and is newer than source file 
+	"""
+	if( os.path.exists(dst_filepath) ):
+		dst_time = os.path.getmtime(dst_filepath)
+		src_time = os.path.getmtime(src_filepath)
+		# do nothing if destination is newer than source
+		return (dst_time > src_time)
+	return False
 def convertSVG(src_filepath, dst_filepath, mc_resolution):
 	source_dpi = 96
 	scaler = mc_resolution / 16

@@ -116,6 +116,7 @@ def copyInto(src, dst):
 				src_filepath = root + os.sep + f
 				if(alreadyExists(src_filepath, dst_filepath)):
 					print("Skipping ", src_filepath)
+					continue
 				convertSVG(src_filepath, dst_filepath, 64)
 				optimizePNG(dst_filepath)
 			else:
@@ -125,6 +126,7 @@ def copyInto(src, dst):
 				makeParentDir(dst_filepath)
 				if(alreadyExists(src_filepath, dst_filepath)):
 					print("Skipping ", src_filepath)
+					continue
 				print('Copying file', str(src_filepath), 'to', str(dst_filepath))
 				shutil.copyfile(src_filepath, dst_filepath)
 				if(f.endswith('.png')):
@@ -141,6 +143,7 @@ def convertSVGDir(src_dir, dest_dir, mc_resolution):
 				src_filepath = root_dir + os.sep + name
 				if(alreadyExists(src_filepath, dst_filepath)):
 					print("Skipping ", src_filepath)
+					continue
 				convertSVG(src_filepath, dst_filepath, mc_resolution)
 def alreadyExists(src_filepath, dst_filepath):
 	""" 

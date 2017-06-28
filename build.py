@@ -31,7 +31,7 @@ tex_resolutions = [16, 32, 64, 128]
 project_dirs=[]
 
 def main():
-	remakeDir('distributables')
+	remakeDir(str(this_dir) + os.sep + 'distributables')
 	for res in tex_resolutions:
 		# setup build dir
 		src = 'x'+str(res)
@@ -40,14 +40,14 @@ def main():
 		svg_dir = str(this_dir) + os.sep + 'svg'
 		com_dir = str(this_dir) + os.sep + 'common'
 		build_dir = str(this_dir) + os.sep + 'build' + os.sep + src
-		zip_file = 'distributables' + os.sep + 'StarTracks_' + src + '.zip'
+		zip_file = str(this_dir) + os.sep + 'distributables' + os.sep + 'StarTracks_' + src + '.zip'
 		remakeDir(build_dir)
 		# copy common files
-		copyInto(src=com_dir, dst=build_dir)
+		copyInto(src=com_dir, dst=build_dir, skipExisting=True)
 		# compile SVG textures
-		convertSVGDir(svg_dir, build_dir, res)
+		convertSVGDir(svg_dir, build_dir, res, skipExisting=True)
 		# copy raw textures
-		copyInto(src=src_dir, dst=build_dir)
+		copyInto(src=src_dir, dst=build_dir, skipExisting=False)
 		# make distributable .zip files
 		the_files = listFiles(build_dir)
 		zipFiles(build_dir, the_files, zip_file, zipfile.ZIP_STORED)
@@ -68,7 +68,7 @@ def main():
 		# done
 		print('\n...done building texture pack',src)
 	world_dir = str(this_dir) + os.sep + "world"
-	world_zip = "distributables" + os.sep + "world.zip"
+	world_zip = str(this_dir) + os.sep + "distributables" + os.sep + "world.zip"
 	print('Building world data...')
 	zipFiles(world_dir, listFiles(world_dir), world_zip, zipfile.ZIP_DEFLATED)
 	print('...done!')
@@ -106,7 +106,7 @@ def makeParentDir(dirpath):
 	print('Recreating directory', str(dirpath))
 	parent_path = os.path.dirname(os.path.realpath(dirpath))
 	os.makedirs(parent_path, exist_ok=True)
-def copyInto(src, dst):
+def copyInto(src, dst, skipExisting=True):
 	for root, dirs, files in os.walk(src):
 		rel_dirpath = os.path.relpath(root, start=src)
 		for f in files:
@@ -114,7 +114,7 @@ def copyInto(src, dst):
 				# common SVG files at fixed resolution
 				dst_filepath = dst + os.sep + rel_dirpath + os.sep + f.replace('.svg','.png')
 				src_filepath = root + os.sep + f
-				if(alreadyExists(src_filepath, dst_filepath)):
+				if(skipExisting and alreadyExists(src_filepath, dst_filepath)):
 					print("Skipping ", src_filepath)
 					continue
 				convertSVG(src_filepath, dst_filepath, 64)
@@ -124,14 +124,14 @@ def copyInto(src, dst):
 				dst_filepath = dst + os.sep + rel_dirpath + os.sep + f
 				src_filepath = root + os.sep + f
 				makeParentDir(dst_filepath)
-				if(alreadyExists(src_filepath, dst_filepath)):
+				if(skipExisting and alreadyExists(src_filepath, dst_filepath)):
 					print("Skipping ", src_filepath)
 					continue
 				print('Copying file', str(src_filepath), 'to', str(dst_filepath))
 				shutil.copyfile(src_filepath, dst_filepath)
 				if(f.endswith('.png')):
 					optimizePNG(dst_filepath)
-def convertSVGDir(src_dir, dest_dir, mc_resolution):
+def convertSVGDir(src_dir, dest_dir, mc_resolution, skipExisting=True):
 	# use inkscape commandline
 	for root_dir, dirs, files in os.walk(src_dir):
 		rel_dirpath = os.path.relpath(root_dir, start=src_dir)
@@ -141,7 +141,7 @@ def convertSVGDir(src_dir, dest_dir, mc_resolution):
 				name = f
 				dst_filepath = dest_dir + os.sep + rel_dirpath + os.sep + name.replace('.svg','.png')
 				src_filepath = root_dir + os.sep + name
-				if(alreadyExists(src_filepath, dst_filepath)):
+				if(skipExisting and alreadyExists(src_filepath, dst_filepath)):
 					print("Skipping ", src_filepath)
 					continue
 				convertSVG(src_filepath, dst_filepath, mc_resolution)

@@ -9,12 +9,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="256"
-   height="256"
-   viewBox="0 0 67.733331 67.733336"
+   width="128"
+   height="64"
+   viewBox="0 0 33.866666 16.933334"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.0 r15299"
+   inkscape:version="0.92.1 r15371"
    sodipodi:docname="drawing2.svg">
   <defs
      id="defs2" />
@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.6282791"
-     inkscape:cx="56.375306"
+     inkscape:cx="-56.013289"
      inkscape:cy="104.64861"
      inkscape:document-units="px"
      inkscape:current-layer="layer4"
@@ -78,20 +78,20 @@
      id="layer4"
      inkscape:label="Ref"
      style="display:inline"
-     transform="translate(0,63.5)" />
+     transform="translate(0,12.7)" />
   <g
      inkscape:label="BG"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-229.26665)" />
+     transform="translate(0,-280.06665)" />
   <g
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Main"
-     transform="translate(0,63.5)" />
+     transform="translate(0,12.7)" />
   <g
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="FG"
-     transform="translate(0,63.5)" />
+     transform="translate(0,12.7)" />
 </svg>

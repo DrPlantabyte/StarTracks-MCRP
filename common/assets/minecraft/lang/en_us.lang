@@ -210,8 +210,8 @@ selectWorld.mapType.normal=Normal
 selectWorld.allowCommands=Allow Cheats:
 selectWorld.allowCommands.info=Commands like /gamemode, /xp
 selectWorld.hardcoreMode=Hardcore:
-selectWorld.hardcoreMode.info=World is deleted upon death
-selectWorld.bonusItems=Bonus Chest:
+selectWorld.hardcoreMode.info=World is lost upon death
+selectWorld.bonusItems=Supply Drop:
 
 generator.default=Default
 generator.flat=Superflat

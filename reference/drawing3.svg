@@ -10,8 +10,8 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="64"
-   height="64"
-   viewBox="0 0 16.933333 16.933334"
+   height="32"
+   viewBox="0 0 16.933333 8.466667"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.1 r15371"
@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="11.2"
-     inkscape:cx="21.971059"
+     inkscape:cx="7.4621304"
      inkscape:cy="5.3115823"
      inkscape:document-units="px"
      inkscape:current-layer="layer4"
@@ -78,20 +78,20 @@
      id="layer4"
      inkscape:label="Ref"
      style="display:inline"
-     transform="translate(0,12.7)" />
+     transform="translate(0,4.2333333)" />
   <g
      inkscape:label="BG"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-280.06665)" />
+     transform="translate(0,-288.53332)" />
   <g
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Main"
-     transform="translate(0,12.7)" />
+     transform="translate(0,4.2333333)" />
   <g
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="FG"
-     transform="translate(0,12.7)" />
+     transform="translate(0,4.2333333)" />
 </svg>

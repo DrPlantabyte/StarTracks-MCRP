@@ -23,7 +23,7 @@ elif platform == 'darwin':
 elif platform == 'win32' or platform == 'win64':
 	# Windows...
 	inkscape_path = 'C:\\Program Files\\Inkscape\\inkscape.exe'
-	imagemagick_path = 'C:\\Program Files\\ImageMagick-7.0.5-Q16\\magick.exe'
+	imagemagick_path = 'C:\\Program Files\\ImageMagick-7.0.7-Q16\\magick.exe'
 	png_optimizer_path = os.path.join(this_dir,'bin\\optipng.exe')
 
 
@@ -161,12 +161,15 @@ def convertSVG(src_filepath, dst_filepath, mc_resolution):
 	dpi = source_dpi * scaler
 	makeParentDir(dst_filepath)
 	print('Rendering', str(src_filepath), 'to', str(dst_filepath))
-	subprocess.call([inkscape_path,'--export-png', str(dst_filepath), '--export-area-page', '--export-dpi', str(dpi), str(src_filepath)])
+	p_status = subprocess.call([inkscape_path, str(src_filepath),'--export-png', str(dst_filepath), '--export-area-page', '--export-dpi', str(dpi)])	if(p_status != 0):		print('warning, Inkscape process returned exit code',p_status)
 	if( "blocks" not in str(dst_filepath) ):
 		# remove transparency, unless it is a block texture
-		subprocess.call([imagemagick_path,'convert', str(dst_filepath), '-channel', 'alpha', '-threshold', '50%', str(dst_filepath)])
+		p_status = subprocess.call([imagemagick_path,'convert', str(dst_filepath), '-channel', 'alpha', '-threshold', '50%', str(dst_filepath)])
+		if(p_status != 0):
+			print('warning, Image Magick process returned exit code',p_status)
 def optimizePNG(filepath):
-	subprocess.call([png_optimizer_path,'-clobber', '-fix', '-force', '-o2', str(filepath)])
+	p_status = subprocess.call([png_optimizer_path,'-clobber', '-fix', '-force', '-o2', str(filepath)])	if(p_status != 0):
+		print('warning, PNG Optimizer process returned exit code',p_status)
 #
 if __name__ == "__main__":
 	main()

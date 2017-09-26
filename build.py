@@ -118,7 +118,6 @@ def copyInto(src, dst, skipExisting=True):
 					print("Skipping ", src_filepath)
 					continue
 				convertSVG(src_filepath, dst_filepath, 64)
-				optimizePNG(dst_filepath)
 			else:
 				# normal files
 				dst_filepath = dst + os.sep + rel_dirpath + os.sep + f
@@ -166,7 +165,7 @@ def convertSVG(src_filepath, dst_filepath, mc_resolution):
 		# remove transparency, unless it is a block texture
 		p_status = subprocess.call([imagemagick_path,'convert', str(dst_filepath), '-channel', 'alpha', '-threshold', '50%', str(dst_filepath)])
 		if(p_status != 0):
-			print('warning, Image Magick process returned exit code',p_status)
+			print('warning, Image Magick process returned exit code',p_status)	optimizePNG(dst_filepath)
 def optimizePNG(filepath):
 	p_status = subprocess.call([png_optimizer_path,'-clobber', '-fix', '-force', '-o2', str(filepath)])	if(p_status != 0):
 		print('warning, PNG Optimizer process returned exit code',p_status)

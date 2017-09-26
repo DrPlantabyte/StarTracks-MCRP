@@ -10,7 +10,7 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="16"
-   height="80"
+   height="16"
    viewBox="0 0 32px 160px"
    version="1.1"
    id="svgMain"
@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="-212"
+     inkscape:cx="-424"
      inkscape:cy="0"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -55,7 +55,7 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(-32,-240)"
+     transform="translate(-32,-304)"
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">

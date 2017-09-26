@@ -166,9 +166,9 @@ def convertSVG(src_filepath, dst_filepath, mc_resolution):
 		p_status = subprocess.call([imagemagick_path,'convert', str(dst_filepath), '-channel', 'alpha', '-threshold', '50%', str(dst_filepath)])
 		if(p_status != 0):
 			print('warning, Image Magick process returned exit code',p_status)	optimizePNG(dst_filepath)
-def optimizePNG(filepath):
+def optimizePNG(filepath):	pass	# unfortunately, the PNG optimizer compresses the color palette in 	# such a way as to prevent Minecraft from accurately loading the 	# texture (some stone textures appear white-washed)	"""
 	p_status = subprocess.call([png_optimizer_path,'-clobber', '-fix', '-force', '-o2', str(filepath)])	if(p_status != 0):
-		print('warning, PNG Optimizer process returned exit code',p_status)
+		print('warning, PNG Optimizer process returned exit code',p_status)	"""
 #
 if __name__ == "__main__":
 	main()

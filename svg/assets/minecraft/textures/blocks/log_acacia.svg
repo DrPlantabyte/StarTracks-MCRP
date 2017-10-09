@@ -16,7 +16,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
-   sodipodi:docname="corel_log.svg">
+   sodipodi:docname="log_acacia.svg">
   <defs
      id="defs2">
     <linearGradient
@@ -306,17 +306,17 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="3.959798"
-     inkscape:cx="-56.465088"
+     inkscape:cx="-32.144686"
      inkscape:cy="-4.507973"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
      units="px"
-     inkscape:window-width="1680"
-     inkscape:window-height="987"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
+     inkscape:window-width="1165"
+     inkscape:window-height="885"
+     inkscape:window-x="400"
+     inkscape:window-y="13"
+     inkscape:window-maximized="0"
      inkscape:snap-smooth-nodes="true"
      inkscape:snap-global="true">
     <inkscape:grid
@@ -334,7 +334,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
       </cc:Work>
@@ -367,7 +367,7 @@
      id="layer1"
      transform="translate(0,-292.76665)">
     <path
-       style="opacity:1;fill:#538e52;fill-opacity:1;stroke:none;stroke-width:0.03307291;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:1;fill:#775686;fill-opacity:1;stroke:none;stroke-width:0.03307291;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 1.2500007e-8,292.50207 v 4.7625 H 4.2333333 v -4.7625 z"
        id="path833"
        inkscape:connector-curvature="0"

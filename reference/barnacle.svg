@@ -16,7 +16,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
-   sodipodi:docname="sapling_oak.svg">
+   sodipodi:docname="barnacle.svg">
   <defs
      id="defs2">
     <linearGradient
@@ -93,17 +93,17 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="31.678384"
-     inkscape:cx="9.0594133"
-     inkscape:cy="6.2059502"
+     inkscape:cx="3.571123"
+     inkscape:cy="3.6805689"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
      units="px"
-     inkscape:window-width="1281"
-     inkscape:window-height="908"
-     inkscape:window-x="384"
-     inkscape:window-y="7"
-     inkscape:window-maximized="0"
+     inkscape:window-width="1680"
+     inkscape:window-height="987"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
      inkscape:snap-global="false">
     <inkscape:grid
        type="xygrid"
@@ -120,7 +120,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
       </cc:Work>
@@ -235,7 +235,7 @@
      id="layer1"
      transform="translate(0,-292.76665)">
     <path
-       style="display:inline;opacity:1;fill:#905050;fill-opacity:1;stroke:#000000;stroke-width:0.24999999;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="display:inline;opacity:1;fill:#4ed83b;fill-opacity:1;stroke:#000000;stroke-width:0.24999999;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M 9.1015625 3.7851562 C 7.5189086 4.0093036 5.8473565 6.8000433 5.1621094 9.4472656 C 4.203857 10.609645 3.7357661 11.590692 4.8417969 12.521484 C 5.8543978 14.997281 4.8087053 14.270053 5 16 L 11 16 C 11.063532 13.715767 9.065813 14.024657 10.476562 12.277344 C 10.449595 12.264316 10.425231 12.258481 10.398438 12.246094 C 13.844517 8.6803591 10.778546 5.4959627 9.1015625 3.7851562 z M 8.6542969 11.822266 C 8.7133208 11.824962 8.7640988 11.83478 8.8203125 11.839844 C 8.6670308 11.830078 8.5139467 11.82091 8.3632812 11.826172 C 8.4608984 11.824412 8.5641016 11.818145 8.6542969 11.822266 z M 8.3046875 11.826172 C 7.591234 11.859372 6.8932823 12.038842 6.1621094 12.222656 C 7.038761 11.984611 7.7597854 11.842622 8.3046875 11.826172 z "
        transform="matrix(0.26458333,0,0,0.26458333,0,292.76665)"
        id="path839-1" />

@@ -50,5 +50,21 @@
     [
 	"mob/villager/death"
     ]
+  },
+ "entity.arrow.shoot":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"entity/arrow/shoot"
+    ]
+  },
+ "entity.arrow.hit":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"entity/arrow/hit"
+    ]
   }
 }

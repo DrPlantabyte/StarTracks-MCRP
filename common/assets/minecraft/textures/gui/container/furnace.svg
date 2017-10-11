@@ -15,7 +15,7 @@
    viewBox="0 0 67.733331 67.733336"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.1 r15371"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
    sodipodi:docname="furnace.svg">
   <defs
      id="defs2" />
@@ -26,9 +26,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.2565582"
-     inkscape:cx="67.353555"
-     inkscape:cy="217.04524"
+     inkscape:zoom="2.3027344"
+     inkscape:cx="110.7015"
+     inkscape:cy="160.65473"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      showgrid="true"
@@ -206,6 +206,12 @@
        id="path5274"
        d="m 47.095833,-58.7375 v 1.058333 h 5.820833 V -58.7375 Z"
        style="fill:#9999ff;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       style="opacity:1;fill:#000000;fill-opacity:0.74901961;stroke:none;stroke-width:0.13229166;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 16.66875,-48.41875 -0.529167,1.058333 h 0.529167 l -0.529167,1.058333 1.5875,-1.058333 h -0.529166 l 0.529166,-1.058334 z"
+       id="path853"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccc" />
   </g>
   <g
      inkscape:groupmode="layer"

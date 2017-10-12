@@ -534,7 +534,7 @@ book.generation.3=Tattered
 
 merchant.deprecated=Trade something else to unlock!
 
-tile.air.name=Air
+tile.air.name=Space
 tile.barrier.name=Barrier
 tile.stone.stone.name=Stone
 tile.stone.granite.name=Granite
@@ -843,8 +843,8 @@ tile.anvil.name=Repair-Bot
 tile.anvil.intact.name=Repair-Bot
 tile.anvil.slightlyDamaged.name=Aging Repair-Bot
 tile.anvil.veryDamaged.name=Damaged Repair-Bot
-tile.whiteStone.name=End Stone
-tile.endPortalFrame.name=End Portal
+tile.whiteStone.name=Asteroid
+tile.endPortalFrame.name=Invader Portal
 tile.mycel.name=Mycelium
 tile.waterlily.name=Algal Biofilm
 tile.dragonEgg.name=Dragon Egg

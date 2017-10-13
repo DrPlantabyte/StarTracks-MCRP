@@ -66,5 +66,132 @@
     [
 	"entity/arrow/hit"
     ]
+  },
+ "entity.skeleton.shoot":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"entity/arrow/shoot"
+    ]
+  },
+ "entity.blaze.death":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"random/robotboom"
+    ]
+  },
+ "entity.blaze.ambient":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"mob/blaze/breathe1",
+	"mob/blaze/breathe2"
+    ]
+  },
+ "entity.blaze.hurt":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"mob/blaze/hit"
+    ]
+  },
+ "entity.ghast.ambient":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"mob/ghast/moan1",
+	"mob/ghast/moan2",
+	"mob/ghast/moan3",
+	"mob/ghast/moan4",
+	"mob/ghast/moan5"
+    ]
+  },
+ "entity.ghast.death":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"random/robotboom"
+    ]
+  },
+ "entity.ghast.hurt":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"mob/ghast/scream1",
+	"mob/ghast/scream2",
+	"mob/ghast/scream3"
+    ]
+  },
+ "entity.ghast.warn":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"mob/ghast/charge"
+    ]
+  },
+ "entity.skeleton.ambient":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"mob/skeleton/say1",
+	"mob/skeleton/say2",
+	"mob/skeleton/say3"
+    ]
+  },
+ "entity.skeleton.death":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"mob/skeleton/death"
+    ]
+  },
+ "entity.skeleton.hurt":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"mob/skeleton/hurt1",
+	"mob/skeleton/hurt2",
+	"mob/skeleton/hurt3"
+    ]
+  },
+ "entity.skeleton_horse.ambient":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"mob/skeleton/say1",
+	"mob/skeleton/say2",
+	"mob/skeleton/say3"
+    ]
+  },
+ "entity.skeleton_horse.death":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"random/robotboom"
+    ]
+  },
+ "entity.skeleton_horse.hurt":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"mob/skeleton/hurt1",
+	"mob/skeleton/hurt2",
+	"mob/skeleton/hurt3"
+    ]
   }
 }

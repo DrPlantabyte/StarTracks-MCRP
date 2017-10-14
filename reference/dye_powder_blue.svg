@@ -16,7 +16,7 @@
    id="svg8"
    inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
    sodipodi:docname="dye_powder_blue.svg"
-   inkscape:export-filename="C:\Users\Cybergnome\Documents\Minecraft\Resource Packs\1.12\StarTracks-MCRP\reference\drawing.png"
+   inkscape:export-filename="D:\CCHall\Documents\Minecraft\Resource Packs\StarTracks-MCRP\common\assets\minecraft\textures\items\dye_powder_blue.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96">
   <defs
@@ -29,7 +29,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="32"
-     inkscape:cx="1.7619697"
+     inkscape:cx="-3.7067803"
      inkscape:cy="7.2995476"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
@@ -58,7 +58,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
       </cc:Work>
@@ -83,7 +83,7 @@
      inkscape:groupmode="layer"
      id="layer4"
      inkscape:label="Ref"
-     style="display:inline" />
+     style="display:none" />
   <g
      inkscape:label="BG"
      inkscape:groupmode="layer"

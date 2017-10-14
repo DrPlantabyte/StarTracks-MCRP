@@ -1,0 +1,1176 @@
+ambient.cave
+
+>>> ambient/cave/cave1
+>>> ambient/cave/cave2
+>>> ambient/cave/cave3
+>>> ambient/cave/cave4
+>>> ambient/cave/cave5
+>>> ambient/cave/cave6
+>>> ambient/cave/cave7
+>>> ambient/cave/cave8
+>>> ambient/cave/cave9
+>>> ambient/cave/cave10
+>>> ambient/cave/cave11
+>>> ambient/cave/cave12
+>>> ambient/cave/cave13
+
+block.anvil.break
+block.glass.place
+block.metal.break
+block.metal.place
+block.stone.break
+block.stone.place
+>>> dig/stone1
+>>> dig/stone2
+>>> dig/stone3
+>>> dig/stone4
+
+block.anvil.destroy
+>>> random/anvil_break
+
+block.anvil.fall
+block.anvil.hit
+block.anvil.step
+block.glass.fall
+block.glass.hit
+block.glass.step
+block.metal.fall
+block.metal.hit
+block.metal.step
+block.stone.fall
+block.stone.hit
+block.stone.step
+>>> step/stone1
+>>> step/stone2
+>>> step/stone3
+>>> step/stone4
+>>> step/stone5
+>>> step/stone6
+
+block.anvil.land
+block.anvil.place
+>>> random/anvil_land
+
+block.anvil.use
+>>> random/anvil_use
+
+block.chest.close
+block.enderchest.close
+>>> random/chestclosed
+
+block.chest.locked
+block.fence_gate.close
+block.fence_gate.open
+block.iron_door.close
+block.iron_door.open
+block.trapdoor.close
+block.trapdoor.open
+block.wooden_door.close
+block.wooden_door.open
+>>> random/door_close
+>>> random/door_open
+
+block.chest.open
+block.enderchest.open
+>>> random/chestopen
+
+block.cloth.break
+block.cloth.place
+>>> dig/cloth1
+>>> dig/cloth2
+>>> dig/cloth3
+>>> dig/cloth4
+
+block.cloth.fall
+block.cloth.hit
+block.cloth.step
+>>> step/cloth1
+>>> step/cloth2
+>>> step/cloth3
+>>> step/cloth4
+
+block.comparator.click
+block.dispenser.dispense
+block.dispenser.fail
+block.lever.click
+block.metal_pressureplate.click_off
+block.metal_pressureplate.click_on
+block.stone_button.click_off
+block.stone_button.click_on
+block.stone_pressureplate.click_off
+block.stone_pressureplate.click_on
+block.tripwire.attach
+block.tripwire.click_off
+block.tripwire.click_on
+block.wood_pressureplate.click_off
+block.wood_pressureplate.click_on
+ui.button.click
+>>> random/click
+
+block.dispenser.launch
+entity.arrow.shoot
+entity.bobber.throw
+entity.egg.throw
+entity.endereye.launch
+entity.enderpearl.throw
+entity.experience_bottle.throw
+entity.firework.shoot
+entity.lingeringpotion.throw
+entity.skeleton.shoot
+entity.snowball.throw
+entity.snowman.shoot
+entity.splash_potion.throw
+>>> random/bow
+
+block.end_gateway.spawn
+entity.enderdragon_fireball.explode
+entity.generic.explode
+entity.lightning.impact
+>>> random/explode1
+>>> random/explode2
+>>> random/explode3
+>>> random/explode4
+
+block.fire.ambient
+entity.blaze.burn
+>>> fire/fire
+
+block.fire.extinguish
+block.lava.extinguish
+block.redstone_torch.burnout
+entity.generic.burn
+entity.generic.extinguish_fire
+>>> random/fizz
+
+block.glass.break
+entity.splash_potion.break
+>>> random/glass1
+>>> random/glass2
+>>> random/glass3
+
+block.grass.break
+block.grass.place
+>>> dig/grass1
+>>> dig/grass2
+>>> dig/grass3
+>>> dig/grass4
+
+block.grass.fall
+block.grass.hit
+block.grass.step
+>>> step/grass1
+>>> step/grass2
+>>> step/grass3
+>>> step/grass4
+>>> step/grass5
+>>> step/grass6
+
+block.gravel.break
+block.gravel.place
+>>> dig/gravel1
+>>> dig/gravel2
+>>> dig/gravel3
+>>> dig/gravel4
+
+block.gravel.fall
+block.gravel.hit
+block.gravel.step
+>>> step/gravel1
+>>> step/gravel2
+>>> step/gravel3
+>>> step/gravel4
+
+block.ladder.break
+block.ladder.place
+block.wood.break
+block.wood.place
+>>> dig/wood1
+>>> dig/wood2
+>>> dig/wood3
+>>> dig/wood4
+
+block.ladder.fall
+block.ladder.hit
+block.ladder.step
+>>> step/ladder1
+>>> step/ladder2
+>>> step/ladder3
+>>> step/ladder4
+>>> step/ladder5
+
+block.lava.ambient
+>>> liquid/lava
+
+block.lava.pop
+>>> liquid/lavapop
+
+block.note.basedrum
+>>> note/bd
+
+block.note.bass
+>>> note/bassattack
+
+block.note.harp
+>>> note/harp
+
+block.note.hat
+>>> note/hat
+
+block.note.snare
+>>> note/snare
+
+block.piston.contract
+>>> tile/piston/in
+
+block.piston.extend
+>>> tile/piston/out
+
+block.portal.ambient
+>>> portal/portal
+
+block.portal.travel
+>>> portal/travel
+
+block.portal.trigger
+>>> portal/trigger
+
+block.sand.break
+block.sand.place
+>>> dig/sand1
+>>> dig/sand2
+>>> dig/sand3
+>>> dig/sand4
+
+block.sand.fall
+block.sand.hit
+block.sand.step
+>>> step/sand1
+>>> step/sand2
+>>> step/sand3
+>>> step/sand4
+>>> step/sand5
+
+block.slime.break
+block.slime.place
+entity.magmacube.death
+entity.magmacube.hurt
+entity.slime.death
+entity.slime.hurt
+entity.slime.jump
+entity.slime.squish
+>>> mob/slime/big1
+>>> mob/slime/big2
+>>> mob/slime/big3
+>>> mob/slime/big4
+
+block.slime.fall
+block.slime.hit
+block.slime.step
+entity.small_magmacube.death
+entity.small_magmacube.hurt
+entity.small_slime.death
+entity.small_slime.hurt
+entity.small_slime.squish
+>>> mob/slime/small1
+>>> mob/slime/small2
+>>> mob/slime/small3
+>>> mob/slime/small4
+>>> mob/slime/small5
+
+block.snow.break
+block.snow.place
+>>> dig/snow1
+>>> dig/snow2
+>>> dig/snow3
+>>> dig/snow4
+
+block.snow.fall
+block.snow.hit
+block.snow.step
+>>> step/snow1
+>>> step/snow2
+>>> step/snow3
+>>> step/snow4
+
+block.tripwire.detach
+entity.arrow.hit
+>>> random/bowhit1
+>>> random/bowhit2
+>>> random/bowhit3
+>>> random/bowhit4
+
+block.water.ambient
+>>> liquid/water
+
+block.wood.fall
+block.wood.hit
+block.wood.step
+>>> step/wood1
+>>> step/wood2
+>>> step/wood3
+>>> step/wood4
+>>> step/wood5
+>>> step/wood6
+
+block.wood_button.click_off
+block.wood_button.click_on
+>>> random/wood_click
+
+entity.arrow.successful_hit
+>>> random/successful_hit
+
+entity.bat.ambient
+>>> mob/bat/idle1
+>>> mob/bat/idle2
+>>> mob/bat/idle3
+>>> mob/bat/idle4
+
+entity.bat.death
+>>> mob/bat/death
+
+entity.bat.hurt
+>>> mob/bat/hurt1
+>>> mob/bat/hurt2
+>>> mob/bat/hurt3
+>>> mob/bat/hurt4
+
+entity.bat.takeoff
+>>> mob/bat/takeoff
+
+entity.blaze.ambient
+>>> mob/blaze/breathe1
+>>> mob/blaze/breathe2
+>>> mob/blaze/breathe3
+>>> mob/blaze/breathe4
+
+entity.blaze.death
+>>> mob/blaze/death
+
+entity.blaze.hurt
+>>> mob/blaze/hit1
+>>> mob/blaze/hit2
+>>> mob/blaze/hit3
+>>> mob/blaze/hit4
+
+entity.blaze.shoot
+entity.enderdragon.shoot
+entity.ghast.shoot
+entity.shulker.shoot
+item.firecharge.use
+>>> mob/ghast/fireball4
+
+entity.bobber.splash
+>>> random/splash
+
+entity.cat.ambient
+>>> mob/cat/meow1
+>>> mob/cat/meow2
+>>> mob/cat/meow3
+>>> mob/cat/meow4
+
+entity.cat.death
+entity.cat.hurt
+>>> mob/cat/hitt1
+>>> mob/cat/hitt2
+>>> mob/cat/hitt3
+
+entity.cat.purr
+>>> mob/cat/purr1
+>>> mob/cat/purr2
+>>> mob/cat/purr3
+
+entity.cat.purreow
+>>> mob/cat/purreow1
+>>> mob/cat/purreow2
+
+entity.chicken.ambient
+>>> mob/chicken/say1
+>>> mob/chicken/say2
+>>> mob/chicken/say3
+
+entity.chicken.death
+entity.chicken.hurt
+>>> mob/chicken/hurt1
+>>> mob/chicken/hurt2
+
+entity.chicken.egg
+entity.donkey.chest
+>>> mob/chicken/plop
+
+entity.chicken.step
+>>> mob/chicken/step1
+>>> mob/chicken/step2
+
+entity.cow.ambient
+>>> mob/cow/say1
+>>> mob/cow/say2
+>>> mob/cow/say3
+>>> mob/cow/say4
+
+entity.cow.death
+entity.cow.hurt
+>>> mob/cow/hurt1
+>>> mob/cow/hurt2
+>>> mob/cow/hurt3
+
+entity.cow.step
+>>> mob/cow/step1
+>>> mob/cow/step2
+>>> mob/cow/step3
+>>> mob/cow/step4
+
+entity.creeper.death
+>>> mob/creeper/death
+
+entity.creeper.hurt
+>>> mob/creeper/say1
+>>> mob/creeper/say2
+>>> mob/creeper/say3
+>>> mob/creeper/say4
+
+entity.creeper.primed
+entity.tnt.primed
+>>> random/fuse
+
+entity.donkey.ambient
+entity.mule.ambient
+>>> mob/horse/donkey/idle1
+>>> mob/horse/donkey/idle2
+>>> mob/horse/donkey/idle3
+
+entity.donkey.angry
+>>> mob/horse/donkey/angry1
+>>> mob/horse/donkey/angry2
+
+entity.donkey.death
+entity.mule.death
+>>> mob/horse/donkey/death
+
+entity.donkey.hurt
+entity.mule.hurt
+>>> mob/horse/donkey/hit1
+>>> mob/horse/donkey/hit2
+>>> mob/horse/donkey/hit3
+
+entity.elder_guardian.ambient
+>>> mob/guardian/elder_idle1
+>>> mob/guardian/elder_idle2
+>>> mob/guardian/elder_idle3
+>>> mob/guardian/elder_idle4
+
+entity.elder_guardian.ambient_land
+entity.guardian.ambient_land
+>>> mob/guardian/land_idle1
+>>> mob/guardian/land_idle2
+>>> mob/guardian/land_idle3
+>>> mob/guardian/land_idle4
+
+entity.elder_guardian.curse
+>>> mob/guardian/curse
+
+entity.elder_guardian.death
+>>> mob/guardian/elder_death
+
+entity.elder_guardian.death_land
+entity.guardian.death_land
+>>> mob/guardian/land_death
+
+entity.elder_guardian.hurt
+>>> mob/guardian/elder_hit1
+>>> mob/guardian/elder_hit2
+>>> mob/guardian/elder_hit3
+>>> mob/guardian/elder_hit4
+
+entity.elder_guardian.hurt_land
+entity.guardian.hurt_land
+>>> mob/guardian/land_hit1
+>>> mob/guardian/land_hit2
+>>> mob/guardian/land_hit3
+>>> mob/guardian/land_hit4
+
+entity.enderdragon.ambient
+entity.enderdragon.growl
+>>> mob/enderdragon/growl1
+>>> mob/enderdragon/growl2
+>>> mob/enderdragon/growl3
+>>> mob/enderdragon/growl4
+
+entity.enderdragon.death
+>>> mob/enderdragon/end
+
+entity.enderdragon.flap
+>>> mob/enderdragon/wings1
+>>> mob/enderdragon/wings2
+>>> mob/enderdragon/wings3
+>>> mob/enderdragon/wings4
+>>> mob/enderdragon/wings5
+>>> mob/enderdragon/wings6
+
+entity.enderdragon.hurt
+>>> mob/enderdragon/hit1
+>>> mob/enderdragon/hit2
+>>> mob/enderdragon/hit3
+>>> mob/enderdragon/hit4
+
+entity.endermen.ambient
+>>> mob/endermen/idle1
+>>> mob/endermen/idle2
+>>> mob/endermen/idle3
+>>> mob/endermen/idle4
+>>> mob/endermen/idle5
+
+entity.endermen.death
+>>> mob/endermen/death
+
+entity.endermen.hurt
+>>> mob/endermen/hit1
+>>> mob/endermen/hit2
+>>> mob/endermen/hit3
+>>> mob/endermen/hit4
+
+entity.endermen.scream
+>>> mob/endermen/scream1
+>>> mob/endermen/scream2
+>>> mob/endermen/scream3
+>>> mob/endermen/scream4
+
+entity.endermen.stare
+>>> mob/endermen/stare
+
+entity.endermen.teleport
+entity.shulker.teleport
+>>> mob/endermen/portal
+>>> mob/endermen/portal2
+
+entity.experience_orb.pickup
+entity.experience_orb.touch
+>>> random/orb
+
+entity.firework.blast
+>>> fireworks/blast1
+
+entity.firework.blast_far
+>>> fireworks/blast_far1
+
+entity.firework.large_blast
+>>> fireworks/largeBlast1
+
+entity.firework.large_blast_far
+>>> fireworks/largeBlast_far1
+
+entity.firework.launch
+>>> fireworks/launch1
+
+entity.firework.twinkle
+>>> fireworks/twinkle1
+
+entity.firework.twinkle_far
+>>> fireworks/twinkle_far1
+
+entity.generic.big_fall
+entity.hostile.big_fall
+entity.player.big_fall
+>>> damage/fallbig
+
+entity.generic.death
+entity.generic.hurt
+entity.hostile.death
+entity.hostile.hurt
+entity.player.death
+entity.player.hurt
+>>> damage/hit1
+>>> damage/hit2
+>>> damage/hit3
+
+entity.generic.drink
+>>> random/drink
+
+entity.generic.eat
+>>> random/eat1
+>>> random/eat2
+>>> random/eat3
+
+entity.generic.small_fall
+entity.hostile.small_fall
+entity.player.small_fall
+>>> damage/fallsmall
+
+entity.generic.splash
+entity.hostile.splash
+entity.player.splash
+>>> liquid/splash
+>>> liquid/splash2
+
+entity.generic.swim
+entity.hostile.swim
+entity.player.swim
+>>> liquid/swim1
+>>> liquid/swim2
+>>> liquid/swim3
+>>> liquid/swim4
+
+entity.ghast.ambient
+>>> mob/ghast/moan1
+>>> mob/ghast/moan2
+>>> mob/ghast/moan3
+>>> mob/ghast/moan4
+>>> mob/ghast/moan5
+>>> mob/ghast/moan6
+>>> mob/ghast/moan7
+
+entity.ghast.death
+>>> mob/ghast/death
+
+entity.ghast.hurt
+>>> mob/ghast/scream1
+>>> mob/ghast/scream2
+>>> mob/ghast/scream3
+>>> mob/ghast/scream4
+>>> mob/ghast/scream5
+
+entity.ghast.warn
+>>> mob/ghast/charge
+
+entity.guardian.ambient
+>>> mob/guardian/guardian_idle1
+>>> >>> volume:0.1
+>>> mob/guardian/guardian_idle2
+>>> >>> volume:0.1
+>>> mob/guardian/guardian_idle3
+>>> >>> volume:0.1
+>>> mob/guardian/guardian_idle4
+>>> >>> volume:0.1
+
+entity.guardian.attack
+>>> mob/guardian/attack_loop
+
+entity.guardian.death
+>>> mob/guardian/guardian_death
+
+entity.guardian.flop
+>>> mob/guardian/flop1
+>>> mob/guardian/flop2
+>>> mob/guardian/flop3
+>>> mob/guardian/flop4
+
+entity.guardian.hurt
+>>> mob/guardian/guardian_hit1
+>>> mob/guardian/guardian_hit2
+>>> mob/guardian/guardian_hit3
+>>> mob/guardian/guardian_hit4
+
+entity.horse.ambient
+>>> mob/horse/idle1
+>>> mob/horse/idle2
+>>> mob/horse/idle3
+
+entity.horse.angry
+>>> mob/horse/angry1
+
+entity.horse.armor
+>>> mob/horse/armor
+
+entity.horse.breathe
+>>> mob/horse/breathe1
+>>> mob/horse/breathe2
+>>> mob/horse/breathe3
+
+entity.horse.death
+>>> mob/horse/death
+
+entity.horse.gallop
+>>> mob/horse/gallop1
+>>> mob/horse/gallop2
+>>> mob/horse/gallop3
+>>> mob/horse/gallop4
+
+entity.horse.hurt
+>>> mob/horse/hit1
+>>> mob/horse/hit2
+>>> mob/horse/hit3
+>>> mob/horse/hit4
+
+entity.horse.jump
+>>> mob/horse/jump
+
+entity.horse.land
+>>> mob/horse/land
+
+entity.horse.saddle
+entity.pig.saddle
+>>> mob/horse/leather
+
+entity.horse.step
+>>> mob/horse/soft1
+>>> mob/horse/soft2
+>>> mob/horse/soft3
+>>> mob/horse/soft4
+>>> mob/horse/soft5
+>>> mob/horse/soft6
+
+entity.horse.step_wood
+>>> mob/horse/wood1
+>>> mob/horse/wood2
+>>> mob/horse/wood3
+>>> mob/horse/wood4
+>>> mob/horse/wood5
+>>> mob/horse/wood6
+
+entity.irongolem.attack
+>>> mob/irongolem/throw
+
+entity.irongolem.death
+>>> mob/irongolem/death
+
+entity.irongolem.hurt
+entity.shulker.hit
+entity.shulker.hurt
+>>> mob/irongolem/hit1
+>>> mob/irongolem/hit2
+>>> mob/irongolem/hit3
+>>> mob/irongolem/hit4
+
+entity.irongolem.step
+>>> mob/irongolem/walk1
+>>> mob/irongolem/walk2
+>>> mob/irongolem/walk3
+>>> mob/irongolem/walk4
+
+entity.item.break
+entity.shield.break
+>>> random/break
+
+entity.item.pickup
+>>> random/pop
+
+entity.lightning.thunder
+>>> ambient/weather/thunder1
+>>> ambient/weather/thunder2
+>>> ambient/weather/thunder3
+
+entity.magmacube.jump
+>>> mob/magmacube/jump1
+>>> mob/magmacube/jump2
+>>> mob/magmacube/jump3
+>>> mob/magmacube/jump4
+
+entity.magmacube.squish
+>>> mob/magmacube/big1
+>>> mob/magmacube/big2
+>>> mob/magmacube/big3
+>>> mob/magmacube/big4
+
+entity.minecart.inside
+>>> minecart/inside
+
+entity.minecart.riding
+>>> minecart/base
+
+entity.pig.ambient
+entity.pig.hurt
+>>> mob/pig/say1
+>>> mob/pig/say2
+>>> mob/pig/say3
+
+entity.pig.death
+>>> mob/pig/death
+
+entity.pig.step
+>>> mob/pig/step1
+>>> mob/pig/step2
+>>> mob/pig/step3
+>>> mob/pig/step4
+>>> mob/pig/step5
+
+entity.player.burp
+>>> random/burp
+
+entity.player.levelup
+>>> random/levelup
+
+entity.rabbit.ambient
+>>> mob/rabbit/idle1
+>>> >>> volume:0.25
+>>> mob/rabbit/idle2
+>>> >>> volume:0.25
+>>> mob/rabbit/idle3
+>>> >>> volume:0.25
+>>> mob/rabbit/idle4
+>>> >>> volume:0.25
+
+entity.rabbit.death
+>>> mob/rabbit/bunnymurder
+>>> >>> volume:0.5
+
+entity.rabbit.hurt
+>>> mob/rabbit/hurt1
+>>> >>> volume:0.5
+>>> mob/rabbit/hurt2
+>>> >>> volume:0.5
+>>> mob/rabbit/hurt3
+>>> >>> volume:0.5
+>>> mob/rabbit/hurt4
+>>> >>> volume:0.5
+
+entity.rabbit.jump
+>>> mob/rabbit/hop1
+>>> >>> volume:0.1
+>>> mob/rabbit/hop2
+>>> >>> volume:0.1
+>>> mob/rabbit/hop3
+>>> >>> volume:0.1
+>>> mob/rabbit/hop4
+>>> >>> volume:0.1
+
+entity.sheep.ambient
+entity.sheep.death
+entity.sheep.hurt
+>>> mob/sheep/say1
+>>> mob/sheep/say2
+>>> mob/sheep/say3
+
+entity.sheep.shear
+entity.mooshroom.shear
+>>> mob/sheep/shear
+
+entity.sheep.step
+>>> mob/sheep/step1
+>>> mob/sheep/step2
+>>> mob/sheep/step3
+>>> mob/sheep/step4
+>>> mob/sheep/step5
+
+entity.silverfish.ambient
+entity.endermite.ambient
+>>> mob/silverfish/say1
+>>> mob/silverfish/say2
+>>> mob/silverfish/say3
+>>> mob/silverfish/say4
+
+entity.silverfish.death
+entity.endermite.death
+>>> mob/silverfish/kill
+
+entity.silverfish.hurt
+entity.endermite.hurt
+>>> mob/silverfish/hit1
+>>> mob/silverfish/hit2
+>>> mob/silverfish/hit3
+
+entity.silverfish.step
+entity.endermite.step
+>>> mob/silverfish/step1
+>>> mob/silverfish/step2
+>>> mob/silverfish/step3
+>>> mob/silverfish/step4
+
+entity.skeleton.ambient
+>>> mob/skeleton/say1
+>>> mob/skeleton/say2
+>>> mob/skeleton/say3
+
+entity.skeleton.death
+>>> mob/skeleton/death
+
+entity.skeleton.hurt
+>>> mob/skeleton/hurt1
+>>> mob/skeleton/hurt2
+>>> mob/skeleton/hurt3
+>>> mob/skeleton/hurt4
+
+entity.skeleton.step
+>>> mob/skeleton/step1
+>>> mob/skeleton/step2
+>>> mob/skeleton/step3
+>>> mob/skeleton/step4
+
+entity.skeleton_horse.ambient
+>>> mob/horse/skeleton/idle1
+>>> mob/horse/skeleton/idle2
+>>> mob/horse/skeleton/idle3
+
+entity.skeleton_horse.death
+>>> mob/horse/skeleton/death
+
+entity.skeleton_horse.hurt
+>>> mob/horse/skeleton/hit1
+>>> mob/horse/skeleton/hit2
+>>> mob/horse/skeleton/hit3
+>>> mob/horse/skeleton/hit4
+
+entity.slime.attack
+>>> mob/slime/attack1
+>>> mob/slime/attack2
+
+entity.small_magmacube.squish
+>>> mob/magmacube/small1
+>>> mob/magmacube/small2
+>>> mob/magmacube/small3
+>>> mob/magmacube/small4
+>>> mob/magmacube/small5
+
+entity.spider.ambient
+entity.spider.hurt
+>>> mob/spider/say1
+>>> mob/spider/say2
+>>> mob/spider/say3
+>>> mob/spider/say4
+
+entity.spider.death
+>>> mob/spider/death
+
+entity.spider.step
+>>> mob/spider/step1
+>>> mob/spider/step2
+>>> mob/spider/step3
+>>> mob/spider/step4
+
+entity.villager.ambient
+>>> mob/villager/idle1
+>>> mob/villager/idle2
+>>> mob/villager/idle3
+
+entity.villager.death
+>>> mob/villager/death
+
+entity.villager.hurt
+>>> mob/villager/hit1
+>>> mob/villager/hit2
+>>> mob/villager/hit3
+>>> mob/villager/hit4
+
+entity.villager.no
+>>> mob/villager/no1
+>>> mob/villager/no2
+>>> mob/villager/no3
+
+entity.villager.trading
+>>> mob/villager/haggle1
+>>> mob/villager/haggle2
+>>> mob/villager/haggle3
+
+entity.villager.yes
+>>> mob/villager/yes1
+>>> mob/villager/yes2
+>>> mob/villager/yes3
+
+entity.wither.ambient
+>>> mob/wither/idle1
+>>> mob/wither/idle2
+>>> mob/wither/idle3
+>>> mob/wither/idle4
+
+entity.wither.death
+>>> mob/wither/death
+
+entity.wither.hurt
+>>> mob/wither/hurt1
+>>> mob/wither/hurt2
+>>> mob/wither/hurt3
+>>> mob/wither/hurt4
+
+entity.wither.shoot
+>>> mob/wither/shoot
+
+entity.wither.spawn
+>>> mob/wither/spawn
+
+entity.wolf.ambient
+>>> mob/wolf/bark1
+>>> mob/wolf/bark2
+>>> mob/wolf/bark3
+
+entity.wolf.death
+>>> mob/wolf/death
+
+entity.wolf.growl
+>>> mob/wolf/growl1
+>>> mob/wolf/growl2
+>>> mob/wolf/growl3
+
+entity.wolf.hurt
+>>> mob/wolf/hurt1
+>>> mob/wolf/hurt2
+>>> mob/wolf/hurt3
+
+entity.wolf.pant
+>>> mob/wolf/panting
+
+entity.wolf.shake
+>>> mob/wolf/shake
+
+entity.wolf.step
+>>> mob/wolf/step1
+>>> mob/wolf/step2
+>>> mob/wolf/step3
+>>> mob/wolf/step4
+>>> mob/wolf/step5
+
+entity.wolf.whine
+>>> mob/wolf/whine
+
+entity.zombie.ambient
+>>> mob/zombie/say1
+>>> mob/zombie/say2
+>>> mob/zombie/say3
+
+entity.zombie.attack_door_wood
+>>> mob/zombie/wood1
+>>> mob/zombie/wood2
+>>> mob/zombie/wood3
+>>> mob/zombie/wood4
+
+entity.zombie.attack_iron_door
+>>> mob/zombie/metal1
+>>> mob/zombie/metal2
+>>> mob/zombie/metal3
+
+entity.zombie.break_door_wood
+entity.wither.break_block
+>>> mob/zombie/woodbreak
+
+entity.zombie.cure
+>>> mob/zombie/remedy
+
+entity.zombie.death
+>>> mob/zombie/death
+
+entity.zombie.hurt
+>>> mob/zombie/hurt1
+>>> mob/zombie/hurt2
+
+entity.zombie.step
+>>> mob/zombie/step1
+>>> mob/zombie/step2
+>>> mob/zombie/step3
+>>> mob/zombie/step4
+>>> mob/zombie/step5
+
+entity.zombie.unfect
+>>> mob/zombie/unfect
+
+entity.zombie_horse.ambient
+>>> mob/horse/zombie/idle1
+>>> mob/horse/zombie/idle2
+>>> mob/horse/zombie/idle3
+
+entity.zombie_horse.death
+>>> mob/horse/zombie/death
+
+entity.zombie_horse.hurt
+>>> mob/horse/zombie/hit1
+>>> mob/horse/zombie/hit2
+>>> mob/horse/zombie/hit3
+>>> mob/horse/zombie/hit4
+
+entity.zombie_pig.ambient
+>>> mob/zombiepig/zpig1
+>>> mob/zombiepig/zpig2
+>>> mob/zombiepig/zpig3
+>>> mob/zombiepig/zpig4
+
+entity.zombie_pig.angry
+>>> mob/zombiepig/zpigangry1
+>>> mob/zombiepig/zpigangry2
+>>> mob/zombiepig/zpigangry3
+>>> mob/zombiepig/zpigangry4
+
+entity.zombie_pig.death
+>>> mob/zombiepig/zpigdeath
+
+entity.zombie_pig.hurt
+>>> mob/zombiepig/zpighurt1
+>>> mob/zombiepig/zpighurt2
+
+enttiy.zombie.infect
+>>> mob/zombie/infect
+
+item.flintandsteel.use
+>>> fire/ignite
+
+music.creative
+>>> music.game
+>>> music/game/creative/creative1
+>>> music/game/creative/creative2
+>>> music/game/creative/creative3
+>>> music/game/creative/creative4
+>>> music/game/creative/creative5
+>>> music/game/creative/creative6
+
+music.credits
+>>> music/game/end/credits
+
+music.dragon
+>>> music/game/end/boss
+
+music.end
+>>> music/game/end/end
+
+music.game
+>>> music/game/calm1
+>>> music/game/calm2
+>>> music/game/calm3
+>>> music/game/hal1
+>>> music/game/hal2
+>>> music/game/hal3
+>>> music/game/hal4
+>>> music/game/nuance1
+>>> music/game/nuance2
+>>> music/game/piano1
+>>> music/game/piano2
+>>> music/game/piano3
+
+music.menu
+>>> music/menu/menu1
+>>> music/menu/menu2
+>>> music/menu/menu3
+>>> music/menu/menu4
+
+music.nether
+>>> music/game/nether/nether1
+>>> music/game/nether/nether2
+>>> music/game/nether/nether3
+>>> music/game/nether/nether4
+
+record.11
+>>> records/11
+
+record.13
+>>> records/13
+
+record.blocks
+>>> records/blocks
+
+record.cat
+>>> records/cat
+
+record.chirp
+>>> records/chirp
+
+record.far
+>>> records/far
+
+record.mall
+>>> records/mall
+
+record.mellohi
+>>> records/mellohi
+
+record.stal
+>>> records/stal
+
+record.strad
+>>> records/strad
+
+record.wait
+>>> records/wait
+
+record.ward
+>>> records/ward
+
+weather.rain
+weather.rain.above
+>>> ambient/weather/rain1
+>>> ambient/weather/rain2
+>>> ambient/weather/rain3
+>>> ambient/weather/rain4

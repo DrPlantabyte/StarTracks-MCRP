@@ -1,10 +1,17 @@
 # StarTracks-MCRP
 This is a Sci-Fi themed resource pack for Minecraft.
+![logo](https://user-images.githubusercontent.com/1922739/31579693-789c62bc-b0f0-11e7-9e1b-f2bc415a4199.png)
 
 # Description
 This resource pack changes the story of Minecraft from that of a survivor in a pre-modern world to that of a space-human exploring a strange new planet, one whose peace is threatened by evil cyborgs and alien invaders. 
 
 Will you free the bird-like people of this once-great world? Or conquer them in the name of humanity?
+
+![screenshot-3](https://user-images.githubusercontent.com/1922739/31579733-4444429a-b0f1-11e7-97a9-39dc130a481f.png)
+
+![screenshot-4](https://user-images.githubusercontent.com/1922739/31579735-47e75478-b0f1-11e7-95e8-fc3f4833656e.png)
+
+![screenshot-5](https://user-images.githubusercontent.com/1922739/31579737-4c056fb8-b0f1-11e7-858d-776fdc241084.png)
 
 # Installation
 Simply download one of the release .zip files and put it in the *resourcepacks* folder inside your Minecraft profile folder (default location is *~/.minecraft* where ~ is either your home directory (unix-like computers) or *C:\Users\<username>\AppData\Roaming* (windows computers)).

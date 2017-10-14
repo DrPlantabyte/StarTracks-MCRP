@@ -1,5 +1,6 @@
 # StarTracks-MCRP
 This is a Sci-Fi themed resource pack for Minecraft.
+
 ![logo](https://user-images.githubusercontent.com/1922739/31579693-789c62bc-b0f0-11e7-9e1b-f2bc415a4199.png)
 
 # Description

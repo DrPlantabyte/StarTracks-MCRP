@@ -7,15 +7,15 @@ This resource pack changes the story of Minecraft from that of a survivor in a p
 Will you free the bird-like people of this once-great world? Or conquer them in the name of humanity?
 
 # Installation
-Simply download one of the release .zip files and put it in the *resourcepacks* folder inside your Minecraft profile folder (default location is *~/.minecraft* where ~ is either your home directory (unix-like computers) or *AppData/Roaming* (windows computers).
+Simply download one of the release .zip files and put it in the *resourcepacks* folder inside your Minecraft profile folder (default location is *~/.minecraft* where ~ is either your home directory (unix-like computers) or *C:\Users\<username>\AppData\Roaming* (windows computers)).
 
 ## Warning!
 You must set your **GUI Scale** to **normal** or **large** in the **Video Settings...** menu screen (text will not be legible if the GUI scale is set to *small* ).
 
 ## Spacesuit Physics
-To enable spacesuit physics, copy the contents of the *world* folder extracted from *world.zip* into your saved game or server world folder. Then execute the command **/function startracks:init** (you may need to run the reload command first). This will install the *startracks:spacesuit_update* function into the game.
+To enable spacesuit physics, copy the contents of the *world* folder extracted from *world.zip* into your saved game or server world folder. Then execute the command **/function startracks:init** (you may need to run the /reload command first). This will initialize spacesuit physics and set the game update loop to run the *startracks:spacesuit_update* function.
 
-While active, spacesuit physics will allow any player wearing any helmet to breath underwater. However, if you are *not* wearing a full suit of armor in other dimensions, you will suffocate quickly.
+While active, spacesuit physics will allow any player wearing any helmet to breath underwater. However, if you are *not* wearing a **full** suit of armor in other dimensions, you will suffocate quickly.
 
 To create a zone of breathable air (in creative mode), set the blocks at Y+128 (~128) to minecraft:barrier blocks (or other non-air block).
 
@@ -25,7 +25,7 @@ To disable spacesuit physics, execute the command **/gamerule gameLoopFunction -
 To compile this resource pack, you must have the following programs installed on your computer:
 - Python 3+
 - Inkscape
-With these programs installed, you need only run the *build.py* python script to generate the resource pack .zip files, which will appear in the *distributables* folder. 
+With these programs installed, you need only run the *build.py* python script to generate the resource pack .zip files, which will appear in the *distributables* folder. You may need to edit *build.py* to specify the specific location where Inkscape is installed on your computer.
 
 # License and Redistribution
 This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (see http://creativecommons.org/licenses/by-sa/4.0/ ).
@@ -37,4 +37,16 @@ Credit for all sources of Creative Commons compatible 3rd party content.
 
 ## Sounds
 From freesound.org:
-- InspectorJ## Art- Llexandro- Abra- Vexels.com
+- InspectorJ
+- Ferdinger
+- Theshuggie
+- RicherlandTV
+- TheHorribleJoke
+- DinoDilopho
+- Tazi
+- Dobroide
+
+## Art
+- Llexandro
+- Abra
+- Vexels.com

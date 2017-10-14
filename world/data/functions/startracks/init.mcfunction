@@ -1,7 +1,7 @@
 # world initialization
 gamerule commandBlockOutput false
 scoreboard objectives add hasHelmet dummy
-scoreboard objectives add hasAir dummy
+scoreboard objectives add hasAir dummygamerule commandBlockOutput falsegamerule logAdminCommands false
 gamerule gameLoopFunction startracks:spacesuit_update
 
 # how air works:
@@ -17,5 +17,3 @@ gamerule gameLoopFunction startracks:spacesuit_update
 #   - apply wither
 # 
 # 
-
-# TODO

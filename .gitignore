@@ -16,3 +16,14 @@ build/**
 *.ini
 # python cache files
 __pycache__/*
+# server filesbanned-ips.json
+banned-players.json
+eula.txt
+logs/*
+minecraft_server*.jar
+ops.json
+server.properties
+usercache.json
+whitelist.json
+world/region/*
+world/session.lock

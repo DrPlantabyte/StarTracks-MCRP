@@ -7,6 +7,7 @@ import sys
 import os
 import hashlib
 import zipfile
+import json # json.loads('{...}') and json.dumps({...}, indent=1, sort_keys=True)
 import mcrp_utils.commands as commands # local file
 
 this_dir = os.path.dirname(os.path.realpath(__file__))

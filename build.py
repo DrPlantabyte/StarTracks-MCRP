@@ -1,81 +1,86 @@
+#!/usr/bin/python3
+
 import shutil
+import distutils
+from distutils.dir_util import copy_tree
 import sys
 import os
-import subprocess
 import hashlib
 import zipfile
-import time
+import mcrp_utils.commands as commands # local file
 
 this_dir = os.path.dirname(os.path.realpath(__file__))
 
-# executable locations
-from sys import platform
-if platform == 'linux' or platform == 'linux2':
-	# linux
-	inkscape_path = 'inkscape'
-	imagemagick_path = 'magick'
-	png_optimizer_path = 'optipng'
-elif platform == 'darwin':
-	# OS X (I don't actually know where OSX puts executables these days)
-	inkscape_path = 'inkscape'
-	imagemagick_path = 'magick'
-	png_optimizer_path = 'optipng'
-elif platform == 'win32' or platform == 'win64':
-	# Windows...
-	inkscape_path = 'C:\\Program Files\\Inkscape\\inkscape.exe'
-	imagemagick_path = 'C:\\Program Files\\ImageMagick-7.0.7-Q16\\magick.exe'
-	png_optimizer_path = os.path.join(this_dir,'bin\\optipng.exe')
+common_dir = os.path.join(this_dir, "common")
+texture_dirs = ["x16", "x32", "x64", "x128"]
+svg_textures_dir = os.path.join(this_dir, "svg")
+datapack_dir = os.path.join(this_dir, "datapack")
+dist_dir = os.path.join(this_dir, "distributables")
+build_dir = os.path.join(this_dir, "temp")
 
-
-tex_resolutions = [16, 32, 64, 128]
-project_dirs=[]
 
 def main():
-	remakeDir(str(this_dir) + os.sep + 'distributables')
-	for res in tex_resolutions:
-		# setup build dir
-		src = 'x'+str(res)
-		print('\nBuilding texture pack at',src,'resoultion...\n')
-		src_dir = str(this_dir) + os.sep + src
-		svg_dir = str(this_dir) + os.sep + 'svg'
-		com_dir = str(this_dir) + os.sep + 'common'
-		build_dir = str(this_dir) + os.sep + 'build' + os.sep + src
-		zip_file = str(this_dir) + os.sep + 'distributables' + os.sep + 'StarTracks_' + src + '.zip'
-		remakeDir(build_dir)
-		# copy common files
-		copyInto(src=com_dir, dst=build_dir, skipExisting=True)
-		# compile SVG textures
-		convertSVGDir(svg_dir, build_dir, res, skipExisting=True)
-		# copy raw textures
-		copyInto(src=src_dir, dst=build_dir, skipExisting=False)
-		# make distributable .zip files
-		the_files = listFiles(build_dir)
-		zipFiles(build_dir, the_files, zip_file, zipfile.ZIP_STORED)
-		# calculate sha1 hash for servers
-		print('Hashing ',zip_file,' with SHA1...')
-		hasher = hashlib.sha1()
-		with open(zip_file, 'rb') as f:
-			while True:
-				data = f.read(4096)
-				if not data:
-					break
-				hasher.update(data)
-		sha1_hash = hasher.hexdigest()
-		print('...done. Hash = ',sha1_hash)
-		fout = open(zip_file+'_sha1.txt','w')
-		fout.write(sha1_hash)
-		fout.close()
-		# done
-		print('\n...done building texture pack',src)
-	world_dir = str(this_dir) + os.sep + "world"
-	world_zip = str(this_dir) + os.sep + "distributables" + os.sep + "world.zip"
-	print('Building world data...')
-	zipFiles(world_dir, listFiles(world_dir), world_zip, zipfile.ZIP_DEFLATED)
-	print('...done!')
+	# setup dirs
+	makeDir(os.path.exists(dist_dir))
+	makeDir(os.path.exists(build_dir))
+	for tex_res in texture_dirs:
+		print(str.format("\n\tBuilding texture pack '{}'...", tex_res))
+		# setup build dirs
+		tmp_build_dir = os.path.join(build_dir, tex_res)
+		makeDir(os.path.exists(tmp_build_dir))
+		src_dir = os.path.join(this_dir, tex_res)
+		# copy sources
+		copy_tree(common_dir, tmp_build_dir)
+		copySVGTree(svg_textures_dir, tmp_build_dir)
+		copy_tree(src_dir, tmp_build_dir)
+		# distribute as .zip file
+		zip_file = os.path.join(dist_dir, "StarTracks_resourcepack_" + str(tex_res) + ".zip")
+		zipDir(tmp_build_dir, zip_file)
+	# distribute the datapack
+	print(str.format("\n\tBuilding datapack..."))
+	zipDir(datapack_dir, os.path.join(dist_dir, "StarTracks_datapack.zip"))
+	# clean-up
+	#shutil.rmtree(build_dir)
+
+def copySVGTree(svg_dir, output_dir, mc_resolution=16, overwrite=True):
+	for root, dirs, files in os.walk(svg_dir):
+		rel_dirpath = os.path.relpath(root, start=svg_dir)
+		for f in files:
+			rel_filepath = os.path.join(rel_dirpath, f)
+			in_filepath = os.path.join(svg_dir,rel_filepath)
+			if(str(in_filepath.endswith('.svg'))):
+				out_filepath = os.path.join(output_dir,rel_filepath).replace('.svg','.png')
+				if(overwrite == False and os.path.exists(output_path)):
+					continue
+				convertSVG(in_filepath, out_filepath)
+
+def convertSVG(svg_path, output_path, mc_resolution=16):
+	source_dpi = 96
+	scaler = mc_resolution / 16
+	dpi = source_dpi * scaler
+	makeParentDir(output_path)
+	print('Rendering', str(svg_path), 'to', str(output_path))
+	commands.inkscape(str(svg_path),'--export-png', str(output_path), '--export-area-page', '--export-dpi', str(dpi))
+	# remove transparency, unless it is a block texture
+	if( "blocks" not in str(output_path) ):
+		commands.mogrifyImage( '-channel', 'alpha', '-threshold', '50%', str(output_path))
+
+def zipDir(src_dir, dest_filepath):
+	print(str.format("Zipping '{}' to '{}'", src_dir, dest_filepath))
+	the_files = listFiles(src_dir)
+	zipFiles(src_dir, the_files, dest_filepath, zipfile.ZIP_STORED)
+	sha1_hash = hashFile(dest_filepath)
+	fout = open(dest_filepath+".sha1.txt","w")
+	fout.write(sha1_hash)
+	fout.close()
+
+def makeDir(dirpath):
+	if not(os.path.exists(dirpath)):
+		os.makedirs(dirpath)
 
 def zipFiles(source_root, file_list, dest_file, compression):
 	# note: Minecraft is bad at handling compressed zip files
-	zout = zipfile.ZipFile(dest_file, mode='w', compression=compression, allowZip64=True)
+	zout = zipfile.ZipFile(dest_file, mode="w", compression=compression, allowZip64=True)
 	try:
 		for filename in file_list:
 			input_file = str(source_root) + os.sep + str(filename)
@@ -83,8 +88,20 @@ def zipFiles(source_root, file_list, dest_file, compression):
 			zout.write(input_file, arcname=zipped_file)
 	finally:
 		zout.close()
+def hashFile(filepath):
+	print(str.format("Hashing file '{}' with SHA1", filepath))
+	hasher = hashlib.sha1()
+	with open(filepath, 'rb') as f:
+		while True:
+			data = f.read(4096)
+			if not data:
+				break
+			hasher.update(data)
+	sha1_hash = hasher.hexdigest()
+	print(str.format("\t'{}'", sha1_hash))
+	return sha1_hash
 
-def listFiles(root_dir):
+def listFiles(root_dir): # recursive
 	fl = []
 	for root, dirs, files in os.walk(root_dir):
 		rel_dirpath = os.path.relpath(root, start=root_dir)
@@ -92,83 +109,9 @@ def listFiles(root_dir):
 			rel_filepath = rel_dirpath + os.sep + f
 			fl.append(rel_filepath)
 	return fl
-def remakeDir(dirpath):
-	"""deletes and recreates a directory"""
-	if (os.path.exists(dirpath)):
-		for root_dir, dirs, files in os.walk(dirpath):
-			for f in files:
-				os.remove(root_dir + os.sep + f)
-		for root_dir, dirs, files in os.walk(dirpath):
-			for d in dirs:
-				shutil.rmtree(root_dir + os.sep + d)
-	os.makedirs(dirpath, exist_ok=True)
+
 def makeParentDir(dirpath):
-	print('Recreating directory', str(dirpath))
 	parent_path = os.path.dirname(os.path.realpath(dirpath))
-	os.makedirs(parent_path, exist_ok=True)
-def copyInto(src, dst, skipExisting=True):
-	for root, dirs, files in os.walk(src):
-		rel_dirpath = os.path.relpath(root, start=src)
-		for f in files:
-			if(f.endswith('.svg')):
-				# common SVG files at fixed resolution
-				dst_filepath = dst + os.sep + rel_dirpath + os.sep + f.replace('.svg','.png')
-				src_filepath = root + os.sep + f
-				if(skipExisting and alreadyExists(src_filepath, dst_filepath)):
-					print("Skipping ", src_filepath)
-					continue
-				convertSVG(src_filepath, dst_filepath, 64)
-			else:
-				# normal files
-				dst_filepath = dst + os.sep + rel_dirpath + os.sep + f
-				src_filepath = root + os.sep + f
-				makeParentDir(dst_filepath)
-				if(skipExisting and alreadyExists(src_filepath, dst_filepath)):
-					print("Skipping ", src_filepath)
-					continue
-				print('Copying file', str(src_filepath), 'to', str(dst_filepath))
-				shutil.copyfile(src_filepath, dst_filepath)
-				if(f.endswith('.png')):
-					optimizePNG(dst_filepath)
-def convertSVGDir(src_dir, dest_dir, mc_resolution, skipExisting=True):
-	# use inkscape commandline
-	for root_dir, dirs, files in os.walk(src_dir):
-		rel_dirpath = os.path.relpath(root_dir, start=src_dir)
-		for f in files:
-			if(f.endswith('.svg')):
-				# svg file detected
-				name = f
-				dst_filepath = dest_dir + os.sep + rel_dirpath + os.sep + name.replace('.svg','.png')
-				src_filepath = root_dir + os.sep + name
-				if(skipExisting and alreadyExists(src_filepath, dst_filepath)):
-					print("Skipping ", src_filepath)
-					continue
-				convertSVG(src_filepath, dst_filepath, mc_resolution)
-def alreadyExists(src_filepath, dst_filepath):
-	""" 
-	returns True if destination file exists and is newer than source file 
-	"""
-	if( os.path.exists(dst_filepath) ):
-		dst_time = os.path.getmtime(dst_filepath)
-		src_time = os.path.getmtime(src_filepath)
-		# do nothing if destination is newer than source
-		return (dst_time > src_time)
-	return False
-def convertSVG(src_filepath, dst_filepath, mc_resolution):
-	source_dpi = 96
-	scaler = mc_resolution / 16
-	dpi = source_dpi * scaler
-	makeParentDir(dst_filepath)
-	print('Rendering', str(src_filepath), 'to', str(dst_filepath))
-	p_status = subprocess.call([inkscape_path, str(src_filepath),'--export-png', str(dst_filepath), '--export-area-page', '--export-dpi', str(dpi)])	if(p_status != 0):		print('warning, Inkscape process returned exit code',p_status)
-	if( "blocks" not in str(dst_filepath) ):
-		# remove transparency, unless it is a block texture
-		p_status = subprocess.call([imagemagick_path,'convert', str(dst_filepath), '-channel', 'alpha', '-threshold', '50%', str(dst_filepath)])
-		if(p_status != 0):
-			print('warning, Image Magick process returned exit code',p_status)	optimizePNG(dst_filepath)
-def optimizePNG(filepath):	pass	# unfortunately, the PNG optimizer compresses the color palette in 	# such a way as to prevent Minecraft from accurately loading the 	# texture (some stone textures appear white-washed)	"""
-	p_status = subprocess.call([png_optimizer_path,'-clobber', '-fix', '-force', '-o2', str(filepath)])	if(p_status != 0):
-		print('warning, PNG Optimizer process returned exit code',p_status)	"""
-#
-if __name__ == "__main__":
-	main()
+	makeDir(parent_path)
+
+main()

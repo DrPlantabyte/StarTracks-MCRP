@@ -1,4 +1,0 @@
-acacia	purple	HSV=199,54,110
-birch	yellow	HSV=45,197,128darkoak	black	HSV=0,0,66
-jungle	green	HSV=84,74,112oak	red	HSV=0,74,112
-spruce	blue	HSV=147,83,112

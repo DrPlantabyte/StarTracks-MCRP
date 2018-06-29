@@ -15,6 +15,7 @@ this_dir = os.path.dirname(os.path.realpath(__file__))
 common_dir = os.path.join(this_dir, "common")
 texture_dirs = ["x16", "x32", "x64", "x128"]
 svg_textures_dir = os.path.join(this_dir, "svg")
+svg_fixed_textures_dir = os.path.join(this_dir, "svg-fixed")
 datapack_dir = os.path.join(this_dir, "datapack")
 dist_dir = os.path.join(this_dir, "distributables")
 build_dir = os.path.join(this_dir, "temp")
@@ -32,7 +33,8 @@ def main():
 		src_dir = os.path.join(this_dir, tex_res)
 		# copy sources
 		copy_tree(common_dir, tmp_build_dir)
-		copySVGTree(svg_textures_dir, tmp_build_dir)
+		copySVGTree(svg_textures_dir, tmp_build_dir, mc_resolution=int(tex_res[1:]), overwrite=False)
+		copySVGTree(svg_fixed_textures_dir, tmp_build_dir, mc_resolution=32, overwrite=False)
 		copy_tree(src_dir, tmp_build_dir)
 		# distribute as .zip file
 		zip_file = os.path.join(dist_dir, "StarTracks_resourcepack_" + str(tex_res) + ".zip")
@@ -51,7 +53,7 @@ def copySVGTree(svg_dir, output_dir, mc_resolution=16, overwrite=True):
 			in_filepath = os.path.join(svg_dir,rel_filepath)
 			if(str(in_filepath.endswith('.svg'))):
 				out_filepath = os.path.join(output_dir,rel_filepath).replace('.svg','.png')
-				if(overwrite == False and os.path.exists(output_path)):
+				if(overwrite == False and os.path.exists(out_filepath)):
 					continue
 				convertSVG(in_filepath, out_filepath)
 

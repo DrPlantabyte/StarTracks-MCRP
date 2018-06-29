@@ -6,6 +6,7 @@ import os
 import subprocess
 
 
+this_dir = os.path.dirname(os.path.realpath(__file__))
 #
 from sys import platform
 if platform == 'linux' or platform == 'linux2':
@@ -13,34 +14,32 @@ if platform == 'linux' or platform == 'linux2':
 	def _inkscape(*args):
 		command = ['inkscape']
 		command += args
-		p_status = subprocess.call(command)
-		if(p_status != 0):
-			raise RuntimeError('Error: application {app} returned error code {err}'.format(app=command[0], err=p_status))
+		return subprocess.check_output(command)
 	# image magick
 	def _convertImage(*args):
 		command = ['convert']
 		command += args
-		p_status = subprocess.call(command)
-		if(p_status != 0):
-			raise RuntimeError('Error: application {app} returned error code {err}'.format(app=command[0], err=p_status))
+		return subprocess.check_output(command)
 	def _montageImage(*args):
 		command = ['montage']
 		command += args
-		p_status = subprocess.call(command)
-		if(p_status != 0):
-			raise RuntimeError('Error: application {app} returned error code {err}'.format(app=command[0], err=p_status))
+		return subprocess.check_output(command)
 	def _compositeImage(*args):
 		command = ['composite']
 		command += args
-		p_status = subprocess.call(command)
-		if(p_status != 0):
-			raise RuntimeError('Error: application {app} returned error code {err}'.format(app=command[0], err=p_status))
+		return subprocess.check_output(command)
 	def _mogrifyImage(*args):
 		command = ['mogrify']
 		command += args
-		p_status = subprocess.call(command)
-		if(p_status != 0):
-			raise RuntimeError('Error: application {app} returned error code {err}'.format(app=command[0], err=p_status))
+		return subprocess.check_output(command)
+	def _identifyImage(*args):
+		command = ['identify']
+		command += args
+		return subprocess.check_output(command)
+	def _potrace(*args):
+		command = ['potrace']
+		command += args
+		return subprocess.check_output(command)
 
 if platform == 'darwin':
 	# OS X - assuming same as linux
@@ -48,80 +47,79 @@ if platform == 'darwin':
 	def _inkscape(*args):
 		command = ['inkscape']
 		command += args
-		p_status = subprocess.call(command)
-		if(p_status != 0):
-			raise RuntimeError('Error: application {app} returned error code {err}'.format(app=command[0], err=p_status))
+		return subprocess.check_output(command)
 	# image magick
 	def _convertImage(*args):
 		command = ['convert']
 		command += args
-		p_status = subprocess.call(command)
-		if(p_status != 0):
-			raise RuntimeError('Error: application {app} returned error code {err}'.format(app=command[0], err=p_status))
+		return subprocess.check_output(command)
 	def _montageImage(*args):
 		command = ['montage']
 		command += args
-		p_status = subprocess.call(command)
-		if(p_status != 0):
-			raise RuntimeError('Error: application {app} returned error code {err}'.format(app=command[0], err=p_status))
+		return subprocess.check_output(command)
 	def _compositeImage(*args):
 		command = ['composite']
 		command += args
-		p_status = subprocess.call(command)
-		if(p_status != 0):
-			raise RuntimeError('Error: application {app} returned error code {err}'.format(app=command[0], err=p_status))
+		return subprocess.check_output(command)
 	def _mogrifyImage(*args):
 		command = ['mogrify']
 		command += args
-		p_status = subprocess.call(command)
-		if(p_status != 0):
-			raise RuntimeError('Error: application {app} returned error code {err}'.format(app=command[0], err=p_status))
+		return subprocess.check_output(command)
+	def _identifyImage(*args):
+		command = ['identify']
+		command += args
+		return subprocess.check_output(command)
+	def _potrace(*args):
+		command = ['potrace']
+		command += args
+		return subprocess.check_output(command)
 
 if platform == 'win32' or platform == 'win64':
 	# windows - need to set raw filepaths
 	inkscape_path = 'C:\\Program Files\\Inkscape\\inkscape.exe'
-	imagemagick_path = 'C:\\Program Files\\ImageMagick-7.0.7-Q16\\magick.exe'
+	imagemagick_path = 'C:\\Program Files\\ImageMagick-7.0.7-Q16\\magick.exe'	potrace_path = os.path.join(os.path.dirname(this_dir), 'utils', 'bin', 'potrace')
 	# inkscape
 	def _inkscape(*args):
 		command = [inkscape_path]
 		command += args
-		p_status = subprocess.call(command)
-		if(p_status != 0):
-			raise RuntimeError('Error: application {app} {com} returned error code {err}'.format(app=command[0], com=command[1], err=p_status))
+		return subprocess.check_output(command)
 	# image magick
 	def _convertImage(*args):
 		command = [imagemagick_path, 'convert']
 		command += args
-		p_status = subprocess.call(command)
-		if(p_status != 0):
-			raise RuntimeError('Error: application {app} {com} returned error code {err}'.format(app=command[0], com=command[1], err=p_status))
+		return subprocess.check_output(command)
 	def _montageImage(*args):
 		command = [imagemagick_path, 'montage']
 		command += args
-		p_status = subprocess.call(command)
-		if(p_status != 0):
-			raise RuntimeError('Error: application {app} {com} returned error code {err}'.format(app=command[0], com=command[1], err=p_status))
+		return subprocess.check_output(command)
 	def _compositeImage(*args):
 		command = [imagemagick_path, 'composite']
 		command += args
-		p_status = subprocess.call(command)
-		if(p_status != 0):
-			raise RuntimeError('Error: application {app} {com} returned error code {err}'.format(app=command[0], com=command[1], err=p_status))
+		return subprocess.check_output(command)
 	def _mogrifyImage(*args):
 		command = [imagemagick_path, 'mogrify']
 		command += args
-		p_status = subprocess.call(command)
-		if(p_status != 0):
-			raise RuntimeError('Error: application {app} {com} returned error code {err}'.format(app=command[0], com=command[1], err=p_status))
+		return subprocess.check_output(command)
+	def _identifyImage(*args):
+		command = [imagemagick_path, 'identify']
+		command += args
+		return subprocess.check_output(command)	def _potrace(*args):
+		command = [potrace_path]
+		command += args
+		return subprocess.check_output(command)
 
 def inkscape(*args):
-	_inkscape(*args)
+	return _inkscape(*args)
 def convertImage(*args):
-	_convertImage(*args)
+	return _convertImage(*args)
 def montageImage(*args):
-	_montageImage(*args)
+	return _montageImage(*args)
 def compositeImage(*args):
-	_compositeImage(*args)
+	return _compositeImage(*args)
 def mogrifyImage(*args):
-	_mogrifyImage(*args)
+	return _mogrifyImage(*args)
+def identifyImage(*args):
+	return _identifyImage(*args)
+def potrace(*args):
+	return _potrace(*args)
 

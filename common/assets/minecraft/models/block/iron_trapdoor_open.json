@@ -1,0 +1,6 @@
+{
+    "parent": "startracks:block/trapdoor_open",
+    "textures": {
+        "texture": "block/stone"
+    }
+}

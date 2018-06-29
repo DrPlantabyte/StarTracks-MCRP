@@ -1,9 +1,9 @@
 {
     "ambientocclusion": false,
     "textures": {
-        "particle": "blocks/iron_block",
-        "base": "blocks/iron_block",
-        "lever": "blocks/lever"
+        "particle": "block/iron_block",
+        "base": "block/iron_block",
+        "lever": "block/lever"
     },
     "elements": [
         {   "from": [ 5, 0, 4 ],
@@ -19,7 +19,7 @@
         },
         {   "from": [ 7, 1, 7 ],
             "to": [ 9, 11, 9 ],
-            "rotation": { "origin": [ 8, 1, 8 ], "axis": "x", "angle": -45 },
+            "rotation": { "origin": [ 8, 1, 8 ], "axis": "x", "angle": 45 },
             "faces": {
                 "down":  { "uv": [ 7, 6, 9,  8 ], "texture": "#lever" },
                 "up":    { "uv": [ 7, 6, 9,  8 ], "texture": "#lever" },

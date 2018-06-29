@@ -2,7 +2,7 @@
     "ambientocclusion": false,
     "textures": {
         "particle": "#bottom",
-        "edge": "startracks:blocks/doorframe_edge"
+        "edge": "startracks:block/doorframe_edge"
     },
     "elements": [
         {   "from": [ 0, 0, 0 ],

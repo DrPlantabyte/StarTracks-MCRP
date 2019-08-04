@@ -123,7 +123,8 @@
        fx="8"
        fy="10.6875"
        r="2.5"
-       gradientUnits="userSpaceOnUse" />
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0,-5.25)" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -133,8 +134,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="16"
-     inkscape:cx="-15.87664"
-     inkscape:cy="13.42753"
+     inkscape:cx="-23.53289"
+     inkscape:cy="13.17753"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      showgrid="true"
@@ -143,7 +144,8 @@
      inkscape:window-height="1024"
      inkscape:window-x="0"
      inkscape:window-y="30"
-     inkscape:window-maximized="1">
+     inkscape:window-maximized="1"
+     inkscape:snap-global="true">
     <inkscape:grid
        type="xygrid"
        id="grid1782"
@@ -157,7 +159,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -210,17 +212,17 @@
        id="rect914"
        style="opacity:1;fill:#a2a2a2;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     <circle
-       style="opacity:1;fill:#565656;fill-opacity:1;stroke:#e7e7e7;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.98939931"
+       style="opacity:1;fill:#565656;fill-opacity:1;stroke:#e7e7e7;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.98939933"
        id="path940"
        cx="8"
-       cy="10.6875"
+       cy="5.4375"
        r="2" />
     <circle
        r="2"
-       cy="10.6875"
+       cy="5.4375"
        cx="8"
        id="circle950"
-       style="opacity:1;fill:none;fill-opacity:0.24705882;stroke:url(#radialGradient958);stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.98939931" />
+       style="opacity:1;fill:none;fill-opacity:0.24705882;stroke:url(#radialGradient958);stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.98939933" />
   </g>
   <g
      inkscape:groupmode="layer"

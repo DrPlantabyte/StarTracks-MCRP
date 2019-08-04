@@ -1,0 +1,61 @@
+{
+
+ "entity.skeleton_horse.ambient":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"mob/skeleton/say1",
+	"mob/skeleton/say2",
+	"mob/skeleton/say3"
+    ]
+  },
+ "entity.skeleton_horse.death":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"random/robotboom"
+    ]
+  },
+ "entity.skeleton_horse.hurt":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"mob/skeleton/hurt1",
+	"mob/skeleton/hurt2",
+	"mob/skeleton/hurt3"
+    ]
+  },
+ "entity.chicken.ambient":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"mob/chicken/say1",
+	"mob/chicken/say2",
+	"mob/chicken/say3",
+	"mob/chicken/say4",
+	"mob/chicken/say5"
+    ]
+  },
+ "entity.chicken.hurt":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"mob/chicken/hurt1",
+	"mob/chicken/hurt2"
+    ]
+  },
+ "entity.chicken.death":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"mob/chicken/hurt1",
+	"mob/chicken/hurt2"
+    ]
+  }
+}

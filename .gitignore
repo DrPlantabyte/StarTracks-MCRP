@@ -1,6 +1,8 @@
 # ignore generated files
 distributables/**
 build/**
+modules/*/distributables/**
+modules/*/build/**
 
 # ignore lock files
 # Open/Libre Office
@@ -16,7 +18,10 @@ build/**
 *.ini
 # python cache files
 __pycache__/*
-# server filesbanned-ips.json
+modules/*/__pycache__/*
+
+# server files
+banned-ips.json
 banned-players.json
 eula.txt
 logs/*

@@ -1,0 +1,79 @@
+{
+ "entity.skeleton.ambient":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"mob/skeleton/say1",
+	"mob/skeleton/say2",
+	"mob/skeleton/say3"
+    ]
+  },
+ "entity.skeleton.death":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"mob/skeleton/death"
+    ]
+  },
+ "entity.skeleton.hurt":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"mob/skeleton/hurt1",
+	"mob/skeleton/hurt2",
+	"mob/skeleton/hurt3"
+    ]
+  },
+ "entity.skeleton_horse.ambient":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"mob/skeleton/say1",
+	"mob/skeleton/say2",
+	"mob/skeleton/say3"
+    ]
+  },
+ "entity.zombie_pig.death":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"random/robotboom"
+    ]
+  },
+ "entity.zombie_pig.hurt":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"mob/zombiepig/zpighurt1"
+    ]
+  },
+ "entity.zombie_pig.ambient":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"mob/zombiepig/zpig1",
+	"mob/zombiepig/zpig2",
+	"mob/zombiepig/zpig3",
+	"mob/zombiepig/zpig4"
+    ]
+  },
+ "entity.zombie_pig.angry":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"mob/zombiepig/zpigangry1",
+	"mob/zombiepig/zpigangry2",
+	"mob/zombiepig/zpigangry3",
+	"mob/zombiepig/zpigangry4",
+	"mob/zombiepig/zpigangry5"
+    ]
+  }
+}

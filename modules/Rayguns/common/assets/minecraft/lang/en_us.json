@@ -1,0 +1,17 @@
+{
+  "block.minecraft.sticky_piston": "Carbon Rody Piston",
+  "item.minecraft.flint_and_steel": "Pocket Laser",
+  "item.minecraft.bow": "Raygun",
+  "item.minecraft.stick": "Carbon Rod",
+  "item.minecraft.flint": "Laser Crystal",
+  "item.minecraft.carrot_on_a_stick": "Carrot on a Carbon Rod",
+  "item.minecraft.crossbow": "Plasma Cannon",
+  "subtitles.item.crossbow.charge": "Plasma Cannon charges up",
+  "subtitles.item.crossbow.hit": "Laserbolt hits",
+  "subtitles.item.crossbow.load": "Plasma Cannon loads",
+  "subtitles.item.crossbow.shoot": "Plasma Cannon fires",
+  "subtitles.item.flintandsteel.use": "Pocket Laser click",
+  "advancements.adventure.arbalistic.description": "Kill five unique mobs with one plasma cannon shot",
+  "advancements.adventure.ol_betsy.description": "Shoot a plasma cannon",
+  "advancements.adventure.shoot_arrow.description": "Shoot something with a raygun",
+"_":"_" }

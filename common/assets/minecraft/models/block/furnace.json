@@ -1,8 +1,0 @@
-{
-    "parent": "block/orientable",
-    "textures": {
-        "top": "startracks:blocks/machine_top",
-        "front": "blocks/furnace_front_off",
-        "side": "startracks:blocks/machine_side"
-    }
-}

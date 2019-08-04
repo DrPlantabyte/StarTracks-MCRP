@@ -1,0 +1,9 @@
+{
+	"pack": {
+		"pack_format": 4,
+		"description":"Boids & Borgs - StarTracks villagers and undead",
+		"authors":"DrCyano",
+		"credits":"DrCyano; InspectorJ; Llexandro;  Abra",
+		"_comment": "Licensed under Creative Commons Attribution-ShareAlike 4.0 International License"
+	}
+}

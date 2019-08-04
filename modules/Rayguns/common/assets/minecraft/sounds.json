@@ -1,0 +1,91 @@
+{
+ "entity.arrow.shoot":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"entity/arrow/shoot"
+    ]
+  },
+ "entity.arrow.hit":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"entity/arrow/hit"
+    ]
+  },
+ "entity.skeleton.shoot":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"entity/arrow/shoot"
+    ]
+  },
+ "item.crossbow.loading_start":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"item/crossbow/loading_start"
+    ]
+  },
+ "item.crossbow.loading_middle":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"item/crossbow/loading_middle"
+    ]
+  },
+ "item.crossbow.loading_end":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"item/crossbow/loading_end"
+    ]
+  },
+ "item.crossbow.shoot":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"item/crossbow/shoot"
+    ]
+  },
+ "item.crossbow.hit":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"entity/arrow/hit"
+    ]
+  },
+ "item.crossbow.quick_charge_1":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"item/crossbow/quick_charge/quick_charge_1"
+    ]
+  },
+ "item.crossbow.quick_charge_2":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"item/crossbow/quick_charge/quick_charge_2"
+    ]
+  },
+ "item.crossbow.quick_charge_3":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"item/crossbow/quick_charge/quick_charge_3"
+    ]
+  }
+  
+}

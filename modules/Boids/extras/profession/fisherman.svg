@@ -1,0 +1,2024 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg2"
+   width="64"
+   height="64"
+   viewBox="0 0 64 64"
+   sodipodi:docname="fisherman.svg"
+   inkscape:version="0.92.4 (unknown)">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6">
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="color_f3">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path5329"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#d02a27;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5463"
+       id="pattern5351"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-5.2916669,-1.5875198)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5439"
+       id="pattern5463"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-6.3500002,-1.5875198)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5435"
+       id="pattern5439"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-3.7500006e-8,-6.3500132)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5431"
+       id="pattern5435"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-2.1166667,-6.3500099)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#color_f1"
+       id="pattern5431"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-6.3500001,-6.3500033)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="color_f1">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path5323"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#3385c1;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5351"
+       id="pattern5355"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333335,-1.5875198)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5463"
+       id="pattern1447"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-5.2916669,-1.5875198)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5439"
+       id="pattern1449"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-6.3500002,-1.5875198)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5435"
+       id="pattern1451"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-3.7500006e-8,-6.3500132)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5431"
+       id="pattern1453"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-2.1166667,-6.3500099)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#color_f1"
+       id="pattern1455"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-6.3500001,-6.3500033)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1459">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1457"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#3385c1;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5351"
+       id="pattern1462"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333335,-1.5875198)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5463"
+       id="pattern1464"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-5.2916669,-1.5875198)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5439"
+       id="pattern1466"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-6.3500002,-1.5875198)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5435"
+       id="pattern1468"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-3.7500006e-8,-6.3500132)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5431"
+       id="pattern1470"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-2.1166667,-6.3500099)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#color_f1"
+       id="pattern1472"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-6.3500001,-6.3500033)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1476">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1474"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#3385c1;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1480">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1478"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#3385c1;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#color_f1"
+       id="pattern1482"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-6.3500001,-6.3500033)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1486">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1484"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#3385c1;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5431"
+       id="pattern1488"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-2.1166667,-6.3500099)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#color_f1"
+       id="pattern1490"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-6.3500001,-6.3500033)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1494">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1492"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#3385c1;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5435"
+       id="pattern1496"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-3.7500006e-8,-6.3500132)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5431"
+       id="pattern1498"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-2.1166667,-6.3500099)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#color_f1"
+       id="pattern1500"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-6.3500001,-6.3500033)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1504">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1502"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#3385c1;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1508">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1506"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#d02a27;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5439"
+       id="pattern5443"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333335,-8.4666832)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5435"
+       id="pattern1512"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-3.7500006e-8,-6.3500132)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5431"
+       id="pattern1514"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-2.1166667,-6.3500099)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#color_f1"
+       id="pattern1516"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-6.3500001,-6.3500033)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1520">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1518"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#3385c1;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5439"
+       id="pattern1522"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-6.3500002,-1.5875198)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5435"
+       id="pattern1524"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-3.7500006e-8,-6.3500132)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5431"
+       id="pattern1526"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-2.1166667,-6.3500099)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#color_f1"
+       id="pattern1528"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-6.3500001,-6.3500033)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1532">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1530"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#3385c1;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5439"
+       id="pattern5363"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-0.52916681,-1.5875198)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5435"
+       id="pattern1537"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-3.7500006e-8,-6.3500132)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5431"
+       id="pattern1539"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-2.1166667,-6.3500099)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#color_f1"
+       id="pattern1541"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-6.3500001,-6.3500033)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1545">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1543"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#3385c1;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5363"
+       id="pattern5367"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-2.1166668,-1.5875198)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5439"
+       id="pattern1549"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-0.52916681,-1.5875198)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5435"
+       id="pattern1551"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-3.7500006e-8,-6.3500132)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5431"
+       id="pattern1553"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-2.1166667,-6.3500099)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#color_f1"
+       id="pattern1555"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-6.3500001,-6.3500033)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1559">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1557"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#3385c1;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5367"
+       id="pattern5371"
+       patternTransform="translate(5.9999985,-1064.5197)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5363"
+       id="pattern1562"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-2.1166668,-1.5875198)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5439"
+       id="pattern1564"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-0.52916681,-1.5875198)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5435"
+       id="pattern1566"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-3.7500006e-8,-6.3500132)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5431"
+       id="pattern1568"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-2.1166667,-6.3500099)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#color_f1"
+       id="pattern1570"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-6.3500001,-6.3500033)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1574">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1572"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#3385c1;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5443"
+       id="pattern5383"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-0.52916681,-3.1750165)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5439"
+       id="pattern1579"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333335,-8.4666832)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5435"
+       id="pattern1581"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-3.7500006e-8,-6.3500132)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5431"
+       id="pattern1583"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-2.1166667,-6.3500099)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#color_f1"
+       id="pattern1585"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-6.3500001,-6.3500033)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1589">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1587"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#3385c1;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5383"
+       id="pattern1592"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-0.52916682,-3.1750198)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5443"
+       id="pattern1594"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-0.52916681,-3.1750165)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5439"
+       id="pattern1596"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333335,-8.4666832)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5435"
+       id="pattern1598"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-3.7500006e-8,-6.3500132)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5431"
+       id="pattern1600"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-2.1166667,-6.3500099)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#color_f1"
+       id="pattern1602"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-6.3500001,-6.3500033)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1606">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1604"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#3385c1;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5439"
+       id="pattern1609"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333335,-8.4666832)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5435"
+       id="pattern1611"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-3.7500006e-8,-6.3500132)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5431"
+       id="pattern1613"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-2.1166667,-6.3500099)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#color_f1"
+       id="pattern1615"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-6.3500001,-6.3500033)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1619">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1617"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#3385c1;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5347"
+       id="pattern5401"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-3.1750001,-9.7895898)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#color_skin"
+       id="pattern5347"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-2.1166668,-6.3500032)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="color_skin">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path45400"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#fffe00;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="color_f2">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path5326"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#6ca00c;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1633">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1631"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#d02a27;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="color_face">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path5338"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#fafafa;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1640">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1638"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#fafafa;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1649">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1647"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#fffe00;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1662">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1660"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#fffe00;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1676">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1674"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#fffe00;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#color_skin"
+       id="pattern1687"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-2.1166668,-6.3500032)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1691">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1689"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#fffe00;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1696">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1694"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#d02a27;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1700">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1698"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#d02a27;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1705">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1703"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#d02a27;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1710">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1708"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#d02a27;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5379"
+       id="pattern5460"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,5.2916673,-1.5875231)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5375"
+       id="pattern5379"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,4.2333332,-1.5875198)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5355"
+       id="pattern5375"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,3.1749999,-1.5875198)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5351"
+       id="pattern1716"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333335,-1.5875198)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5463"
+       id="pattern1718"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-5.2916669,-1.5875198)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5439"
+       id="pattern1720"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-6.3500002,-1.5875198)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5435"
+       id="pattern1722"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-3.7500006e-8,-6.3500132)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5431"
+       id="pattern1724"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-2.1166667,-6.3500099)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#color_f1"
+       id="pattern1726"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-6.3500001,-6.3500033)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1730">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1728"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#3385c1;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5379"
+       id="pattern1734"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,5.2916673,-1.5875231)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5375"
+       id="pattern1736"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,4.2333332,-1.5875198)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5355"
+       id="pattern1738"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,3.1749999,-1.5875198)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5351"
+       id="pattern1740"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333335,-1.5875198)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5463"
+       id="pattern1742"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-5.2916669,-1.5875198)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5439"
+       id="pattern1744"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-6.3500002,-1.5875198)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5435"
+       id="pattern1746"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-3.7500006e-8,-6.3500132)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5431"
+       id="pattern1748"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-2.1166667,-6.3500099)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#color_f1"
+       id="pattern1750"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-6.3500001,-6.3500033)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1754">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1752"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#3385c1;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5460"
+       id="pattern1758"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,6.3500008,-1.5875231)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5379"
+       id="pattern1760"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,5.2916673,-1.5875231)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5375"
+       id="pattern1762"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,4.2333332,-1.5875198)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5355"
+       id="pattern1764"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,3.1749999,-1.5875198)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5351"
+       id="pattern1766"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333335,-1.5875198)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5463"
+       id="pattern1768"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-5.2916669,-1.5875198)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5439"
+       id="pattern1770"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-6.3500002,-1.5875198)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5435"
+       id="pattern1772"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-3.7500006e-8,-6.3500132)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5431"
+       id="pattern1774"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-2.1166667,-6.3500099)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#color_f1"
+       id="pattern1776"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-6.3500001,-6.3500033)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1780">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1778"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#3385c1;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1785">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1783"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#d02a27;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5443"
+       id="pattern1788"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-5.2916669,-2.6458498)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5439"
+       id="pattern1790"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333335,-8.4666832)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5435"
+       id="pattern1792"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-3.7500006e-8,-6.3500132)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5431"
+       id="pattern1794"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-2.1166667,-6.3500099)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#color_f1"
+       id="pattern1796"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-6.3500001,-6.3500033)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1800">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1798"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#3385c1;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1805">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1803"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#d02a27;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5363"
+       id="pattern1808"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-0.52916681,-1.5875198)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5439"
+       id="pattern1810"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-0.52916681,-1.5875198)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5435"
+       id="pattern1812"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-3.7500006e-8,-6.3500132)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5431"
+       id="pattern1814"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-2.1166667,-6.3500099)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#color_f1"
+       id="pattern1816"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-6.3500001,-6.3500033)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1820">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1818"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#3385c1;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1824">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1822"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#6ca00c;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1828">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1826"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#6ca00c;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5401"
+       id="pattern5515"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,6.8791667,-4.4979197)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5347"
+       id="pattern1832"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-3.1750001,-9.7895898)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#color_skin"
+       id="pattern1834"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-2.1166668,-6.3500032)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1838">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1836"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#fffe00;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5515"
+       id="pattern5519"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,6.8791672,-5.5562529)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5401"
+       id="pattern1842"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,6.8791667,-4.4979197)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5347"
+       id="pattern1844"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-3.1750001,-9.7895898)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#color_skin"
+       id="pattern1846"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-2.1166668,-6.3500032)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1850">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1848"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#fffe00;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5515"
+       id="pattern1854"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,6.8791672,-5.5562529)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5401"
+       id="pattern1856"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,6.8791667,-4.4979197)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5347"
+       id="pattern1858"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-3.1750001,-9.7895898)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#color_skin"
+       id="pattern1860"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-2.1166668,-6.3500032)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1864">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1862"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#fffe00;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5519"
+       id="pattern1867"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,8.9958343,-5.5562561)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5515"
+       id="pattern1869"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,6.8791672,-5.5562529)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5401"
+       id="pattern1871"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,6.8791667,-4.4979197)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5347"
+       id="pattern1873"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-3.1750001,-9.7895898)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#color_skin"
+       id="pattern1875"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-2.1166668,-6.3500032)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1879">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1877"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#fffe00;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1884">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1882"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#d02a27;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1890">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1888"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#3385c1;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1895">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1893"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#d02a27;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#color_f1"
+       id="pattern5666"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1901">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1899"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#3385c1;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5666"
+       id="pattern5670"
+       patternTransform="matrix(-0.26458334,0,0,0.26458334,45.544964,-6.35)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#color_f1"
+       id="pattern1905"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1909">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1907"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#3385c1;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5670"
+       id="pattern5674"
+       patternTransform="matrix(0,0.26458334,0.26458334,0,-278.47914,262.86874)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5666"
+       id="pattern1912"
+       patternTransform="matrix(-0.26458334,0,0,0.26458334,45.544964,-6.35)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#color_f1"
+       id="pattern1914"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1918">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1916"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#3385c1;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5674"
+       id="pattern5686"
+       patternTransform="matrix(0,-0.26458334,0.26458334,0,-279.53747,311.0229)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5670"
+       id="pattern1922"
+       patternTransform="matrix(0,0.26458334,0.26458334,0,-278.47914,262.86874)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5666"
+       id="pattern1924"
+       patternTransform="matrix(-0.26458334,0,0,0.26458334,45.544964,-6.35)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#color_f1"
+       id="pattern1926"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1930">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1928"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#3385c1;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5674"
+       id="pattern1933"
+       patternTransform="matrix(0,-0.26458334,0.26458334,0,-279.53747,311.0229)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5670"
+       id="pattern1935"
+       patternTransform="matrix(0,0.26458334,0.26458334,0,-278.47914,262.86874)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5666"
+       id="pattern1937"
+       patternTransform="matrix(-0.26458334,0,0,0.26458334,45.544964,-6.35)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#color_f1"
+       id="pattern1939"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1943">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1941"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#3385c1;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5686"
+       id="pattern1946"
+       patternTransform="matrix(0.18520884,0,0,0.26458334,-5.2123345,-2.1166557)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5674"
+       id="pattern1948"
+       patternTransform="matrix(0,-0.26458334,0.26458334,0,-279.53747,311.0229)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5670"
+       id="pattern1950"
+       patternTransform="matrix(0,0.26458334,0.26458334,0,-278.47914,262.86874)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5666"
+       id="pattern1952"
+       patternTransform="matrix(-0.26458334,0,0,0.26458334,45.544964,-6.35)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#color_f1"
+       id="pattern1954"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern1958">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path1956"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#3385c1;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="color_c1">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path5332"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#714a40;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="color_beak">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path4540"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#fffe00;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern2323">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path2321"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#fffe00;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern2328">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path2326"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#fffe00;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="color_eyes">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path5306"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#101010;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern2339">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path2337"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#101010;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5542"
+       id="pattern5548"
+       patternTransform="matrix(0.13229167,0,0,0.13229167,0.7110677,-4.7625)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#color_claws"
+       id="pattern5542"
+       patternTransform="matrix(0.13229167,0,0,0.13229167,0.68350695,-4.7625)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="color_claws">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path5320"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#586371;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5542"
+       id="pattern2377"
+       patternTransform="matrix(0.13229167,0,0,0.13229167,0.7110677,-4.7625)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#color_claws"
+       id="pattern2379"
+       patternTransform="matrix(0.13229167,0,0,0.13229167,0.68350695,-4.7625)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern2383">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path2381"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#586371;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5598"
+       id="pattern5691"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,15.08125,-2.1166669)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5572"
+       id="pattern5598"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,12.964584,1.1244796)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5562"
+       id="pattern5572"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,15.081251,0.39687547)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5558"
+       id="pattern5562"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,14.816667,-1.5874999)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5548"
+       id="pattern5558"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,14.816667,-2.1166669)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5542"
+       id="pattern2390"
+       patternTransform="matrix(0.13229167,0,0,0.13229167,0.7110677,-4.7625)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#color_claws"
+       id="pattern2392"
+       patternTransform="matrix(0.13229167,0,0,0.13229167,0.68350695,-4.7625)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern2396">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path2394"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#586371;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5691"
+       id="pattern5699"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,15.08125,-1.5875)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5598"
+       id="pattern2412"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,15.08125,-2.1166669)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5572"
+       id="pattern2414"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,12.964584,1.1244796)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5562"
+       id="pattern2416"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,15.081251,0.39687547)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5558"
+       id="pattern2418"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,14.816667,-1.5874999)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5548"
+       id="pattern2420"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,14.816667,-2.1166669)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5542"
+       id="pattern2422"
+       patternTransform="matrix(0.13229167,0,0,0.13229167,0.7110677,-4.7625)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#color_claws"
+       id="pattern2424"
+       patternTransform="matrix(0.13229167,0,0,0.13229167,0.68350695,-4.7625)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern2428">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path2426"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#586371;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5691"
+       id="pattern2458"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,15.08125,-1.5875)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5598"
+       id="pattern2460"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,15.08125,-2.1166669)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5572"
+       id="pattern2462"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,12.964584,1.1244796)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5562"
+       id="pattern2464"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,15.081251,0.39687547)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5558"
+       id="pattern2466"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,14.816667,-1.5874999)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5548"
+       id="pattern2468"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,14.816667,-2.1166669)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5542"
+       id="pattern2470"
+       patternTransform="matrix(0.13229167,0,0,0.13229167,0.7110677,-4.7625)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#color_claws"
+       id="pattern2472"
+       patternTransform="matrix(0.13229167,0,0,0.13229167,0.68350695,-4.7625)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern2476">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path2474"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#586371;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5598"
+       id="pattern2493"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,15.08125,-2.1166669)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5572"
+       id="pattern2495"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,12.964584,1.1244796)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5562"
+       id="pattern2497"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,15.081251,0.39687547)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5558"
+       id="pattern2499"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,14.816667,-1.5874999)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5548"
+       id="pattern2501"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,14.816667,-2.1166669)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5542"
+       id="pattern2503"
+       patternTransform="matrix(0.13229167,0,0,0.13229167,0.7110677,-4.7625)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#color_claws"
+       id="pattern2505"
+       patternTransform="matrix(0.13229167,0,0,0.13229167,0.68350695,-4.7625)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern2509">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path2507"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#586371;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5691"
+       id="pattern2525"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,15.08125,-1.5875)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5598"
+       id="pattern2527"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,15.08125,-2.1166669)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5572"
+       id="pattern2529"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,12.964584,1.1244796)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5562"
+       id="pattern2531"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,15.081251,0.39687547)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5558"
+       id="pattern2533"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,14.816667,-1.5874999)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5548"
+       id="pattern2535"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,14.816667,-2.1166669)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5542"
+       id="pattern2537"
+       patternTransform="matrix(0.13229167,0,0,0.13229167,0.7110677,-4.7625)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#color_claws"
+       id="pattern2539"
+       patternTransform="matrix(0.13229167,0,0,0.13229167,0.68350695,-4.7625)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern2543">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path2541"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#586371;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5699"
+       id="pattern2559"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,15.08125,-1.0583334)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5691"
+       id="pattern2561"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,15.08125,-1.5875)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5598"
+       id="pattern2563"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,15.08125,-2.1166669)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5572"
+       id="pattern2565"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,12.964584,1.1244796)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5562"
+       id="pattern2567"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,15.081251,0.39687547)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5558"
+       id="pattern2569"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,14.816667,-1.5874999)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5548"
+       id="pattern2571"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,14.816667,-2.1166669)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5542"
+       id="pattern2573"
+       patternTransform="matrix(0.13229167,0,0,0.13229167,0.7110677,-4.7625)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#color_claws"
+       id="pattern2575"
+       patternTransform="matrix(0.13229167,0,0,0.13229167,0.68350695,-4.7625)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern2579">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path2577"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#586371;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5699"
+       id="pattern2595"
+       patternTransform="matrix(0,0.13229167,0.13229167,0,10.318749,-3.1750001)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5691"
+       id="pattern2597"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,15.08125,-1.5875)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5598"
+       id="pattern2599"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,15.08125,-2.1166669)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5572"
+       id="pattern2601"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,12.964584,1.1244796)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5562"
+       id="pattern2603"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,15.081251,0.39687547)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5558"
+       id="pattern2605"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,14.816667,-1.5874999)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5548"
+       id="pattern2607"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,14.816667,-2.1166669)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5542"
+       id="pattern2609"
+       patternTransform="matrix(0.13229167,0,0,0.13229167,0.7110677,-4.7625)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#color_claws"
+       id="pattern2611"
+       patternTransform="matrix(0.13229167,0,0,0.13229167,0.68350695,-4.7625)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern2615">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path2613"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#586371;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5691"
+       id="pattern2644"
+       patternTransform="matrix(0,0.13229167,0.13229167,0,13.49375,-1.3229166)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5598"
+       id="pattern2646"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,15.08125,-2.1166669)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5572"
+       id="pattern2648"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,12.964584,1.1244796)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5562"
+       id="pattern2650"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,15.081251,0.39687547)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5558"
+       id="pattern2652"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,14.816667,-1.5874999)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5548"
+       id="pattern2654"
+       patternTransform="matrix(0,0.13229167,-0.13229167,0,14.816667,-2.1166669)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#pattern5542"
+       id="pattern2656"
+       patternTransform="matrix(0.13229167,0,0,0.13229167,0.7110677,-4.7625)" />
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#color_claws"
+       id="pattern2658"
+       patternTransform="matrix(0.13229167,0,0,0.13229167,0.68350695,-4.7625)" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       patternTransform="matrix(0.26458334,0,0,0.26458334,-4.2333334,-6.35)"
+       id="pattern2662">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path2660"
+         d="M 0,0 V 8 H 8 V 0 Z"
+         style="opacity:1;fill:#586371;fill-opacity:1;stroke:none;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </pattern>
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1024"
+     id="namedview4"
+     showgrid="true"
+     inkscape:zoom="14.75"
+     inkscape:cx="21.578696"
+     inkscape:cy="39.075928"
+     inkscape:window-x="0"
+     inkscape:window-y="30"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid812"
+       empspacing="8" />
+  </sodipodi:namedview>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Ref"
+     style="display:inline">
+    <image
+       y="0"
+       x="0"
+       id="image4194"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAC8UlEQVR42u1bv2sUQRS+0kqwEbQI
+BAvRXGUgIWdnsBIVkTRyYiEpghBsFAQFTSFCDEjstbI88C9IZZ8/wD9m9FvyLW+f7+0e6+nN7r4H
+H3Pza2e+b97szByzo1GDvZveSMCXF5sVMH3UdyN5hD+Obpa/GQ5CABAneSnCIASQoy8xGA+QI2/9
+HoQA1ugjHIwHWOCLcJAC9GoVkGu7dHEZ99Ksd4IHrhp6X5HFMqc3OtbGx0uX3lC3YbKQhQC7t8cp
+F0AUhhRIe5nngXoQ9FTVbRBLH4B7mysJeHrraonnd8YVvN1ZL/BxulECcV2OkM8C2AawtXaxAOOj
+sLCwsLCwsLCwMNvWL59PVy6cSwwHJ4AkjzA8IDwgLCwsLCysd2v9/bVL6eX29RJPNlaLNIa9XQJB
+UAOESdrKByhS5wXQo4wNjwTzpTASvdjpSXA6eIJo9GL+Exxt+Q6gEFIY5vVKAEnOcnddjvHergzw
+gjZ5IUAIEAKEACFA14h6aFOnc8JZnZpXgDb1OiEAd4N1dayDUNMBKcvDk9Up7gabTpBt6nVCAG6J
+6+pYJ0EvXT43y+OwldZEpG29EMAw7xaqdSdw4ZcrdacOPrxJD3buFphMJn80Vpf/NwI0Xbf9Z1f0
+QcSLWwLU5VMcry3kW+n6IwzvWi3LLVQAkJD/9TGOJQ2/9SaHabIsQa/w/kf0xGkir0VY+BTw4BGp
+q9OE7ATQt8DZGDr76P3r9Ozr50oHjo+PinA2O6yE/I1yLINwnuvxSxdAYnbyMx18+laS/10kbe8+
+LuefFOD09HsBKQAgBdC3v7MWgFfJSZ6AAGycJEGcnaIQ7ChF6IwAuiEIQID8yvhaRQDWkR7AuJwS
+nRGAnYT7AyQP4pgOyK9Mk7O5jnSKIL1Azn8+u+kdsLRlUH+lsf/qsCAN8vIrCz1VtNuXIp5NEevr
+D0+ApW6EJEni4XQvWekS1uiTvP78RT4nu62wJup9y6PJW+TmeU52h6H//WFUbvx/AfILBaFsNep8
+AAAAAElFTkSuQmCC
+"
+       style="image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="64"
+       width="64" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="BG"
+     style="display:inline" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="BG Shading"
+     style="display:inline" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Main"
+     style="display:inline" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="FG"
+     style="display:inline" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="Cyborg"
+     style="display:inline" />
+</svg>

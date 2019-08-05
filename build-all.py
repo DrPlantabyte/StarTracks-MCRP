@@ -59,7 +59,7 @@ def main():
 		com_dir = str(this_dir) + os.sep + 'common'
 		build_dir = str(this_dir) + os.sep + 'build' + os.sep + src
 		zip_file = str(this_dir) + os.sep + 'distributables' + os.sep + 'StarTracks-' + config.name + '_' + src + '.zip'
-		remakeDir(build_dir)
+		os.makedirs(build_dir, exist_ok=True)
 		# copy common files
 		copyInto(src=com_dir, dst=build_dir, skipExisting=True)
 		# compile SVG textures

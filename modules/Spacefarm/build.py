@@ -148,7 +148,7 @@ def convertSVG(src_filepath, dst_filepath, mc_resolution):
 	makeParentDir(dst_filepath)
 	print('Rendering', str(src_filepath), 'to', str(dst_filepath))
 	p_status = config.inkscape(str(src_filepath),'--export-png', str(dst_filepath), '--export-area-page', '--export-dpi', str(dpi))
-	if( "blocks" not in str(dst_filepath) ):
+	if( "block" not in str(dst_filepath) and "horse_marking" not in str(dst_filepath) ):
 		# remove transparency, unless it is a block texture
 		p_status = config.convert(str(dst_filepath), '-channel', 'alpha', '-threshold', '50%', str(dst_filepath))
 

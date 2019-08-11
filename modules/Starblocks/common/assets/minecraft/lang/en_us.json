@@ -12,6 +12,8 @@
   "book.generation.2": "Copy of a copy",
   "book.generation.3": "Tattered",
   "book.invalid.tag": "* Invalid tablet tag *",
+  "block.minecraft.smooth_stone": "Silicon Panel",
+  "block.minecraft.smooth_stone_slab": "Silicon Panel Slab",
   "block.minecraft.tnt": "Unstable Reactor",
   "block.minecraft.bookshelf": "Data Core",
   "block.minecraft.redstone_wire": "Redstone Wire",

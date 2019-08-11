@@ -61,9 +61,9 @@ elif platform == 'darwin':
 		return p_status
 	mogrify = _mogrify
 elif platform == 'win32' or platform == 'win64':
-	# Windows...
+	# Windows...	import glob
 	inkscape_path = 'C:\\Program Files\\Inkscape\\inkscape.exe'
-	imagemagick_path = 'C:\\Program Files\\ImageMagick-7.0.7-Q16\\magick.exe'
+	imagemagick_path = glob.glob('C:\\Program Files\\ImageMagick-*\\magick.exe')[0]
 	def _inkscape(*args):
 		p_status = subprocess.call([inkscape_path]+list(args))
 		if(p_status != 0):

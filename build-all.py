@@ -6,7 +6,7 @@ from os import path
 import hashlib
 import zipfile
 import time
-import json
+import jsonfrom multiprocessing import Process
 
 import config
 
@@ -29,10 +29,10 @@ def main():
 		os.makedirs(dest_dir, exist_ok=True)
 		mergeInto(src_dir, dest_dir)
 	
-	# then build all modules
+	# then build all modules	build_list = []
 	for module in os.listdir(module_dir):
-		build_file = path.join(module_dir, module, 'build.py')
-		run_file(build_file)
+		build_file = path.join(module_dir, module, 'build.py')		build_list.append(build_file)
+	run_files(build_list)
 	# then copy their distributables for convenience
 	dist_dir = path.join(this_dir, 'distributables')
 	remakeDir(dist_dir)
@@ -97,6 +97,10 @@ def run_file(filepath):
 	print('\t\texecuting',filepath,'...')
 	config.python3(filepath)
 	print('\t\t...',filepath,'complete')
+# runs python files as if using the terminal in separate processes and then waits on them all
+def run_files(filepath_list):	process_list = []	for fp in filepath_list:		p = Process(target=run_file, args=(fp,))
+		p.start()		process_list.append(p)	for p in process_list:
+		p.join()
 # stores files in file_list from directory source_root in zip file dest_file
 # (file_list will be the relative filepaths from the root of both the source 
 # directory and the destination .zip file)

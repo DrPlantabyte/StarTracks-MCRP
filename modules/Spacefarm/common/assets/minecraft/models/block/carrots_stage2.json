@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "crop": "block/carrots_stage2"
+    }
+}

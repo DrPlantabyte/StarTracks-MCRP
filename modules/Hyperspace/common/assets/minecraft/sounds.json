@@ -1,4 +1,95 @@
 {
+ "block.shulker_box.close":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"random/whir"
+    ]
+  },
+ "block.shulker_box.open":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"random/whir"
+    ]
+  },
+ "entity.shulker.close":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"random/whir"
+    ]
+  },
+ "entity.shulker.open":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"random/whir"
+    ]
+  },
+ "entity.shulker.ambient":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"random/beepboop1",
+	"random/beepboop2",
+	"random/beepboop3",
+	"random/beepboop4"
+    ]
+  },
+ "entity.shulker.death":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"random/robotboom"
+    ]
+  },
+ "entity.shulker.hurt":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"random/spark"
+    ]
+  },
+ "entity.shulker.hurt_closed":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"random/kaklunk"
+    ]
+  },
+ "entity.shulker.shoot":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"entity/arrow/shoot"
+    ]
+  },
+ "entity.shulker_bullet.hit":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"entity/arrow/hit"
+    ]
+  },
+ "entity.shulker_bullet.hurt":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"random/spark"
+    ]
+  },
  "entity.blaze.death":
   {
    "replace": true,

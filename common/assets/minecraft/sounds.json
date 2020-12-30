@@ -23,70 +23,71 @@
 	"entity/arrow/shoot"
     ]
   },
- "entity.blaze.death":
+ "item.crossbow.loading_start":
   {
    "replace": true,
    "sounds":
     [
-	"random/robotboom"
+	"item/crossbow/loading_start"
     ]
   },
- "entity.blaze.ambient":
+ "item.crossbow.loading_middle":
   {
    "replace": true,
    "sounds":
     [
-	"mob/blaze/breathe1",
-	"mob/blaze/breathe2"
+	"item/crossbow/loading_middle"
     ]
   },
- "entity.blaze.hurt":
+ "item.crossbow.loading_end":
   {
    "replace": true,
    "sounds":
     [
-	"mob/blaze/hit"
+	"item/crossbow/loading_end"
     ]
   },
- "entity.ghast.ambient":
+ "item.crossbow.shoot":
   {
    "replace": true,
    "sounds":
     [
-	"mob/ghast/moan1",
-	"mob/ghast/moan2",
-	"mob/ghast/moan3",
-	"mob/ghast/moan4",
-	"mob/ghast/moan5"
+	"item/crossbow/shoot"
     ]
   },
- "entity.ghast.death":
+ "item.crossbow.hit":
   {
    "replace": true,
    "sounds":
     [
-	"random/robotboom"
+	"entity/arrow/hit"
     ]
   },
- "entity.ghast.hurt":
+ "item.crossbow.quick_charge_1":
   {
    "replace": true,
    "sounds":
     [
-	"mob/ghast/scream1",
-	"mob/ghast/scream2",
-	"mob/ghast/scream3"
+	"item/crossbow/quick_charge/quick_charge_1"
     ]
   },
- "entity.ghast.warn":
+ "item.crossbow.quick_charge_2":
   {
    "replace": true,
    "sounds":
     [
-	"mob/ghast/charge"
+	"item/crossbow/quick_charge/quick_charge_2"
     ]
   },
- "entity.skeleton.ambient":
+ "item.crossbow.quick_charge_3":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"item/crossbow/quick_charge/quick_charge_3"
+    ]
+  },
+  "entity.skeleton.ambient":
   {
    "replace": true,
    "sounds":
@@ -124,7 +125,50 @@
 	"mob/skeleton/say3"
     ]
   },
- "entity.skeleton_horse.death":
+  "block.shulker_box.close":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"random/whir"
+    ]
+  },
+ "block.shulker_box.open":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"random/whir"
+    ]
+  },
+ "entity.shulker.close":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"random/whir"
+    ]
+  },
+ "entity.shulker.open":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"random/whir"
+    ]
+  },
+ "entity.shulker.ambient":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"random/beepboop1",
+	"random/beepboop2",
+	"random/beepboop3",
+	"random/beepboop4"
+    ]
+  },
+ "entity.shulker.death":
   {
    "replace": true,
    "sounds":
@@ -132,17 +176,47 @@
 	"random/robotboom"
     ]
   },
- "entity.skeleton_horse.hurt":
+ "entity.shulker.hurt":
   {
    "replace": true,
    "sounds":
     [
-	"mob/skeleton/hurt1",
-	"mob/skeleton/hurt2",
-	"mob/skeleton/hurt3"
+	"random/spark"
     ]
   },
- "entity.zombie_pig.death":
+ "entity.shulker.hurt_closed":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"random/kaklunk"
+    ]
+  },
+ "entity.shulker.shoot":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"entity/arrow/shoot"
+    ]
+  },
+ "entity.shulker_bullet.hit":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"entity/arrow/hit"
+    ]
+  },
+ "entity.shulker_bullet.hurt":
+  {
+   "replace": true,
+   "sounds":
+    [
+	"random/spark"
+    ]
+  },
+ "entity.blaze.death":
   {
    "replace": true,
    "sounds":
@@ -150,65 +224,22 @@
 	"random/robotboom"
     ]
   },
- "entity.zombie_pig.hurt":
+ "entity.blaze.ambient":
   {
    "replace": true,
    "sounds":
     [
-	"mob/zombiepig/zpighurt1"
+	"mob/blaze/breathe1",
+	"mob/blaze/breathe2"
     ]
   },
- "entity.zombie_pig.ambient":
+ "entity.blaze.hurt":
   {
    "replace": true,
    "sounds":
     [
-	"mob/zombiepig/zpig1",
-	"mob/zombiepig/zpig2",
-	"mob/zombiepig/zpig3",
-	"mob/zombiepig/zpig4"
-    ]
-  },
- "entity.zombie_pig.angry":
-  {
-   "replace": true,
-   "sounds":
-    [
-	"mob/zombiepig/zpigangry1",
-	"mob/zombiepig/zpigangry2",
-	"mob/zombiepig/zpigangry3",
-	"mob/zombiepig/zpigangry4",
-	"mob/zombiepig/zpigangry5"
-    ]
-  },
- "entity.chicken.ambient":
-  {
-   "replace": true,
-   "sounds":
-    [
-	"mob/chicken/say1",
-	"mob/chicken/say2",
-	"mob/chicken/say3",
-	"mob/chicken/say4",
-	"mob/chicken/say5"
-    ]
-  },
- "entity.chicken.hurt":
-  {
-   "replace": true,
-   "sounds":
-    [
-	"mob/chicken/hurt1",
-	"mob/chicken/hurt2"
-    ]
-  },
- "entity.chicken.death":
-  {
-   "replace": true,
-   "sounds":
-    [
-	"mob/chicken/hurt1",
-	"mob/chicken/hurt2"
+	"mob/blaze/hit"
     ]
   }
+  
 }

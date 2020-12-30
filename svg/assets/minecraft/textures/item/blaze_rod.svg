@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="16"
+   height="16"
+   viewBox="0 0 4.2333332 4.2333335"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="blaze_rod.svg">
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="curve">
+      <stop
+         style="stop-color:#000000;stop-opacity:0.12156863"
+         offset="0"
+         id="stop853" />
+      <stop
+         id="stop861"
+         offset="0.41"
+         style="stop-color:#ffffff;stop-opacity:0.49803922" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0.24705882"
+         offset="1"
+         id="stop855" />
+    </linearGradient>
+    <filter
+       inkscape:label="Film Grain"
+       inkscape:menu="Image Effects"
+       inkscape:menu-tooltip="Adds a small scale graininess"
+       style="color-interpolation-filters:sRGB;"
+       id="filter849">
+      <feTurbulence
+         type="fractalNoise"
+         numOctaves="3"
+         baseFrequency="1"
+         seed="0"
+         result="result0"
+         id="feTurbulence839" />
+      <feColorMatrix
+         result="result4"
+         values="0"
+         type="saturate"
+         id="feColorMatrix841" />
+      <feComposite
+         in="SourceGraphic"
+         in2="result4"
+         operator="arithmetic"
+         k1="1.25"
+         k2="0.5"
+         k3="0.5"
+         result="result2"
+         id="feComposite843" />
+      <feBlend
+         result="result5"
+         mode="normal"
+         in="result2"
+         in2="SourceGraphic"
+         id="feBlend845" />
+      <feComposite
+         in="result5"
+         in2="SourceGraphic"
+         operator="in"
+         result="result3"
+         id="feComposite847" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#curve"
+       id="linearGradient859"
+       x1="1.8520833"
+       y1="2.6458333"
+       x2="2.38125"
+       y2="2.6458333"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="rotate(45,2.1462752,1.9839028)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="22.4"
+     inkscape:cx="2.2600597"
+     inkscape:cy="8.8210532"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer4"
+     showgrid="true"
+     units="px"
+     inkscape:window-width="1680"
+     inkscape:window-height="987"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-global="false"
+     inkscape:snap-bbox="false"
+     inkscape:snap-nodes="true"
+     inkscape:bbox-nodes="true"
+     inkscape:document-rotation="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4485"
+       empspacing="4"
+       color="#8484ba"
+       opacity="0.24705882"
+       empcolor="#3f3fff"
+       empopacity="0.36862745" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Ref"
+     style="display:none"
+     sodipodi:insensitive="true">
+    <image
+       width="4.2333336"
+       height="4.2333336"
+       preserveAspectRatio="none"
+       style="image-rendering:optimizeSpeed"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAEoXpUWHRSYXcgcHJvZmlsZSB0eXBl
+IGV4aWYAAHjazVdtcsSoDvzPKfYIlgRIHIfPqneDPf42Bs9mJpN9k0mqdofYYISF6BaN4/qf/xvu
+D/yYUnQ+qMUU44GfTz5xRsOO9cvnnQ5/3vfDcTXu+t3NwOgS1LIeLe7xVz8dd54ooxU+OLK6DeXe
+kPz2bw+OeFUyI5rtth2l7Uh4GWg7yGtZR0ymH5dQ+qrbtRJbl5s3b/dhf3pWoNcC5hHmLiQH7iy8
+ApDzcpJhYNxZEq/uLEHs7OHtDIA8w+n4EJV7ZOXWoi/6H0iRuPodOu7BjLf6aT+Fh/7t0J0Qf5hZ
+6m3mu/7Ahz4u57rGaObG6Gt12UdAGveirqWcLQwsgFzO1yKK4gpo61kSijlkbwXl7ahHQamUiEHL
+IE+NMg3qZ12pIkTPnRU1c2U5+0yUE9fJGomfhQarJGngi6WCXkEv32Khc950TlfJMHEjjGSCs8k6
+u3n7jfKlozFmyhMddsMKcfHMLIQxmZt3jAIhNK48CifAV3n8TV4FDIYTZsMC81GWixJo59bMIzmJ
+FgwMqNdeI23bASDC3AHBkICBI5IEinQosxIBRwM/GY6MxXMBBRQCN0TJXiSCHOM5N95ROsdy4NUN
+zQIRQaIoqEmSwZWHsCF/1BtyKAcJPoQQgwYLKeQo0ccQY9Q4xS+rqNegUVVNk2YT8xYsmpo5S5YT
+J4E4hhSTJksp5YxJMzxnvJ0xIOfCRYovocSixUoquSJ9qq+hxqrVXE01N27SoBMtNm3WUsudOlKp
++x567Nqtp54HUm3I8COMOHTYSCPfWCO3aP1UXmeNLtb4ZGoO1BtreFX1ckFTTsLkDIyxJzCukwEk
+NE/ODiPv2U3qJmdHYuyKwIgyTHIaTcbAoO/EYdCNu7+Zu+PNef8j3vhizk3qfoM5N6n7grnPvD1h
+rc3Tph7iTobmNpygHoLthwHdMlueh9rLtfvuC/+yoxHLbHDp/Ri110w+4A8ZEKiD6fmgNaah3i3T
+PKp/Vn/pSIu02QZFVbtm8B3Ws6DtNdE2B/AO2l1az11Sx06NtMPNaUT/najcKwO1hD09jrGOvC5j
+R8dRW0od2ujOAFqBEuBw3NHF1GHF1lnRKcCMb2P0MnbtOCd0Gw9WfAFt9Lzi0Kt1RZ+pHWobyXFk
+7BZ7G6NXsHMLvHhRi7Y9UutXfnaVbINkpyj5Ac26pbD7+eZYe8BF3TM0GxUaocd+Vj+iDb4CKJCN
+xDspa597hK89whAUx8dpg1L/rHa3DuoI6JZVyKQxdX6lHUi2M+0+ZF3YoafaM1TSLQ0bFqB9ftnw
+Mff92j01CIR2TVBMhiAHy0J1JLQh07bNGWocfaXlqFTItcCad3RDeq/f5M39f2IfxK3XeFqqh7hD
+M5ax4fuoRTmWbYgfvg7m/abUUcqLOLmXAZWWLtwicAMa9cIN7eyeAfcObu+dIk9wc8+Aewc3924C
+XrjtpRfnAVwHcHt+BNbSI277OMN/Bs1/JXK/f659OinWXg4em1Jln7Cm/kE9buLhfklFPjuiqR9L
+LQL+ycphUxkl2T9x537A2X/XkeADMLm/AMALEF4jF1HwAAABhGlDQ1BJQ0MgcHJvZmlsZQAAeJx9
+kT1Iw0AcxV9TRZGKgxlEFDJUJwviF45SxSJYKG2FVh1MLv2CJg1Jiouj4Fpw8GOx6uDirKuDqyAI
+foA4OTopukiJ/0sKLWI8OO7Hu3uPu3eAUC8zzeoYBzTdNpOxqJTJrkpdrwhhGAKmIcrMMuKpxTR8
+x9c9Any9i/As/3N/jl41ZzEgIBHPMcO0iTeIZzZtg/M+sciKskp8Tjxm0gWJH7muePzGueCywDNF
+M52cJxaJpUIbK23MiqZGPEUcVjWd8oWMxyrnLc5aucqa9+QvDOX0lRTXaQ4hhiXEkYAEBVWUUIaN
+CK06KRaStB/18Q+6/gS5FHKVwMixgAo0yK4f/A9+d2vlJye8pFAU6HxxnI8RoGsXaNQc5/vYcRon
+QPAZuNJb/kodmP0kvdbSwkdA3zZwcd3SlD3gcgcYeDJkU3alIE0hnwfez+ibskD/LdCz5vXW3Mfp
+A5CmrpZvgINDYLRA2es+7+5u7+3fM83+fgCsVHK+W2aNzwAAD5xpVFh0WE1MOmNvbS5hZG9iZS54
+bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlk
+Ij8+Cjx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IlhNUCBDb3Jl
+IDQuNC4wLUV4aXYyIj4KIDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5
+OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+CiAgPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIK
+ICAgIHhtbG5zOmlwdGNFeHQ9Imh0dHA6Ly9pcHRjLm9yZy9zdGQvSXB0YzR4bXBFeHQvMjAwOC0w
+Mi0yOS8iCiAgICB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIK
+ICAgIHhtbG5zOnN0RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3Vy
+Y2VFdmVudCMiCiAgICB4bWxuczpwbHVzPSJodHRwOi8vbnMudXNlcGx1cy5vcmcvbGRmL3htcC8x
+LjAvIgogICAgeG1sbnM6R0lNUD0iaHR0cDovL3d3dy5naW1wLm9yZy94bXAvIgogICAgeG1sbnM6
+ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICAgeG1sbnM6dGlmZj0iaHR0
+cDovL25zLmFkb2JlLmNvbS90aWZmLzEuMC8iCiAgICB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9i
+ZS5jb20veGFwLzEuMC8iCiAgIHhtcE1NOkRvY3VtZW50SUQ9ImdpbXA6ZG9jaWQ6Z2ltcDo5Mjcx
+MTg4My1kYzJmLTQ1YmItOGI1OS01OWQ1NWNkZDczNjciCiAgIHhtcE1NOkluc3RhbmNlSUQ9Inht
+cC5paWQ6ZTYxZjdiMjYtYzljZC00NmExLWJjMWQtN2IxYzc0N2Y0ODA5IgogICB4bXBNTTpPcmln
+aW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6YTYxMDkyZDMtMDI4ZC00ODZkLThlMTMtZDRjNDQzZGY2
+ZGFkIgogICBHSU1QOkFQST0iMi4wIgogICBHSU1QOlBsYXRmb3JtPSJXaW5kb3dzIgogICBHSU1Q
+OlRpbWVTdGFtcD0iMTYwOTIzNTkwMjc0MTU3NiIKICAgR0lNUDpWZXJzaW9uPSIyLjEwLjIyIgog
+ICBkYzpGb3JtYXQ9ImltYWdlL3BuZyIKICAgdGlmZjpPcmllbnRhdGlvbj0iMSIKICAgeG1wOkNy
+ZWF0b3JUb29sPSJHSU1QIDIuMTAiPgogICA8aXB0Y0V4dDpMb2NhdGlvbkNyZWF0ZWQ+CiAgICA8
+cmRmOkJhZy8+CiAgIDwvaXB0Y0V4dDpMb2NhdGlvbkNyZWF0ZWQ+CiAgIDxpcHRjRXh0OkxvY2F0
+aW9uU2hvd24+CiAgICA8cmRmOkJhZy8+CiAgIDwvaXB0Y0V4dDpMb2NhdGlvblNob3duPgogICA8
+aXB0Y0V4dDpBcnR3b3JrT3JPYmplY3Q+CiAgICA8cmRmOkJhZy8+CiAgIDwvaXB0Y0V4dDpBcnR3
+b3JrT3JPYmplY3Q+CiAgIDxpcHRjRXh0OlJlZ2lzdHJ5SWQ+CiAgICA8cmRmOkJhZy8+CiAgIDwv
+aXB0Y0V4dDpSZWdpc3RyeUlkPgogICA8eG1wTU06SGlzdG9yeT4KICAgIDxyZGY6U2VxPgogICAg
+IDxyZGY6bGkKICAgICAgc3RFdnQ6YWN0aW9uPSJzYXZlZCIKICAgICAgc3RFdnQ6Y2hhbmdlZD0i
+LyIKICAgICAgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDpiZGViOTNmNi1lN2M5LTQyYmQtYThj
+YS1hNzhmNzgwYWYzNDYiCiAgICAgIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkdpbXAgMi4xMCAoV2lu
+ZG93cykiCiAgICAgIHN0RXZ0OndoZW49IjIwMjAtMTItMjlUMjA6NTg6MjIiLz4KICAgIDwvcmRm
+OlNlcT4KICAgPC94bXBNTTpIaXN0b3J5PgogICA8cGx1czpJbWFnZVN1cHBsaWVyPgogICAgPHJk
+ZjpTZXEvPgogICA8L3BsdXM6SW1hZ2VTdXBwbGllcj4KICAgPHBsdXM6SW1hZ2VDcmVhdG9yPgog
+ICAgPHJkZjpTZXEvPgogICA8L3BsdXM6SW1hZ2VDcmVhdG9yPgogICA8cGx1czpDb3B5cmlnaHRP
+d25lcj4KICAgIDxyZGY6U2VxLz4KICAgPC9wbHVzOkNvcHlyaWdodE93bmVyPgogICA8cGx1czpM
+aWNlbnNvcj4KICAgIDxyZGY6U2VxLz4KICAgPC9wbHVzOkxpY2Vuc29yPgogIDwvcmRmOkRlc2Ny
+aXB0aW9uPgogPC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAog
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+CiAgICAgICAgICAgICAgICAgICAgICAgICAgIAo8P3hwYWNrZXQgZW5kPSJ3Ij8+gxvyYAAAAAlw
+SFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+QMHQk6FvguwdAAAACOSURBVDjLY2CgO+i59Z+hfN9/
+8jS3X/4/4/3//wwL/v9nSF/8n2Sbz32Caq7c+59km899+v9fes///wy990m3Ge5skjUj+5kczXA/
+U+RskgOs59Z/hpsUhPYA2dx6nuzQZmJgYGBgYOdmaD7LwMDw9gEDQ7EiIykGsDAwMDAw3D7J8PTt
+YwaGdmdGumdOABkJg8HLbxYrAAAAAElFTkSuQmCC
+"
+       id="image907"
+       x="0"
+       y="-2.220446e-16" />
+  </g>
+  <g
+     inkscape:label="BG"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-292.76665)">
+    <path
+       style="opacity:1;fill:#17bffe;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter849)"
+       d="m -3.4395834,293.03123 v 3.70417 h 0.5291667 v -3.70417 z"
+       id="path837"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       transform="rotate(45,-0.49955809,301.13815)" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="Shader"
+     style="display:inline">
+    <path
+       style="fill:#bfbfbf;fill-opacity:1;stroke:none;stroke-width:0.0529167;stroke-linecap:round;stroke-linejoin:round"
+       d="m 0.53475362,3.1793744 -0.3741797,0.3741797 0.3741774,0.3741774 0.3741797,-0.3741797 z"
+       id="path913"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:#bfbfbf;fill-opacity:1;stroke:none;stroke-width:0.0529167;stroke-linecap:round;stroke-linejoin:round"
+       d="M 3.5281701,0.18595801 3.1539927,0.56013533 3.5281701,0.93431266 3.9023474,0.56013537 Z"
+       id="path911"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path851"
+       d="M 3.52817,0.18595794 0.16057382,3.553554 0.53475122,3.9277314 3.9023474,0.5601353 Z"
+       style="opacity:1;fill:url(#linearGradient859);fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       sodipodi:nodetypes="ccccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Main" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="FG" />
+</svg>

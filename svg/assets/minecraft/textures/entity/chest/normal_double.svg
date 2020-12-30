@@ -15,7 +15,7 @@
    viewBox="0 0 33.866666 16.933334"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.1 r15371"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
    sodipodi:docname="normal_double.svg">
   <defs
      id="defs2">
@@ -303,36 +303,6 @@
        y1="-5.5562501"
        x2="7.9375"
        y2="-6.0854168" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#bevel"
-       id="linearGradient4927"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.85,0,0,0.85,-8.4402093,16.853958)"
-       x1="8.4666672"
-       y1="-6.3499999"
-       x2="9.5249996"
-       y2="-5.2916665" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#bevel"
-       id="linearGradient4929"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.7791695,0,0,0.7791695,-6.2155288,-7.3708343)"
-       x1="8.4666672"
-       y1="-6.3499999"
-       x2="9.5249996"
-       y2="-5.2916665" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#groove-8"
-       id="linearGradient4846-1"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0,1,1,0,6.6150392,-21.048975)"
-       x1="8.3489752"
-       y1="-5.556706"
-       x2="8.3489752"
-       y2="-6.0858727" />
     <radialGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4980"
@@ -1033,7 +1003,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="11.313709"
-     inkscape:cx="42.264754"
+     inkscape:cx="26.796794"
      inkscape:cy="40.767133"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
@@ -1061,7 +1031,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
       </cc:Work>
@@ -1093,32 +1063,7 @@
        y="-12.7"
        x="2.220446e-016"
        id="image5069"
-       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAABACAYAAADS1n9/AAAABGdBTUEAALGPC/xhBQAABSJJREFU
-eNrtW81qFEEQnqdIUNwEjdk1GrOJYoz4A6IRPSkSxJ+DREEQxYPBiCdBJHhSI/gCYvDgW+SeZ2pT
-ndRYqcxM/2UnM8v3QTGdriqr3equrumuybJtbG1tmY2NDcPPzANnuuPm/MxkThfnepbmZ7t7/mby
-lSvrJzp1smN87abytd1sWCEdHzIJ6If5/KxvfjyfMN9fnLb08emJfcT9vnJl/WSLHeRjN5Wv7Q7t
-BFhbWzObm5uGnrLt0rvQ75qvy13z5814Kf16NZGTS86lTw6b708atnujl5VTN0vn7xLbHdoJsLq6
-alc8PWXbJwLQCvn2smPp74ezlrjN/eTI3297TjmXPq1IDslk99K2c4huT+8Qt7k/lU8T4eZUltsd
-6gmwvr6eTwBuu/QoLJIjyDlM7DjZx873kavSJ1u8b1ObnMPEjpN9B8GnPrabAfsjwM/XM7nj5AqW
-q5f7feXK+skWRwBqs+PkCtarN4XP/WwXHlegfZH2R7lP671c83zkXDkA25X79L49vZsdGH/oc4DU
-CMArlBwm93Id2l1yLn2yxW8B1OYVSg6Te7kM6yl8lmG78HhJDiCTOLln6zDuknPp6xxAJnFyzy5K
-8mL4vA0gB6iIAJQhyxUuHVeW5JXJufTJFkcAastVrJ2qV3ksn98CMAFKcgA+B3C973N/lZxLn2xx
-DpCfA5Tt4UV7fSSf7cLjjhxAv78XrXCXXJW+fgsY1Pu/jgR4C3AcBfPRKf1QRLpNIZTbVXIufbLF
-E8DHbipf24XHFU5PdmxoXNg9niXiNodqPro9d7brJVelT0/ai33tpvK13aF15K1r58z1y/2c6G+i
-xatze/6WRD9IjJ6U1zRIu6njLRq/r91WTICy7Fu+v/O7OrXpejRGj9pL10YsVWX9Lrtad1Dj1bIx
-4238BLh5Zdbrtk5m6RSGQ/WIvjw6sofqsJsyXt9byyq7rYgAVUlR0f05FWXE6H14OGmJo0BddmP1
-imRD7TZ+AtD+ZROf7YoYJq6YkX1cMUM0fmzUxOhN98Z3acxSrF0tM6jxatmY8Q5t8hhaEsY/lizH
-CtVHSVgDzwFCSqu4T+qFlmahJKwh4NKs7WYtpEvCYkrMYpI5XAdXRABaIXVNAF0S5iolS+XrUjR4
-vOQ6uK4JoK+DfUrJUvmyFA0eL7kMqmsC6MsgV4lZKl+XosHjBdfBtD/WnQPElqLF8pEDNCgCyJIw
-V4lZKl+XosHjDcsBXKVkqXxdigaPF0QAypDrfAuQJWE+pWipfFmKBo8X5AB1ngPokjDfUrRUPkrC
-GvoWMKj3/7JSNHi85Cg4pLSK5aVeaGkWSsIagtCSMC6tWlAlWaH6KAk7YOA62H0dnMsN43UwFUq8
-fzxrVh7M2CfTy/tTOb1bmtrD4wKLUL3lOz1LixeOWqrLbqyeloux2/gJsHilbzNdTXQCxiT7Pz3p
-2jAcqke0cnfMLF8fsfT+3rFou0X/9iDGq+VixtuKCODz8aY8GZPFmSEfh2p+HXZTxlskF2q3FTlA
-6MkY/cdC9eQBS+yJXIzdlPGmfszaiglAKyP0ZIxXVIieT1n1IOwe9nhbkQOEnozxnnqQJ24hdn0+
-Nm3KeFuXA/icjHFWHaJX9LFFHXYPe7ytmAChJ2P8g/p89Cn1iuro67B7mONtxYke0bR9jln63+4I
-GjO9iR3+8c6oidGTPJatw+5hjhdnxgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDA8Q8f
-tK1aCehNLgAAAABJRU5ErkJggg==
-"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAABACAYAAADS1n9/AAAABGdBTUEAALGPC/xhBQAABSJJREFU eNrtW81qFEEQnqdIUNwEjdk1GrOJYoz4A6IRPSkSxJ+DREEQxYPBiCdBJHhSI/gCYvDgW+SeZ2pT ndRYqcxM/2UnM8v3QTGdriqr3equrumuybJtbG1tmY2NDcPPzANnuuPm/MxkThfnepbmZ7t7/mby lSvrJzp1smN87abytd1sWCEdHzIJ6If5/KxvfjyfMN9fnLb08emJfcT9vnJl/WSLHeRjN5Wv7Q7t BFhbWzObm5uGnrLt0rvQ75qvy13z5814Kf16NZGTS86lTw6b708atnujl5VTN0vn7xLbHdoJsLq6 alc8PWXbJwLQCvn2smPp74ezlrjN/eTI3297TjmXPq1IDslk99K2c4huT+8Qt7k/lU8T4eZUltsd 6gmwvr6eTwBuu/QoLJIjyDlM7DjZx873kavSJ1u8b1ObnMPEjpN9B8GnPrabAfsjwM/XM7nj5AqW q5f7feXK+skWRwBqs+PkCtarN4XP/WwXHlegfZH2R7lP671c83zkXDkA25X79L49vZsdGH/oc4DU CMArlBwm93Id2l1yLn2yxW8B1OYVSg6Te7kM6yl8lmG78HhJDiCTOLln6zDuknPp6xxAJnFyzy5K 8mL4vA0gB6iIAJQhyxUuHVeW5JXJufTJFkcAastVrJ2qV3ksn98CMAFKcgA+B3C973N/lZxLn2xx DpCfA5Tt4UV7fSSf7cLjjhxAv78XrXCXXJW+fgsY1Pu/jgR4C3AcBfPRKf1QRLpNIZTbVXIufbLF E8DHbipf24XHFU5PdmxoXNg9niXiNodqPro9d7brJVelT0/ai33tpvK13aF15K1r58z1y/2c6G+i xatze/6WRD9IjJ6U1zRIu6njLRq/r91WTICy7Fu+v/O7OrXpejRGj9pL10YsVWX9Lrtad1Dj1bIx 4238BLh5Zdbrtk5m6RSGQ/WIvjw6sofqsJsyXt9byyq7rYgAVUlR0f05FWXE6H14OGmJo0BddmP1 imRD7TZ+AtD+ZROf7YoYJq6YkX1cMUM0fmzUxOhN98Z3acxSrF0tM6jxatmY8Q5t8hhaEsY/lizH CtVHSVgDzwFCSqu4T+qFlmahJKwh4NKs7WYtpEvCYkrMYpI5XAdXRABaIXVNAF0S5iolS+XrUjR4 vOQ6uK4JoK+DfUrJUvmyFA0eL7kMqmsC6MsgV4lZKl+XosHjBdfBtD/WnQPElqLF8pEDNCgCyJIw V4lZKl+XosHjDcsBXKVkqXxdigaPF0QAypDrfAuQJWE+pWipfFmKBo8X5AB1ngPokjDfUrRUPkrC GvoWMKj3/7JSNHi85Cg4pLSK5aVeaGkWSsIagtCSMC6tWlAlWaH6KAk7YOA62H0dnMsN43UwFUq8 fzxrVh7M2CfTy/tTOb1bmtrD4wKLUL3lOz1LixeOWqrLbqyeloux2/gJsHilbzNdTXQCxiT7Pz3p 2jAcqke0cnfMLF8fsfT+3rFou0X/9iDGq+VixtuKCODz8aY8GZPFmSEfh2p+HXZTxlskF2q3FTlA 6MkY/cdC9eQBS+yJXIzdlPGmfszaiglAKyP0ZIxXVIieT1n1IOwe9nhbkQOEnozxnnqQJ24hdn0+ Nm3KeFuXA/icjHFWHaJX9LFFHXYPe7ytmAChJ2P8g/p89Cn1iuro67B7mONtxYke0bR9jln63+4I GjO9iR3+8c6oidGTPJatw+5hjhdnxgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDA8Q8f tK1aCehNLgAAAABJRU5ErkJggg== "
        style="image-rendering:optimizeSpeed"
        preserveAspectRatio="none"
        height="16.933334"
@@ -1265,27 +1210,6 @@ tK1aCehNLgAAAABJRU5ErkJggg==
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="cccccc" />
     </g>
-    <ellipse
-       transform="scale(-1)"
-       ry="0.67468756"
-       rx="0.67468768"
-       cy="11.90625"
-       cx="-0.79375041"
-       id="ellipse4913"
-       style="opacity:1;fill:#92886f;fill-opacity:1;stroke:url(#linearGradient4927);stroke-width:0.22489585;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    <ellipse
-       style="opacity:1;fill:none;fill-opacity:1;stroke:url(#linearGradient4929);stroke-width:0.11244792;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="ellipse4915"
-       cx="0.79375041"
-       cy="-11.90625"
-       rx="0.61846596"
-       ry="0.61846578" />
-    <path
-       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:url(#linearGradient4846-1);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.26458335;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-       d="m 0.66191411,-12.7 h 0.2636719 v 0.01833 l -0.131836,0.09949 -0.1318359,-0.09949 z"
-       id="path4832-7"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccccc" />
     <g
        id="g5156">
       <path

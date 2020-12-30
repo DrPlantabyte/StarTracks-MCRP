@@ -1,0 +1,7 @@
+{
+    "parent": "betterdoors:block/trapdoor_bottom",
+    "textures": {
+        "texture": "block/acacia_planks",
+        "blind":  "betterdoors:material/wooden_blind"
+    }
+}

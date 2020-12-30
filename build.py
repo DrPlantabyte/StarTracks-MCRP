@@ -1,30 +1,17 @@
+#!/usr/bin/python3
 import shutil
 import sys
 import os
-import subprocess
+from os import path
 import hashlib
 import zipfile
 import time
 
-this_dir = os.path.dirname(os.path.realpath(__file__))
+import config
 
-# executable locations
-from sys import platform
-if platform == 'linux' or platform == 'linux2':
-	# linux
-	inkscape_path = 'inkscape'
-	imagemagick_path = 'magick'
-	png_optimizer_path = 'optipng'
-elif platform == 'darwin':
-	# OS X (I don't actually know where OSX puts executables these days)
-	inkscape_path = 'inkscape'
-	imagemagick_path = 'magick'
-	png_optimizer_path = 'optipng'
-elif platform == 'win32' or platform == 'win64':
-	# Windows...
-	inkscape_path = 'C:\\Program Files\\Inkscape\\inkscape.exe'
-	imagemagick_path = 'C:\\Program Files\\ImageMagick-7.0.7-Q16\\magick.exe'
-	png_optimizer_path = os.path.join(this_dir,'bin\\optipng.exe')
+this_dir = path.dirname(path.realpath(__file__))
+
+
 
 
 tex_resolutions = [16, 32, 64, 128]
@@ -32,15 +19,17 @@ project_dirs=[]
 
 def main():
 	remakeDir(str(this_dir) + os.sep + 'distributables')
+	import lang_convert
+	lang_convert.main()
 	for res in tex_resolutions:
 		# setup build dir
 		src = 'x'+str(res)
-		print('\nBuilding texture pack at',src,'resoultion...\n')
+		print('\nBuilding texture pack at',src,'resolution...\n')
 		src_dir = str(this_dir) + os.sep + src
 		svg_dir = str(this_dir) + os.sep + 'svg'
 		com_dir = str(this_dir) + os.sep + 'common'
 		build_dir = str(this_dir) + os.sep + 'build' + os.sep + src
-		zip_file = str(this_dir) + os.sep + 'distributables' + os.sep + 'StarTracks_' + src + '.zip'
+		zip_file = str(this_dir) + os.sep + 'distributables' + os.sep + 'StarTracks-' + config.name + '_' + src + '.zip'
 		remakeDir(build_dir)
 		# copy common files
 		copyInto(src=com_dir, dst=build_dir, skipExisting=True)
@@ -67,10 +56,12 @@ def main():
 		fout.close()
 		# done
 		print('\n...done building texture pack',src)
-	world_dir = str(this_dir) + os.sep + "world"
-	world_zip = str(this_dir) + os.sep + "distributables" + os.sep + "world.zip"
-	print('Building world data...')
-	zipFiles(world_dir, listFiles(world_dir), world_zip, zipfile.ZIP_DEFLATED)
+
+#	world_dir = str(this_dir) + os.sep + "world"
+#	world_zip = str(this_dir) + os.sep + "distributables" + os.sep + "world.zip"
+#	print('Building world data...')
+#	zipFiles(world_dir, listFiles(world_dir), world_zip, zipfile.ZIP_DEFLATED)
+
 	print('...done!')
 
 def zipFiles(source_root, file_list, dest_file, compression):
@@ -87,14 +78,14 @@ def zipFiles(source_root, file_list, dest_file, compression):
 def listFiles(root_dir):
 	fl = []
 	for root, dirs, files in os.walk(root_dir):
-		rel_dirpath = os.path.relpath(root, start=root_dir)
+		rel_dirpath = path.relpath(root, start=root_dir)
 		for f in files:
 			rel_filepath = rel_dirpath + os.sep + f
 			fl.append(rel_filepath)
 	return fl
 def remakeDir(dirpath):
 	"""deletes and recreates a directory"""
-	if (os.path.exists(dirpath)):
+	if (path.exists(dirpath)):
 		for root_dir, dirs, files in os.walk(dirpath):
 			for f in files:
 				os.remove(root_dir + os.sep + f)
@@ -103,19 +94,19 @@ def remakeDir(dirpath):
 				shutil.rmtree(root_dir + os.sep + d)
 	os.makedirs(dirpath, exist_ok=True)
 def makeParentDir(dirpath):
-	print('Recreating directory', str(dirpath))
-	parent_path = os.path.dirname(os.path.realpath(dirpath))
+	print('Recreating directory', str(path.relpath(dirpath,'.')))
+	parent_path = path.dirname(path.realpath(dirpath))
 	os.makedirs(parent_path, exist_ok=True)
 def copyInto(src, dst, skipExisting=True):
 	for root, dirs, files in os.walk(src):
-		rel_dirpath = os.path.relpath(root, start=src)
+		rel_dirpath = path.relpath(root, start=src)
 		for f in files:
 			if(f.endswith('.svg')):
 				# common SVG files at fixed resolution
 				dst_filepath = dst + os.sep + rel_dirpath + os.sep + f.replace('.svg','.png')
 				src_filepath = root + os.sep + f
 				if(skipExisting and alreadyExists(src_filepath, dst_filepath)):
-					print("Skipping ", src_filepath)
+					print("Skipping ", path.relpath(src_filepath,'.'))
 					continue
 				convertSVG(src_filepath, dst_filepath, 64)
 			else:
@@ -124,16 +115,15 @@ def copyInto(src, dst, skipExisting=True):
 				src_filepath = root + os.sep + f
 				makeParentDir(dst_filepath)
 				if(skipExisting and alreadyExists(src_filepath, dst_filepath)):
-					print("Skipping ", src_filepath)
+					print("Skipping ", path.relpath(src_filepath,'.'))
 					continue
-				print('Copying file', str(src_filepath), 'to', str(dst_filepath))
+				print('Copying file', str(path.relpath(src_filepath,'.')), 'to', str(path.relpath(dst_filepath,'.')))
 				shutil.copyfile(src_filepath, dst_filepath)
-				if(f.endswith('.png')):
-					optimizePNG(dst_filepath)
+				
 def convertSVGDir(src_dir, dest_dir, mc_resolution, skipExisting=True):
 	# use inkscape commandline
 	for root_dir, dirs, files in os.walk(src_dir):
-		rel_dirpath = os.path.relpath(root_dir, start=src_dir)
+		rel_dirpath = path.relpath(root_dir, start=src_dir)
 		for f in files:
 			if(f.endswith('.svg')):
 				# svg file detected
@@ -141,16 +131,16 @@ def convertSVGDir(src_dir, dest_dir, mc_resolution, skipExisting=True):
 				dst_filepath = dest_dir + os.sep + rel_dirpath + os.sep + name.replace('.svg','.png')
 				src_filepath = root_dir + os.sep + name
 				if(skipExisting and alreadyExists(src_filepath, dst_filepath)):
-					print("Skipping ", src_filepath)
+					print("Skipping ", path.relpath(src_filepath,'.'))
 					continue
 				convertSVG(src_filepath, dst_filepath, mc_resolution)
 def alreadyExists(src_filepath, dst_filepath):
 	""" 
 	returns True if destination file exists and is newer than source file 
 	"""
-	if( os.path.exists(dst_filepath) ):
-		dst_time = os.path.getmtime(dst_filepath)
-		src_time = os.path.getmtime(src_filepath)
+	if( path.exists(dst_filepath) ):
+		dst_time = path.getmtime(dst_filepath)
+		src_time = path.getmtime(src_filepath)
 		# do nothing if destination is newer than source
 		return (dst_time > src_time)
 	return False
@@ -159,16 +149,12 @@ def convertSVG(src_filepath, dst_filepath, mc_resolution):
 	scaler = mc_resolution / 16
 	dpi = source_dpi * scaler
 	makeParentDir(dst_filepath)
-	print('Rendering', str(src_filepath), 'to', str(dst_filepath))
-	p_status = subprocess.call([inkscape_path, str(src_filepath),'--export-png', str(dst_filepath), '--export-area-page', '--export-dpi', str(dpi)])	if(p_status != 0):		print('warning, Inkscape process returned exit code',p_status)
+	print('Rendering', str(path.relpath(src_filepath,'.')), 'to', str(path.relpath(dst_filepath,'.')))
+	p_status = config.inkscape(str(src_filepath),'--export-type=png','--export-filename', str(dst_filepath), '--export-area-page', '--export-dpi', str(dpi))
 	if( "blocks" not in str(dst_filepath) ):
 		# remove transparency, unless it is a block texture
-		p_status = subprocess.call([imagemagick_path,'convert', str(dst_filepath), '-channel', 'alpha', '-threshold', '50%', str(dst_filepath)])
-		if(p_status != 0):
-			print('warning, Image Magick process returned exit code',p_status)	optimizePNG(dst_filepath)
-def optimizePNG(filepath):	pass	# unfortunately, the PNG optimizer compresses the color palette in 	# such a way as to prevent Minecraft from accurately loading the 	# texture (some stone textures appear white-washed)	"""
-	p_status = subprocess.call([png_optimizer_path,'-clobber', '-fix', '-force', '-o2', str(filepath)])	if(p_status != 0):
-		print('warning, PNG Optimizer process returned exit code',p_status)	"""
+		p_status = config.convert(str(dst_filepath), '-channel', 'alpha', '-threshold', '50%', str(dst_filepath))
+
 #
 if __name__ == "__main__":
 	main()

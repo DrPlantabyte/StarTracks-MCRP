@@ -6,6 +6,7 @@ from os import path
 import hashlib
 import zipfile
 import time
+import threading
 
 import config
 
@@ -28,32 +29,38 @@ def main():
 	zipFiles(datapack_src, listFiles(datapack_src), zip_file, zipfile.ZIP_STORED)
 	hashFile(zip_file)
 	
+	thread_list = []
 	for res in tex_resolutions:
-		# setup build dir
-		src = 'x'+str(res)
-		print('\nBuilding texture pack at',src,'resolution...\n')
-		src_dir = str(this_dir) + os.sep + src
-		svg_dir = str(this_dir) + os.sep + 'svg'
-		com_dir = str(this_dir) + os.sep + 'common'
-		build_dir = str(this_dir) + os.sep + 'build' + os.sep + src
-		zip_file = str(this_dir) + os.sep + 'distributables' + os.sep + 'StarTracks-' + config.name + '_' + src + '.zip'
-		remakeDir(build_dir)
-		# copy common files
-		copyInto(src=com_dir, dst=build_dir, skipExisting=True)
-		# compile SVG textures
-		convertSVGDir(svg_dir, build_dir, res, skipExisting=True)
-		# copy raw textures
-		copyInto(src=src_dir, dst=build_dir, skipExisting=False)
-		# make distributable .zip files
-		the_files = listFiles(build_dir)
-		zipFiles(build_dir, the_files, zip_file, zipfile.ZIP_STORED)
-		# calculate sha1 hash for servers
-		hashFile(zip_file)
-		# done
-		print('\n...done building texture pack',src)
+		#buildTexPack(res)
+		t = threading.Thread(target=buildTexPack, args=(res,))
+		thread_list.append(t)
+		t.start()
+	t.join()
 
 	print('...done!')
-
+def buildTexPack(res):
+	# setup build dir
+	src = 'x'+str(res)
+	print('\nBuilding texture pack at',src,'resolution...\n')
+	src_dir = str(this_dir) + os.sep + src
+	svg_dir = str(this_dir) + os.sep + 'svg'
+	com_dir = str(this_dir) + os.sep + 'common'
+	build_dir = str(this_dir) + os.sep + 'build' + os.sep + src
+	zip_file = str(this_dir) + os.sep + 'distributables' + os.sep + 'StarTracks-' + config.name + '_' + src + '.zip'
+	remakeDir(build_dir)
+	# copy common files
+	copyInto(src=com_dir, dst=build_dir, skipExisting=True)
+	# compile SVG textures
+	convertSVGDir(svg_dir, build_dir, res, skipExisting=True)
+	# copy raw textures
+	copyInto(src=src_dir, dst=build_dir, skipExisting=False)
+	# make distributable .zip files
+	the_files = listFiles(build_dir)
+	zipFiles(build_dir, the_files, zip_file, zipfile.ZIP_STORED)
+	# calculate sha1 hash for servers
+	hashFile(zip_file)
+	# done
+	print('\n...done building texture pack',src)
 def hashFile(fpath):
 	print('Hashing ',fpath,' with SHA1...')
 	hasher = hashlib.sha1()

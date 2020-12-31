@@ -1,0 +1,308 @@
+{
+	"type": "minecraft:chest",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:blue_banner",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{BlockEntityTag:{Patterns:[{Pattern:\"gra\",Color:15},{Pattern:\"glb\",Color:4}]}}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:leather_helmet",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{display:{color:16701501}}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:leather_chestplate",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{display:{color:3949738}}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:leather_leggings",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{display:{color:16701501}}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:leather_boots",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{display:{color:3949738}}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:written_book",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{pages:['[\"\",{\"text\":\"TERRAN SPACE UNION\",\"underlined\":true,\"color\":\"dark_blue\"},{\"text\":\"\\\\nMISSION BRIEFING\\\\n\\\\nGreetings, \",\"color\":\"reset\"},{\"text\":\"clone\",\"strikethrough\":true},{\"text\":\" space cadet. Welcome to planet \",\"color\":\"reset\"},{\"text\":\"Minecraft\",\"obfuscated\":true},{\"text\":\", a recently terraformed planet with some minor troubles.\\\\n\\\\nWe have an important mission for you, \",\"color\":\"reset\"},{\"text\":\"clone\",\"strikethrough\":true},{\"text\":\" space cadet.\",\"color\":\"reset\"}]','{\"text\":\"Your mission is to construct a basecamp, survey this planet\\\'s resources, and impress the native villagers.\\\\n\\\\nWe have great confidence in you, space cadet! (But should you die, we will send your back-up clone(s) to finish the job.)\"}','[\"\",{\"text\":\"Oh, one more thing.\\\\n\\\\nOur enemies, the \"},{\"text\":\"herobrine\",\"obfuscated\":true},{\"text\":\", are attacking the planet to thwart the \",\"color\":\"reset\"},{\"text\":\"Terran Space Union\",\"color\":\"dark_blue\"},{\"text\":\", filling the shadows with monsters using their dark-particle technology. Light the darkness to stop them.\",\"color\":\"reset\"}]','[\"\",{\"text\":\"This planet holds many mysteries and you will be facing hostile aliens at every turn, but we believe that you will triumph!\\\\n\\\\nGood luck, brave explorer, and make the \"},{\"text\":\"Terran Space Union\",\"color\":\"dark_blue\"},{\"text\":\" proud!\\\\n\\\\nOver and out!\",\"color\":\"reset\"}]'],title:\"Mission Briefing\",author:\"Terran Space Union\",display:{Lore:[\"Mission briefing from the Terran Space Union to all new recruits and fresh clones\"]}}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:bow"
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 10.0,
+								"max": 20.0,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"name": "minecraft:arrow"
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:flint_and_steel"
+				}
+			]
+		},
+		{
+			"rolls": 3,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1.0,
+								"max": 2.0,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"name": "minecraft:apple"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1.0,
+								"max": 2.0,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"name": "minecraft:bread"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1.0,
+								"max": 2.0,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"name": "minecraft:salmon"
+				}
+			]
+		},
+		{
+			"rolls": 4,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1.0,
+								"max": 12.0,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"name": "minecraft:stick"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1.0,
+								"max": 12.0,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"name": "minecraft:oak_planks"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1.0,
+								"max": 3.0,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"name": "minecraft:oak_log"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1.0,
+								"max": 3.0,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"name": "minecraft:spruce_log"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1.0,
+								"max": 3.0,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"name": "minecraft:birch_log"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1.0,
+								"max": 3.0,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"name": "minecraft:jungle_log"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1.0,
+								"max": 3.0,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"name": "minecraft:acacia_log"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1.0,
+								"max": 3.0,
+								"type": "minecraft:uniform"
+							}
+						}
+					],
+					"name": "minecraft:dark_oak_log"
+				}
+			]
+		}
+	]
+}

@@ -21,6 +21,13 @@ def main():
 	remakeDir(str(this_dir) + os.sep + 'distributables')
 	import lang_convert
 	lang_convert.main()
+	
+	print('\nBuilding data pack at...\n')
+	datapack_src = path.join(this_dir, 'datapack')
+	zip_file = path.join(this_dir, 'distributables', 'StarTracks_datapack.zip')
+	zipFiles(datapack_src, listFiles(datapack_src), zip_file, zipfile.ZIP_STORED)
+	hashFile(zip_file)
+	
 	for res in tex_resolutions:
 		# setup build dir
 		src = 'x'+str(res)
@@ -41,28 +48,26 @@ def main():
 		the_files = listFiles(build_dir)
 		zipFiles(build_dir, the_files, zip_file, zipfile.ZIP_STORED)
 		# calculate sha1 hash for servers
-		print('Hashing ',zip_file,' with SHA1...')
-		hasher = hashlib.sha1()
-		with open(zip_file, 'rb') as f:
-			while True:
-				data = f.read(4096)
-				if not data:
-					break
-				hasher.update(data)
-		sha1_hash = hasher.hexdigest()
-		print('...done. Hash = ',sha1_hash)
-		fout = open(zip_file+'_sha1.txt','w')
-		fout.write(sha1_hash)
-		fout.close()
+		hashFile(zip_file)
 		# done
 		print('\n...done building texture pack',src)
 
-#	world_dir = str(this_dir) + os.sep + "world"
-#	world_zip = str(this_dir) + os.sep + "distributables" + os.sep + "world.zip"
-#	print('Building world data...')
-#	zipFiles(world_dir, listFiles(world_dir), world_zip, zipfile.ZIP_DEFLATED)
-
 	print('...done!')
+
+def hashFile(fpath):
+	print('Hashing ',fpath,' with SHA1...')
+	hasher = hashlib.sha1()
+	with open(fpath, 'rb') as f:
+		while True:
+			data = f.read(4096)
+			if not data:
+				break
+			hasher.update(data)
+	sha1_hash = hasher.hexdigest()
+	print('...done. Hash = ',sha1_hash)
+	fout = open(fpath+'_sha1.txt','w')
+	fout.write(sha1_hash)
+	fout.close()
 
 def zipFiles(source_root, file_list, dest_file, compression):
 	# note: Minecraft is bad at handling compressed zip files

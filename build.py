@@ -31,11 +31,12 @@ def main():
 	
 	thread_list = []
 	for res in tex_resolutions:
-		#buildTexPack(res)
-		t = threading.Thread(target=buildTexPack, args=(res,))
-		thread_list.append(t)
-		t.start()
-	t.join()
+		buildTexPack(res)
+		#t = threading.Thread(target=buildTexPack, args=(res,))
+		#thread_list.append(t)
+		#t.start()
+	for t in thread_list:
+		t.join()
 
 	print('...done!')
 def buildTexPack(res):

@@ -29,14 +29,17 @@ def main():
 	zipFiles(datapack_src, listFiles(datapack_src), zip_file, zipfile.ZIP_STORED)
 	hashFile(zip_file)
 	
-	thread_list = []
-	for res in tex_resolutions:
-		buildTexPack(res)
-		#t = threading.Thread(target=buildTexPack, args=(res,))
-		#thread_list.append(t)
-		#t.start()
-	for t in thread_list:
-		t.join()
+	if '-p' in sys.argv or '--parallel' in sys.argv:
+		thread_list = []
+		for res in tex_resolutions:
+			t = threading.Thread(target=buildTexPack, args=(res,))
+			thread_list.append(t)
+			t.start()
+		for t in thread_list:
+			t.join()
+	else:
+		for res in tex_resolutions:
+			buildTexPack(res)
 
 	print('...done!')
 def buildTexPack(res):

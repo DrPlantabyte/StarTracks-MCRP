@@ -170,6 +170,8 @@ def change(key, val):
 	text = text.replace('Charcoal','Fuel Cell')
 	text = text.replace('Block of Coal','Nuclear Reactor')
 	text = text.replace('Coal','Thorium')
+	if val == 'Nether Brick':
+		text = 'Durasteel Ingot'
 	text = re.sub('Nether Bricks*','Durasteel',text)
 	text = text.replace('Red Durasteel','Durasteel Conduit')
 	text = text.replace('Popped Chorus Fruit','Astrosteel Ingot')

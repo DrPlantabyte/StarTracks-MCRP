@@ -5,6 +5,7 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="16"
@@ -15,7 +16,31 @@
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
    sodipodi:docname="feather.svg">
   <defs
-     id="defs866" />
+     id="defs866">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient842">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1"
+         offset="0"
+         id="stop838" />
+      <stop
+         style="stop-color:#00ffff;stop-opacity:1"
+         offset="1"
+         id="stop840" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient842"
+       id="radialGradient844"
+       cx="2.1166666"
+       cy="294.88333"
+       fx="2.1166666"
+       fy="294.88333"
+       r="1.0914062"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.84848484,0,0,0.84848484,0.18310022,45.066702)" />
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -23,14 +48,14 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="7.919596"
-     inkscape:cx="-24.566578"
-     inkscape:cy="16.880201"
+     inkscape:zoom="1.979899"
+     inkscape:cx="-114.04746"
+     inkscape:cy="-2.7937634"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="true"
      units="px"
-     inkscape:snap-bbox="true"
+     inkscape:snap-bbox="false"
      inkscape:snap-nodes="true"
      inkscape:bbox-nodes="true"
      inkscape:window-width="1680"
@@ -39,7 +64,9 @@
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:document-rotation="0"
-     inkscape:snap-global="false">
+     inkscape:snap-global="false"
+     inkscape:snap-bbox-midpoints="false"
+     inkscape:snap-smooth-nodes="true">
     <inkscape:grid
        type="xygrid"
        id="grid1417"
@@ -53,7 +80,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -62,25 +89,11 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-292.76665)">
-    <path
-       style="fill:#fefefe;fill-opacity:1;stroke:#007b7b;stroke-width:0.0661458;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 1.9867374,293.44229 -0.79375,1.5875 0.79375,0.26458 z"
-       id="path856" />
-    <path
-       style="fill:#00fefe;fill-opacity:1;stroke:#007b7b;stroke-width:0.0661458;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 1.9867373,295.29436 0.79375,-0.26458 -0.79375,-1.5875 z"
-       id="path858" />
-    <path
-       style="fill:#00fefe;fill-opacity:1;stroke:#007b7b;stroke-width:0.0661458;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 1.9867373,295.29436 -0.79375,-0.26458 0.79375,1.05833 z"
-       id="path860" />
-    <path
-       style="fill:#00aefe;fill-opacity:1;stroke:#007b7b;stroke-width:0.0661458;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 1.9867373,295.29436 v 0.79375 l 0.79375,-1.05833 z"
-       id="path862" />
-    <path
-       style="fill:none;fill-opacity:1;stroke:#007b7b;stroke-width:0.132292;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 1.9867373,293.44228 -0.79375,1.5875 0.79375,1.05833 0.79375,-1.05833 z"
-       id="path864" />
+    <circle
+       style="fill:url(#radialGradient844);fill-opacity:1;stroke:#006464;stroke-width:0.0661458;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path836"
+       cx="1.9790597"
+       cy="295.27072"
+       r="0.89797974" />
   </g>
 </svg>

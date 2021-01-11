@@ -87,7 +87,11 @@ def change(key, val):
 	text = text.replace('Dolphin','Aquarian')
 	text = text.replace('Glistering','Sparkling')
 	text = text.replace('Bat','Squeaker')
-	text = text.replace('Bee','Mega-Bee').replace('bee','mega-bee')
+	if re.search('[Bb]ee',val) != None and 'advancements' not in key:
+		# bees
+		re.search('[Bb]een|[Bb]eet|[Bb]eef',val) == None: 
+			# but not beef or beet or been
+			text = text.replace('Bee','Mega-Bee').replace('bee','mega-bee')
 	text = text.replace('Spider','Spyder')
 	text = text.replace('Silverfish','Sliverfish')
 	text = text.replace('Horse','Cosmo-Horse')

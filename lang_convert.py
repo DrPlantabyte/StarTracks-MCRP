@@ -87,6 +87,7 @@ def change(key, val):
 	text = text.replace('Dolphin','Aquarian')
 	text = text.replace('Glistering','Sparkling')
 	text = text.replace('Bat','Squeaker')
+	text = text.replace('Bee','Mega-Bee').replace('bee','mega-bee')
 	text = text.replace('Spider','Spyder')
 	text = text.replace('Silverfish','Sliverfish')
 	text = text.replace('Horse','Cosmo-Horse')

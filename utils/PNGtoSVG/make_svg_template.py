@@ -7,6 +7,7 @@ def main():
 	parser = argparse.ArgumentParser()
 	parser.add_argument("source", help="Image file or directory to convert to SVG")
 	parser.add_argument("destination", help="Output image file or directory (if source is a directory, then this must also be a directory, and vice versa)")
+	parser.add_argument('-f','--overwrite', help='Overwrite existing files', dest='overwrite', action='store_true', default=False)
 	args = parser.parse_args()
 	#print(args.source, args.destination)
 	if not path.exists(args.source):
@@ -27,14 +28,21 @@ def main():
 					subpath = path.relpath(src_file, src_root)
 					svg_fpath = re.sub('%s$' % ftype, 'svg', str(subpath))
 					dst_file = path.join(dest_root, svg_fpath)
-					dst_parent = path.dirname(dst_file)
-					if not path.isdir(dst_parent):
-						os.makedirs(dst_parent)
-					img_to_SVG(src_file, dst_file)
+					if args.overwrite or not path.exists(dst_file):
+						dst_parent = path.dirname(dst_file)
+						if not path.isdir(dst_parent):
+							os.makedirs(dst_parent)
+						img_to_SVG(src_file, dst_file)
+					elif path.exists(dst_file):
+						_print('Skipping existing file %s' % dst_file)
 	else:
 		# non-recursive, single file
 		src = args.source
 		dst = args.destination
+		if not str(dst).lower().endswith('.svg'):
+			dst = str(dst) + '.svg'
+		if path.exists(dst) and not args.overwrite:
+			fail('Destination file %s already exists. Use -f or --overwrite option to overwrite existing file' % dst)
 		img_to_SVG(src, dst)
 	pass
 
@@ -46,8 +54,6 @@ def file_suffix(fpath):
 		return None
 
 def img_to_SVG(src_path, dst_path):
-	if not str(dst_path).lower().endswith('.svg'):
-			dst_path = str(dst_path) + '.svg'
 	_print('%s\n\t-> %s' % (src_path, dst_path))
 	content = make_SVG(src_path)
 	with open(dst_path, 'w') as fout:

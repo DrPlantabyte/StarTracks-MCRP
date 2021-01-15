@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-import os, argparse, sys, base64
+import os, argparse, sys, base64, re
 from os import path
 from PIL import Image
 
@@ -16,25 +16,45 @@ def main():
 			fail('Source and destination must both be files or both be directories')
 	if path.isdir(args.source):
 		# recursive, directory scan
-		# TODO
-		fail('not implemented yet')
+		src_root = args.source
+		dest_root = args.destination
+		for parent_dir, dirs, files in os.walk(args.source):
+			for fpath in files:
+				ftype = file_suffix(fpath).lower()
+				if ftype in ['png','jpg','jpeg']:
+					# supported image type
+					src_file = path.join(parent_dir, fpath)
+					subpath = path.relpath(src_file, src_root)
+					svg_fpath = re.sub('%s$' % ftype, 'svg', str(subpath))
+					dst_file = path.join(dest_root, svg_fpath)
+					dst_parent = path.dirname(dst_file)
+					if not path.isdir(dst_parent):
+						os.makedirs(dst_parent)
+					img_to_SVG(src_file, dst_file)
 	else:
 		# non-recursive, single file
 		src = args.source
 		dst = args.destination
-		if not str(dst).lower().endswith('.svg'):
-			dst = str(dst) + '.svg'
 		img_to_SVG(src, dst)
 	pass
 
+def file_suffix(fpath):
+	s = str(fpath)
+	if '.' in s:
+		return s[s.rfind('.')+1:]
+	else:
+		return None
+
 def img_to_SVG(src_path, dst_path):
-	_print(src_path, '->', dst_path)
+	if not str(dst_path).lower().endswith('.svg'):
+			dst_path = str(dst_path) + '.svg'
+	_print('%s\n\t-> %s' % (src_path, dst_path))
 	content = make_SVG(src_path)
 	with open(dst_path, 'w') as fout:
 		fout.write(content)
 
 def make_SVG(image_filepath):
-	img_type = (str(image_filepath)[str(image_filepath).rfind('.')+1:]).lower()
+	img_type = file_suffix(image_filepath).lower()
 	if img_type == 'jpeg':
 		img_type = 'jpg'
 	if not (img_type == 'jpg' or img_type == 'png'):
@@ -42,10 +62,10 @@ def make_SVG(image_filepath):
 	with Image.open(image_filepath) as img:
 		w, h = img.size
 	with open(image_filepath, 'rb') as fin:
-		img_data = bytes2b64(fin.read())
+		img_data = bytes_to_b64(fin.read())
 	return _svg_template().format(img_type=img_type, img_width=w, img_height=h, img_base64=img_data)
 
-def bytes2b64(byte_array):
+def bytes_to_b64(byte_array):
 	# stupid base64 library returns a utf-8 binary string on encode 
 	# instead of returning an encoding-agnostic string object
 	return base64.b64encode(byte_array).decode('utf8')

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="256"
+   height="256"
+   viewBox="0 0 256 256"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="tex-template.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="4.0"
+     inkscape:cx="0.0"
+     inkscape:cy="0.0"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer2"
+     inkscape:document-rotation="0"
+     showgrid="true"
+     units="px"
+     inkscape:window-width="1680"
+     inkscape:window-height="987"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid850"
+       empspacing="8" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ref"
+     inkscape:groupmode="layer"
+     id="layer1"
+     sodipodi:insensitive="true">
+    <image
+       width="256"
+       height="256"
+       preserveAspectRatio="none"
+       style="image-rendering:optimizeSpeed"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAFY0lEQVR42u3dv24aSRwH8CHyA5zyArkqKfIExkWqRErhzm7d+zpLpEkTpUkTSzTR+RFS4M5FpLsqBfgZfBX3Aqd7A8ICu4Y1NomXP7szn4+EEmAzkQZ+350Z2KEVbo0CNEMr/8tgMBg9/fQh/Pf+48p/NH9cu91u6cYQnuTFPxbc3JpwK5+sXvzx96S4y8Vevp8d1+/3VX0pAEazToVGGJ/1F0Lg+rfBpLjLoVC+nx3Hor3yA9fX13qFWut2u+H4+Dj0er1Rcba/ehb65/1wcHAwPejts/D0cG5qMLt/8BNThRSnAIqfxiqf7afv5a8rRwWUAgAaaXx2D2G4dA3gds4/nBxnDUAAEJFise/b4qL+i6t/Fg+cPX/4/S+dJgCIa/g/DDd/vi6FwnA2MpjKn/dJgAAguuF/CFev3hQLgNNQ+D3cHD4vDpsuBi6GAgKAxpvO/Tsv3915PAuF3P7/bV0lAIjNzeGbYiRQDO3nzvLzHwtOj3+u0wQAsbj9CvDwznOdzpc7I4X5qQICgIYrhvbznwJ8+7co+mJUMHv+7lQhbXu6gCbLvt7bPz8f/+3zksfuO86nAAKAaCwb0q96LLuKcH9/f+W3X2O/atAUgLSnEOMQMAKI1NnZWeU2jo6OLBolEAKpXgcT/RQgK+AqOp2Oi6SEgCkAmA4IABACpgAQb9GmNB0wAoCERwICAJY4PT01BYCYi/Xi4uLe9k5OTgQANME6izWl4jcFgISLXwBAwsUvACDh4hcAKP6Ei18AoPgTLv6MTwEabB1XO64S89WQqRe/AIhA1asdV6n71ZB+5tsUADACWH52zM5gQIIBkM1dbeYBpgC14/fpEABCQCcgAOpUbNsuSiGAADAS0AkIgE3KFgTLhbbs/q6+9CIEEABGAjqBrdpLubjyUcH8Wf9XRwHrLtpdjkIwAsBIAAGQRkH96uPbYgSAKcAOCmvZQuGmivW+/0fxYwSQ6DBb8SMAtlz05QVAxY8ASGzov+tiVPwIgESnAoofAVCzIt9WKCh+di2JTwGWFdrPPqb4MQIAjACaZh275sa8Ky5EPwWoumtu3XfFBVMAwAggNXY9RgAkzK7HmAIAAgAQAIAAAAQAIAAAAQAIAEAAAAIABAAgAIC0RH0xkKvlIOEAcLUcmAIAAgAQAIAAAAQACABAAAACABAAgAAABAAgAICYPHgx0Lp+Xvvy8lI72nl0O36efUcBkL8AVWSX42ZvBO1o57HtuKLTFAAQAIAAAAQAIAAAAQAIAEAAAAIAEACAAAAEACAAQADoAhAAQIIe3A9gXT+vrR3tUE+t8W00NrlT3njBjkDaqUM75R2But3u5M9er5e/h9nECCB/Aaqw4412qrZjRyBrAIAAAAQAIAAAAQAIAEAAAAIAEACAAAAEACAAAAEAAkAXgAAAEmRHIO3Uvh02x45A2ql9O3YE2tEIIH8BqrDjjXaqtmNHIGsAgAAABAAgAAABAAgAQAAAAgAQAIAAAAQAIAAAAQACQBeAAAASZEcg7dS+HTbnwR2BoI7sCGQKAAgAQAAAj/LgIqBdgbVTh3bKuwKzpQDIX4Aq7HqrnartWJw2BQAEACAAAAEACABAAAACABAAgAAABAAgAAABAAgAEAC6AAQAkCC7Amun9u2wOXYFpnHsCmwKAAgAQACQ3PCf9cgWAVtjo8FgoHMh0RFAq91u6w0awwLgepQ7cKRLaOh7FwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIvADGH+/EAqxTeYAAAAASUVORK5CYII="
+       id="image846"
+       x="0"
+       y="0" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="BG" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Main" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="FG" />
+</svg>

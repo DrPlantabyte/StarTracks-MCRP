@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="256"
+   height="256"
+   viewBox="0 0 256 256"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="tex-template.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="4.0"
+     inkscape:cx="0.0"
+     inkscape:cy="0.0"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer2"
+     inkscape:document-rotation="0"
+     showgrid="true"
+     units="px"
+     inkscape:window-width="1680"
+     inkscape:window-height="987"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid850"
+       empspacing="8" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ref"
+     inkscape:groupmode="layer"
+     id="layer1"
+     sodipodi:insensitive="true">
+    <image
+       width="256"
+       height="256"
+       preserveAspectRatio="none"
+       style="image-rendering:optimizeSpeed"
+       xlink:href="data:image/png;base64,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"
+       id="image846"
+       x="0"
+       y="0" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="BG" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Main" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="FG" />
+</svg>

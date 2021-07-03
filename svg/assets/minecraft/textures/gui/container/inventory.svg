@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="256"
    height="256"
    viewBox="0 0 256 256"
    version="1.1"
    id="svg8"
-   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
-   sodipodi:docname="inventory.svg">
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="inventory.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs2">
     <linearGradient
@@ -48,8 +48,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2"
-     inkscape:cx="36.83225"
-     inkscape:cy="-15.980283"
+     inkscape:cx="-6.75"
+     inkscape:cy="56.75"
      inkscape:document-units="px"
      inkscape:current-layer="layer3"
      inkscape:document-rotation="0"
@@ -61,10 +61,11 @@
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:snap-global="true"
-     inkscape:snap-bbox="false"
+     inkscape:snap-bbox="true"
      inkscape:bbox-nodes="true"
      inkscape:snap-nodes="true"
-     inkscape:snap-smooth-nodes="true">
+     inkscape:snap-smooth-nodes="true"
+     inkscape:pagecheckerboard="0">
     <inkscape:grid
        type="xygrid"
        id="grid850"
@@ -166,6 +167,11 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="Main">
+    <path
+       id="path1623"
+       style="display:inline;opacity:1;fill:#333333;fill-opacity:1;stroke:none;stroke-width:0.999999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 172,50 c 0,2.21599 -1.78401,4 -4,4 h -68 c -2.21599,0 -4,-1.78401 -4,-4 V 16 h 76 z"
+       sodipodi:nodetypes="ssssccs" />
     <rect
        style="display:inline;opacity:1;fill:#9999ff;fill-opacity:1;stroke:none;stroke-width:0.999999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect1046"
@@ -300,11 +306,11 @@
     <path
        id="path1312"
        style="display:inline;opacity:1;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.999999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 170,8 c 0,-2.21599 -1.78401,-4 -4,-4 H 96 c -2.21599,0 -4,1.78401 -4,4 v 8 h 78 z m -36,10 v 34.000026 h 18 V 18 Z m 20,0 v 8 h 16 v -8 z m 0,28 v 6 h 12 c 2.216,0 4,-1.784025 4,-4 V 46 Z M 92,18 v 30 c 0,2.215975 1.78401,4 4,4 V 18 Z"
-       sodipodi:nodetypes="ssssccsccccccccccccsscccsccc" />
+       d="m 172,8 c 0,-2.21599 -1.78401,-4 -4,-4 h -68 c -2.21599,0 -4,1.78401 -4,4 v 8 h 76 z"
+       sodipodi:nodetypes="ssssccs" />
     <path
-       style="fill:#000000;fill-opacity:0.501961;stroke:none;stroke-width:0.500001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 136,33.000001 v 4.000025 h 7 v 4.999975 l 7,-6.999988 -7,-6 v 3.999988 z"
+       style="fill:#ffffff;fill-opacity:0.501961;stroke:none;stroke-width:0.500001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 136,32.468751 v 4.000025 h 7 v 4.999975 l 7,-6.999988 -7,-6 v 3.999988 z"
        id="path4597"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccccc" />

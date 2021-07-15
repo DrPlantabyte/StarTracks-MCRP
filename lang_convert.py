@@ -70,8 +70,8 @@ def change(key, val):
 	text = text.replace('Potato','Tater')
 	text = text.replace('Carrot','Eyeberry')
 	text = text.replace('Beetroot','Astro-Beet')
-	text = text.replace('Chicken','Star Chicken')
-	text = text.replace('Feather','Star Feather')
+	text = text.replace('Chicken','Sunduck')
+	text = text.replace('Feather','Sundrop')
 	text = text.replace('Sheep','Polysheep')
 	text = text.replace('Wool','Polyfiber')
 	text = text.replace('String','Polymer')
@@ -174,9 +174,9 @@ def change(key, val):
 	text = text.replace('Block of Coal','Nuclear Reactor')
 	text = text.replace('Coal','Thorium')
 	if val == 'Nether Brick':
-		text = 'Durasteel Ingot'
-	text = re.sub('Nether Bricks*','Durasteel',text)
-	text = text.replace('Red Durasteel','Durasteel Conduit')
+		text = 'Nethersteel Ingot'
+	text = re.sub('Nether Bricks*','Nethersteel',text)
+	text = text.replace('Red Nethersteel','Nethersteel Conduit')
 	text = text.replace('Popped Chorus Fruit','Astrosteel Ingot')
 	text = text.replace('Chorus ','Mecha-')
 	text = text.replace('Purpur', 'Astrosteel')

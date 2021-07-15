@@ -240,36 +240,6 @@
     [
 	"mob/blaze/hit"
     ]
-  },
- "entity.chicken.ambient":
-  {
-   "replace": true,
-   "sounds":
-    [
-	"mob/chicken/say1",
-	"mob/chicken/say2",
-	"mob/chicken/say3",
-	"mob/chicken/say4",
-	"mob/chicken/say5"
-    ]
-  },
- "entity.chicken.hurt":
-  {
-   "replace": true,
-   "sounds":
-    [
-	"mob/chicken/hurt1",
-	"mob/chicken/hurt2"
-    ]
-  },
- "entity.chicken.death":
-  {
-   "replace": true,
-   "sounds":
-    [
-	"mob/chicken/hurt1",
-	"mob/chicken/hurt2"
-    ]
   }
   
 }

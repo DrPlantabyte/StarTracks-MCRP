@@ -24,11 +24,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="4"
-     inkscape:cx="125.875"
-     inkscape:cy="70.875"
+     inkscape:zoom="1"
+     inkscape:cx="-82.5"
+     inkscape:cy="167.5"
      inkscape:document-units="px"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer3"
      inkscape:document-rotation="0"
      showgrid="true"
      units="px"
@@ -146,7 +146,7 @@
        d="M 72,33 H 60 c -2.215975,0 -4,-1.784026 -4,-4 v -8 c 0,-2.21601 1.784025,-4 4,-4 h 8 c 2.215974,0 4,1.78399 4,4 v 4 z"
        sodipodi:nodetypes="csssssscc" />
     <path
-       style="display:inline;fill:#cc99cc;fill-opacity:1;stroke:none;stroke-width:0.999999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="display:inline;fill:#cc9900;fill-opacity:1;stroke:none;stroke-width:0.999999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="m 78,41 h -4 v 6 c 0,3 1,4 4,4 z"
        id="path1296"
        sodipodi:nodetypes="ccccc" />
@@ -157,12 +157,12 @@
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="sssssssss" />
     <path
-       style="display:inline;fill:#cc99cc;fill-opacity:1;stroke:none;stroke-width:0.999999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="display:inline;fill:#cc9900;fill-opacity:1;stroke:none;stroke-width:0.999999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="m 110,47 v 4 h -6 v -4 z"
        id="path2988"
        sodipodi:nodetypes="ccccc" />
     <path
-       style="display:inline;fill:#cc99cc;fill-opacity:1;stroke:none;stroke-width:0.999999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="display:inline;fill:#cc9900;fill-opacity:1;stroke:none;stroke-width:0.999999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="m 74,39 h 4 v -6 c 0,-3 -1,-4 -4,-4 z"
        id="path3568"
        sodipodi:nodetypes="ccccc" />

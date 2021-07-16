@@ -2,7 +2,7 @@
     "parent": "block/orientable",
     "textures": {
         "front": "block/blast_furnace_front",
-        "top": "startracks:block/machine_top",
-        "side": "startracks:block/machine_side"
+        "top": "startracks:block/heavy_machine_bottom",
+        "side": "startracks:block/heavy_machine_side"
     }
 }

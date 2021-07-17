@@ -1,12 +1,12 @@
 {
     "parent": "block/cube",
     "textures": {
-        "particle": "startracks:block/machine_top",
-        "down": "startracks:block/machine_top",
+        "particle": "startracks:block/light_machine_bottom",
+        "down": "startracks:block/light_machine_bottom",
         "up": "block/fletching_table_top",
-        "north": "startracks:block/machine_side",
-        "east": "startracks:block/machine_side",
-        "south": "startracks:block/machine_side",
-        "west": "startracks:block/machine_side"
+        "north": "startracks:block/light_machine_side",
+        "east": "startracks:block/light_machine_side",
+        "south": "startracks:block/light_machine_side",
+        "west": "startracks:block/light_machine_side"
     }
 }

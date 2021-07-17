@@ -9,7 +9,7 @@ import time
 
 this_dir = os.path.dirname(os.path.realpath(__file__))
 
-name = 'MC16'
+name = 'MC17'
 
 def inkscape(*args):
 	pass #platform specific definition

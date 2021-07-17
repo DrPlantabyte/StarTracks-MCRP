@@ -2,21 +2,21 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="16px"
    height="16px"
    viewBox="0 0 16px 16px"
    version="1.1"
    id="svgMain"
-   inkscape:version="0.92.4 (unknown)"
-   sodipodi:docname="cartography_table_top.svg">
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="cartography_table_top.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs4542">
     <inkscape:perspective
@@ -26,6 +26,32 @@
        inkscape:vp_z="16 : 8 : 1"
        inkscape:persp3d-origin="8 : 5.3333333 : 1"
        id="perspective1022" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient888"
+       id="linearGradient1016"
+       gradientUnits="userSpaceOnUse"
+       x1="0"
+       y1="0"
+       x2="8"
+       y2="8"
+       gradientTransform="matrix(0.96873265,0,0,0.93746524,0.25013901,8.250139)" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient888">
+      <stop
+         style="stop-color:#e2d0bc;stop-opacity:1"
+         offset="0"
+         id="stop884" />
+      <stop
+         id="stop1018"
+         offset="0.34999999"
+         style="stop-color:#efefef;stop-opacity:1" />
+      <stop
+         style="stop-color:#e2d0bc;stop-opacity:1"
+         offset="1"
+         id="stop886" />
+    </linearGradient>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -34,19 +60,23 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2"
-     inkscape:cx="5.3745706"
-     inkscape:cy="4.9532366"
+     inkscape:zoom="11.313709"
+     inkscape:cx="5.2591067"
+     inkscape:cy="1.016466"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      showgrid="true"
      units="px"
-     inkscape:window-width="1920"
-     inkscape:window-height="1024"
-     inkscape:window-x="0"
-     inkscape:window-y="30"
+     inkscape:window-width="1680"
+     inkscape:window-height="987"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:snap-global="false">
+     inkscape:snap-global="true"
+     inkscape:pagecheckerboard="0"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-nodes="false">
     <inkscape:grid
        type="xygrid"
        id="grid1782"
@@ -60,7 +90,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -296,6 +326,12 @@
        d="M 13.78125,5.789943 H 12.328125"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#2458e9;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        sodipodi:nodetypes="cc" />
+    <path
+       style="fill:url(#linearGradient1016);fill-opacity:1;stroke:#685f56;stroke-width:0.500278;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       d="M 0.25013902,8.250139 V 15.74986 H 15.74986 V 8.250139 Z"
+       id="path874"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
   </g>
   <g
      inkscape:groupmode="layer"

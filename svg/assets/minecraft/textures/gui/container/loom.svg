@@ -24,11 +24,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="4"
-     inkscape:cx="111.875"
-     inkscape:cy="69.625"
+     inkscape:zoom="16"
+     inkscape:cx="145.84375"
+     inkscape:cy="68.03125"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer3"
      inkscape:document-rotation="0"
      showgrid="true"
      units="px"
@@ -165,7 +165,7 @@
        sodipodi:nodetypes="sssssssss" />
     <path
        style="display:inline;fill:#cc99cc;fill-opacity:1;stroke:none;stroke-width:0.999999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 147,57 h 8.00004 c 2.21599,0 3.99998,1.78399 3.99998,3.999976 v 8.000043 c 0,2.215986 -1.78399,3.999976 -3.99998,3.999976 H 147 c -2.21599,0 -3.99998,-1.78399 -3.99998,-3.999976 V 60.999976 C 143.00002,58.78399 144.78401,57 147,57 Z"
+       d="m 147,58 h 8.00004 c 2.21599,0 3.99998,1.78399 3.99998,3.999976 v 8.000043 c 0,2.215986 -1.78399,3.999976 -3.99998,3.999976 H 147 c -2.21599,0 -3.99998,-1.78399 -3.99998,-3.999976 V 61.999976 C 143.00002,59.78399 144.78401,58 147,58 Z"
        id="path1151-5"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="sssssssss" />

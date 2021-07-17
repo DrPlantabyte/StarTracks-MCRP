@@ -3,7 +3,7 @@
         "particle": "block/stonecutter_bottom",
         "bottom": "startracks:block/heavy_machine_bottom",
         "top": "block/stonecutter_top",
-        "side": "startracks:block/heavy_machine_side"
+        "side": "startracks:block/heavy_machine_side",
         "saw": "block/stonecutter_saw"
     },
     "elements": [

@@ -161,14 +161,17 @@ def alreadyExists(src_filepath, dst_filepath):
 		return (dst_time > src_time)
 	return False
 def convertSVG(src_filepath, dst_filepath, mc_resolution):
+	if "gui" in str(dst_filepath):
+		# fixed resolution for GUI textures
+		mc_resolution = 64
 	source_dpi = 96
 	scaler = mc_resolution / 16
 	dpi = source_dpi * scaler
 	makeParentDir(dst_filepath)
 	print('Rendering', str(path.relpath(src_filepath,'.')), 'to', str(path.relpath(dst_filepath,'.')))
 	p_status = config.inkscape(str(src_filepath),'--export-type=png','--export-filename', str(dst_filepath), '--export-area-page', '--export-dpi', str(dpi))
-	if( "blocks" not in str(dst_filepath) ):
-		# remove transparency, unless it is a block texture
+	if( "stained_glass" not in str(dst_filepath) and  "tinted_glass" not in str(dst_filepath) ):
+		# remove transparency, unless it is a tinted glass block texture
 		p_status = config.convert(str(dst_filepath), '-channel', 'alpha', '-threshold', '50%', str(dst_filepath))
 
 #

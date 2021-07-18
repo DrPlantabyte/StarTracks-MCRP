@@ -66,7 +66,21 @@ elif platform == 'win32' or platform == 'win64':
 	inkscape_path = 'C:\\Program Files\\Inkscape\\bin\\inkscape.com'
 	imagemagick_path = glob.glob('C:\\Program Files\\ImageMagick-*\\magick.exe')[0]
 	def _inkscape(*args):
-		p_status = subprocess.call([inkscape_path]+list(args))
+		retry_limit = 3
+		retry_count = 0
+		while True:
+			try:
+				pope = subprocess.Popen([inkscape_path]+list(args))
+				pope.wait((retry_count+1) * 30) # restart if it's taking too long (occasional windows inkscape bug)
+				break
+			except subprocess.TimeoutExpired:
+				print('Inkscape process has stalled. Restarting...')
+				pope.terminate()
+			retry_count += 1
+			if retry_count > retry_limit:
+				print('Restart limit exceeded! Abort!')
+				exit(1)
+		p_status = pope.returncode
 		if(p_status != 0):
 			print('warning, Inkscape process returned exit code',p_status)
 		return p_status

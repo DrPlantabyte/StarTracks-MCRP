@@ -30,4 +30,5 @@ scoreboard players add @a[nbt={Inventory:[{Slot:100b,Count:1b,id:"minecraft:neth
 
 execute as @a if score @s spacesuit_score matches 4 run effect give @s minecraft:water_breathing 1 1 true
 
-execute as @a[nbt=!{Dimension:"minecraft:overworld"}] if score @s spacesuit_score matches 0..3 run effect give @s minecraft:wither 1 1
+# requiring a spacesuit to survive in the nether and the end was too cruel
+#execute as @a[nbt=!{Dimension:"minecraft:overworld"}] if score @s spacesuit_score matches 0..3 run effect give @s minecraft:wither 1 1

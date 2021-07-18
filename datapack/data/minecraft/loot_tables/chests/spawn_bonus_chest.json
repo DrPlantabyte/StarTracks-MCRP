@@ -82,7 +82,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:written_book",
-					"__comment__:"Note: you need to triple-escape new-line characters (\\\\n) in the tag text and semi-conons need to be double-escaped (\\')",
+					"__comment__":"Note: you need to triple-escape new-line characters (\\\\n) in the tag text and semi-conons need to be double-escaped (\\')",
 					"functions": [
 						{
 							"function": "set_nbt",

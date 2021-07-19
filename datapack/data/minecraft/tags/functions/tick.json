@@ -1,5 +1,6 @@
 {
 	"values":[
-		"startracks:spacesuits/loop"
+		"startracks:spacesuits/loop",
+		"startracks:missions/loop"
 	]
 }

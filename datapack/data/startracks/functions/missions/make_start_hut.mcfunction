@@ -54,7 +54,7 @@ fill ~-6 ~2 ~-3 ~6 ~2 ~-3 minecraft:red_nether_bricks
 fill ~-6 ~ ~3 ~6 ~ ~3 minecraft:blue_concrete
 fill ~-6 ~1 ~3 ~6 ~1 ~3 minecraft:yellow_concrete
 fill ~-6 ~2 ~3 ~6 ~2 ~3 minecraft:red_nether_bricks
-fill ~-5 ~ ~-5 ~5 ~1 ~-5 minecraft:air
+fill ~-5 ~ ~-6 ~5 ~1 ~-6 minecraft:air
 fill ~-5 ~ ~5 ~5 ~1 ~5 minecraft:air
 fill ~5 ~ ~-5 ~5 ~1 ~5 minecraft:air
 
@@ -80,7 +80,32 @@ setblock ~2 ~ ~1 minecraft:barrel[facing=up]
 ## cloning room
 
 ## teleport room
-setblock ~4 ~1 ~-4 minecraft:acacia_wall_sign[facing=east]{Text2:'{"text":"Teleport","color":"black"}', Text3:'{"text":"Room","color":"black"}'}
+setblock ~4 ~1 ~-5 minecraft:acacia_wall_sign[facing=east]{Text2:'{"text":"Teleport","color":"black"}', Text3:'{"text":"Room","color":"black"}'}
+fill ~2 ~ ~-5 ~-6 ~2 ~-5 minecraft:air
+fill ~2 ~ ~-4 ~-6 ~1 ~-4 minecraft:nether_bricks
+fill ~2 ~2 ~-4 ~-6 ~2 ~-4 minecraft:red_nether_bricks
+summon minecraft:painting ~1 ~1 ~-6 {Motive:"minecraft:bust", Facing:0}
+
+setblock ~1 ~1 ~-4 minecraft:birch_wall_sign[facing=north]{Text2:'{"text":"Sector 1","color":"black"}'}
+setblock ~1 ~-1 ~-4 minecraft:command_block[facing=up]{auto:0b,powered:0b,Command:"spreadplayers -724 -724 8 64 false @p[distance=0..1]"}
+setblock ~1 ~ ~-4 minecraft:polished_blackstone_pressure_plate
+setblock ~1 ~-1 ~-5 minecraft:red_concrete
+
+setblock ~-1 ~1 ~-4 minecraft:birch_wall_sign[facing=north]{Text2:'{"text":"Sector 2","color":"black"}'}
+setblock ~-1 ~-1 ~-4 minecraft:command_block[facing=up]{auto:0b,powered:0b,Command:"spreadplayers 724 -724 8 64 false @p[distance=0..1]"}
+setblock ~-1 ~ ~-4 minecraft:polished_blackstone_pressure_plate
+setblock ~-1 ~-1 ~-5 minecraft:red_concrete
+
+setblock ~-3 ~1 ~-4 minecraft:birch_wall_sign[facing=north]{Text2:'{"text":"Sector 3","color":"black"}'}
+setblock ~-3 ~-1 ~-4 minecraft:command_block[facing=up]{auto:0b,powered:0b,Command:"spreadplayers 724 724 8 64 false @p[distance=0..1]"}
+setblock ~-3 ~ ~-4 minecraft:polished_blackstone_pressure_plate
+setblock ~-3 ~-1 ~-5 minecraft:red_concrete
+
+setblock ~-5 ~1 ~-4 minecraft:birch_wall_sign[facing=north]{Text2:'{"text":"Sector 4","color":"black"}'}
+setblock ~-5 ~-1 ~-4 minecraft:command_block[facing=up]{auto:0b,powered:0b,Command:"spreadplayers -724 724 8 64 false @p[distance=0..1]"}
+setblock ~-5 ~ ~-4 minecraft:polished_blackstone_pressure_plate
+setblock ~-5 ~-1 ~-5 minecraft:red_concrete
+
 # command blocks
 setblock ~ ~-1 ~ minecraft:repeating_command_block[facing=up]{auto:1b,powered:0b,Command:"gamemode adventure @a[distance=0..12]"}
 setblock ~ ~-2 ~ minecraft:repeating_command_block[facing=up]{auto:1b,powered:0b,Command:"gamemode survival @a[distance=13..16]"}

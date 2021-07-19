@@ -234,3 +234,9 @@ class Pos:
 		for i in range(0, len(cp)):
 			cp[i] = NumVal(cp[i]).block_pos()
 		return cp
+class Item:
+	def __init__(self, id: str, count: int):
+		self.id=id
+		self.quantity=count
+	def __str__(self):
+		return '%s %s' % (self.id, self.quantity)

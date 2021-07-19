@@ -1,0 +1,1 @@
+tellraw @s [{"text":"[Commander Steve] ","color":"blue"},{"text":"Their dark-photon technology allows them to teleport their cybernetic monsters to any dark shadow. Be careful and place lights everywhere!","color":"white"}]

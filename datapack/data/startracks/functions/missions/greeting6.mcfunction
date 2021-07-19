@@ -1,0 +1,1 @@
+tellraw @s [{"text":"[Commander Steve] ","color":"blue"},{"text":"Now go out there and show them that the might of the Terran Space Union! Over and out.","color":"white"}]

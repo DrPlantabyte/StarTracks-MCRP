@@ -1,8 +1,9 @@
 # setup function
 ## first, use marker block to track first load
+gamerule commandBlockOutput false
 forceload add 0 0 15 15
-execute if block 1 1 1 minecraft:netherite_block as @r run function startracks:missions/make_start_hut 
-## make spawn base
+execute unless block 1 1 1 minecraft:netherite_block run schedule function startracks:missions/first_load 1t
 ## finally, place marker block
-fill 0 0 0 2 2 2 minecraft:bedrock
+### reserving loaded space for mission machines
+execute unless block 1 1 1 minecraft:netherite_block run fill 0 0 0 15 15 15 minecraft:bedrock
 setblock 1 1 1 minecraft:netherite_block

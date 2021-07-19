@@ -59,6 +59,7 @@ fill ~5 ~ ~-5 ~5 ~1 ~5 minecraft:air replace
 fill ~-7 ~5 ~-7 ~7 ~5 ~7 minecraft:purpur_slab[type=bottom]
 fill ~ ~5 ~ ~ ~8 ~ minecraft:lightning_rod
 # internal stuff
+## start room
 fill ~-3 ~ ~-2 ~-3 ~3 ~2 minecraft:sea_lantern
 summon minecraft:painting ~-2 ~2 ~2 {Motive:"minecraft:sunset", Facing:3}
 summon minecraft:painting ~-2 ~1 ~2 {Motive:"minecraft:aztec", Facing:3}
@@ -74,6 +75,8 @@ setblock ~1 ~ ~-2 minecraft:light_blue_bed[facing=east,part=foot] replace
 setblock ~ ~ ~2 minecraft:chest[facing=north]{LootTable:"minecraft:chests/spawn_bonus_chest"}
 setblock ~2 ~ ~2 minecraft:barrel[facing=up]
 setblock ~2 ~ ~1 minecraft:barrel[facing=up]
+## teleport room
+setblock ~4 ~1 ~-4 minecraft:acacia_wall_sign[facing=east]{Text2:'{"text":"Teleport","color":"black"}', Text3:'{"text":"Room","color":"black"}'}
 # command blocks
 setblock ~ ~-1 ~ minecraft:repeating_command_block[facing=up]{auto:1b,powered:0b,Command:"gamemode adventure @a[distance=0..12]"} replace
 setblock ~ ~-2 ~ minecraft:repeating_command_block[facing=up]{auto:1b,powered:0b,Command:"gamemode survival @a[distance=13..16]"} replace

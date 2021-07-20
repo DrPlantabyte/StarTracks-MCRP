@@ -1,0 +1,17 @@
+minecraft.killed:minecraft.ender_dragon
+minecraft.killed:minecraft.elder_guardian
+minecraft.killed:minecraft.wither
+minecraft.killed:minecraft.evoker
+minecraft.killed:minecraft.enderman
+minecraft.picked_up:minecraft.diamond
+minecraft.picked_up:minecraft.ender_eye
+minecraft.custom:minecraft.animals_bred
+minecraft.custom:minecraft.horse_one_cm
+minecraft.custom:minecraft.traded_with_villager
+minecraft.custom:minecraft.talked_to_villager
+minecraft.custom:minecraft.swim_one_cm
+minecraft.custom:minecraft.minecart_one_cm
+minecraft.custom:minecraft.fish_caught
+minecraft.custom:minecraft.enchant_item
+minecraft.custom:minecraft.interact_with_brewingstand
+minecraft.picked_up:minecraft.wither_skeleton_skull

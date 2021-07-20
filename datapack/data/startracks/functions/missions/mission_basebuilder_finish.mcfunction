@@ -8,3 +8,4 @@ give @a minecraft:blue_carpet 64
 give @a minecraft:yellow_carpet 64
 give @a minecraft:glass 64
 give @a minecraft:iron_door 4
+function startracks:missions/mission_greenthumb_setup

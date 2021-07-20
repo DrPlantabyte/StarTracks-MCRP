@@ -13,7 +13,10 @@ def make_mission(
 		objective_scoreboard_display_name: str,
 		objective_scoreboard_value,
 		debriefing: str,
-		reward_items: list[Item]
+		reward_items: list[Item],
+		next_mission=None,
+		reset_trigger_score=False,
+		reset_objective_score=False
 ):
 	fullname = mission_name
 	mission_name = safename(mission_name)
@@ -36,6 +39,8 @@ def make_mission(
 		setup.write('forceload add %s %s\n' % (xz_pos, xz_pos))
 		setup.write('setblock %s minecraft:repeating_command_block[facing=up]{auto:1b,powered:0b,Command:"function startracks:missions/mission_%s_trigger"}\n' % (machine_pos, mission_name))
 		setup.write('scoreboard objectives add %s %s\n' % (tscore_name, trigger_scoreboard_type))
+		if reset_trigger_score:
+			setup.write('scoreboard players set @a %s 0\n' % tscore_name)
 
 		trigger.write('execute as @a if score @s %s matches %s run function startracks:missions/mission_%s_start\n' % (tscore_name, trigger_scoreboard_value, mission_name))
 
@@ -45,7 +50,10 @@ def make_mission(
 			machine_pos2, mission_name))
 		start.write('tellraw @a ["",{"text":"[Commander Steve] ","color":"blue"},{"text":"%s","color":"white"}]\n' % briefing)
 		start.write('scoreboard objectives add %s %s "%s"\n' % (oscore_name, objective_scoreboard_type, objective_scoreboard_display_name))
-		#start.write('scoreboard players set @a %s 0\n' % oscore_name)
+		if reset_objective_score:
+			start.write('scoreboard players set @a %s 0\n' % oscore_name)
+		start.write('''give @a written_book{pages:['{"text":"%s"}'],title:"%s",author:"Commander Steve",display:{Lore:["Mission Briefing"]}}'''
+					% (briefing.replace('"', "'").replace("'","\\'"), fullname))
 
 		loop.write('execute as @a if score @s %s matches %s run function startracks:missions/mission_%s_finish\n' % (oscore_name, objective_scoreboard_value, mission_name))
 
@@ -55,14 +63,17 @@ def make_mission(
 		finish.write('tellraw @a ["",{"text":"[Commander Steve] ","color":"blue"},{"text":"%s","color":"white"}]\n' % debriefing)
 		for item in reward_items:
 			finish.write('give @a %s\n' % item)
+		if next_mission is not None:
+			finish.write('function startracks:missions/mission_%s_setup\n' % safename(next_mission) )
 	pass
 def safename(n: str) -> str:
 	out = ''
 	safe_chars = 'abcdefghijklmnopqrstuvwxyz1234567890_'
 	n = n.lower()
 	for i in range(0,len(n)):
-		c = n[c]
+		c = n[i]
 		if c in safe_chars and len(out) < 12:
 			out += c
 	if len(out) == 0:
 		raise ValueError('Cannot make safe string from "%s"' % n)
+	return out

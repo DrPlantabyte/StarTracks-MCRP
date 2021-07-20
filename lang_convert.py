@@ -92,7 +92,7 @@ def change(key, val):
 			# but not beef or beet or been
 			text = text.replace('Bee','Mega-Bee').replace('bee','mega-bee')
 	text = text.replace('Spider','Spyder')
-	text = text.replace('Silverfish','Sliverfish')
+	text = text.replace('Silverfish','Stoneworm')
 	text = text.replace('Horse','Cosmo-Horse')
 	text = text.replace('Skeleton Cosmo-Horse','Robo-Horse')
 	text = text.replace('Zombie Cosmo-Horse','Cyborg-Horse')

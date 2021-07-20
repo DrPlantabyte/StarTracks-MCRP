@@ -160,3 +160,7 @@ setblock ~8 ~ ~ minecraft:polished_blackstone_pressure_plate
 # start missions
 schedule function startracks:missions/mission_greeting_setup 1s
 schedule function startracks:missions/mission_basebuilder_setup 2s
+schedule function startracks:missions/mission_dragonhunter_setup 3s
+schedule function startracks:missions/mission_minetime_setup 4s
+schedule function startracks:missions/mission_claimtheocea_setup 5s
+schedule function startracks:missions/mission_findavillage_setup 6s

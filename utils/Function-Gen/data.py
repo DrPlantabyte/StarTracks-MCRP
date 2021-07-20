@@ -265,7 +265,7 @@ class Pos:
 			cp[i] = NumVal(cp[i]).block_pos()
 		return cp
 class Item:
-	def __init__(self, id: str, count: int, data_dict=None):
+	def __init__(self, id: str, count: int=1, data_dict=None):
 		self.id=id
 		self.quantity=count
 		self.nbt=data_dict

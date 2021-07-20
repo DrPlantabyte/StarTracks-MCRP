@@ -1,4 +1,4 @@
-import re
+import re, json
 def _parse_num(n):
 	clean = re.sub('~|x|y|z|X|Y|Z|\\(|\\)|,|\\s','',str(n))
 	if len(clean) == 0:
@@ -110,6 +110,36 @@ class Pos:
 			self.z = NumVal(comps[1])
 		else:
 			raise ValueError('mcfunctions.data.Pos.__init__(*args) must be a 2D (X,Z) or 3D (X,Y,Z) coordinate')
+	def up(self, dist=1):
+		if self.y is not None:
+			return Pos(self.x, self.y+dist, self.z)
+		else:
+			return Pos(self.x, self.z)
+	def down(self, dist=1):
+		if self.y is not None:
+			return Pos(self.x, self.y-dist, self.z)
+		else:
+			return Pos(self.x, self.z)
+	def north(self, dist=1):
+		if self.y is not None:
+			return Pos(self.x, self.y, self.z-dist)
+		else:
+			return Pos(self.x, self.z-dist)
+	def south(self, dist=1):
+		if self.y is not None:
+			return Pos(self.x, self.y, self.z+dist)
+		else:
+			return Pos(self.x, self.z+dist)
+	def east(self, dist=1):
+		if self.y is not None:
+			return Pos(self.x-dist, self.y, self.z)
+		else:
+			return Pos(self.x-dist, self.z)
+	def west(self, dist=1):
+		if self.y is not None:
+			return Pos(self.x+dist, self.y, self.z)
+		else:
+			return Pos(self.x+dist, self.z)
 	def __str__(self):
 		if self.y is not None:
 			return '%s %s %s' % (self.x, self.y, self.z)
@@ -235,8 +265,12 @@ class Pos:
 			cp[i] = NumVal(cp[i]).block_pos()
 		return cp
 class Item:
-	def __init__(self, id: str, count: int):
+	def __init__(self, id: str, count: int, data_dict=None):
 		self.id=id
 		self.quantity=count
+		self.nbt=data_dict
 	def __str__(self):
-		return '%s %s' % (self.id, self.quantity)
+		if self.nbt is None:
+			return '%s %s' % (self.id, self.quantity)
+		else:
+			return '%s%s %s' % (self.id, json.dumps(self.nbt), self.quantity)

@@ -1,17 +1,30 @@
 # make starter hut
 ## setup stuff
+### temporarily load area around the HQ
+forceload add 16 -20 16 20
+forceload add -16 -20 -16 20
+forceload add -20 16 20 16
+forceload add -20 -16 20 -16
+## player spawn
 setworldspawn ~ ~ ~
+### use levitate to fix falling into ground because of server lag
+effect give @a minecraft:levitation 2
 tp @a ~ ~ ~
+
 # clear area
 fill ~-12 ~ ~-12 ~12 ~32 ~12 minecraft:air
-fill ~-12 ~-1 ~-12 ~12 ~-1 ~12 minecraft:gray_concrete
-fill ~-12 ~-2 ~-12 ~12 ~-12 ~12 minecraft:cobblestone
+fill ~-20 ~-1 ~-20 ~20 ~-1 ~20 minecraft:gray_concrete
+fill ~-20 ~-2 ~-20 ~20 ~-6 ~20 minecraft:cobblestone keep
+fill ~-20 ~ ~-20 ~20 ~4 ~20 minecraft:air
+fill ~-20 ~5 ~-20 ~20 ~9 ~20 minecraft:air
+fill ~-20 ~10 ~-20 ~20 ~14 ~20 minecraft:air
 
-fill ~13 ~-1 ~-1 ~14 ~-1 ~1 minecraft:cobblestone
-setblock ~13 ~-1 ~ minecraft:air
-fill ~13 ~ ~ ~13 128 ~ minecraft:ladder[facing=west] replace #minecraft:stone_ore_replaceables
-fill ~14 ~ ~ ~14 10 ~ minecraft:cobblestone keep
-fill ~13 ~ ~ ~13 10 ~ minecraft:ladder[facing=west] keep
+fill ~21 ~-1 ~-1 ~22 ~-1 ~1 minecraft:cobblestone
+setblock ~21 ~-1 ~ minecraft:air
+fill ~21 ~ ~ ~21 128 ~ minecraft:ladder[facing=west] replace #minecraft:stone_ore_replaceables
+fill ~22 ~ ~ ~22 1 ~ minecraft:cobblestone keep
+fill ~21 ~ ~ ~21 1 ~ minecraft:ladder[facing=west] keep
+
 # build rooms
 fill ~-7 ~ ~-7 ~7 ~ ~7 minecraft:blue_concrete
 fill ~-7 ~1 ~-7 ~7 ~1 ~7 minecraft:yellow_concrete
@@ -69,6 +82,23 @@ setblock ~-3 ~ ~-10 minecraft:torch
 setblock ~3 ~ ~-10 minecraft:torch
 setblock ~-3 ~ ~10 minecraft:torch
 setblock ~3 ~ ~10 minecraft:torch
+
+setblock ~16 ~ ~-12 minecraft:torch
+setblock ~16 ~ ~-4 minecraft:torch
+setblock ~16 ~ ~4 minecraft:torch
+setblock ~16 ~ ~12 minecraft:torch
+setblock ~-16 ~ ~-12 minecraft:torch
+setblock ~-16 ~ ~-4 minecraft:torch
+setblock ~-16 ~ ~4 minecraft:torch
+setblock ~-16 ~ ~12 minecraft:torch
+setblock ~-12 ~ ~16 minecraft:torch
+setblock ~-4 ~ ~16 minecraft:torch
+setblock ~4 ~ ~16 minecraft:torch
+setblock ~12 ~ ~16 minecraft:torch
+setblock ~-12 ~ ~-16 minecraft:torch
+setblock ~-4 ~ ~-16 minecraft:torch
+setblock ~4 ~ ~-16 minecraft:torch
+setblock ~12 ~ ~-16 minecraft:torch
 
 # internal stuff
 ## start room
@@ -147,8 +177,8 @@ setblock ~-2 ~ ~5 minecraft:pink_bed[facing=north,part=foot]
 
 
 # command blocks
-setblock ~ ~-1 ~ minecraft:repeating_command_block[facing=up]{auto:1b,powered:0b,Command:"gamemode adventure @a[distance=0..12]"}
-setblock ~ ~-2 ~ minecraft:repeating_command_block[facing=up]{auto:1b,powered:0b,Command:"gamemode survival @a[gamemode=adventure,distance=13..]"}
+setblock ~ ~-1 ~ minecraft:repeating_command_block[facing=up]{auto:1b,powered:0b,Command:"gamemode adventure @a[gamemode=survival,distance=0..19]"}
+setblock ~ ~-2 ~ minecraft:repeating_command_block[facing=up]{auto:1b,powered:0b,Command:"gamemode survival @a[gamemode=adventure,distance=20..]"}
 
 # place doorway
 fill ~ ~ ~ ~12 ~1 ~ minecraft:air
@@ -156,6 +186,12 @@ setblock ~7 ~ ~ minecraft:iron_door[half=lower,facing=east,hinge=left]
 setblock ~7 ~1 ~ minecraft:iron_door[half=upper,facing=east,hinge=left]
 setblock ~6 ~ ~ minecraft:polished_blackstone_pressure_plate
 setblock ~8 ~ ~ minecraft:polished_blackstone_pressure_plate
+
+# cleanup
+forceload remove 16 -20 16 20
+forceload remove -16 -20 -16 20
+forceload remove -20 16 20 16
+forceload remove -20 -16 20 -16
 
 # start missions
 schedule function startracks:missions/mission_greeting_setup 1s

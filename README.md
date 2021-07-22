@@ -1,3 +1,5 @@
+![Attribution-ShareAlike 4.0 International](https://licensebuttons.net/l/by-sa/4.0/88x31.png) [(CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/)
+
 # StarTracks-MCRP
 This is a Sci-Fi themed resource pack for Minecraft.
 
@@ -6,19 +8,23 @@ This is a Sci-Fi themed resource pack for Minecraft.
 # Description
 This resource pack changes the story of Minecraft from that of a survivor in a pre-modern world to that of a space-human exploring a strange new planet, one whose peace is threatened by evil cyborgs and alien invaders. 
 
-Will you free the bird-like people of this once-great world? Or conquer them in the name of humanity?
+Will you free the bird-like people of this once-great world? Or conquer them in the name of the Terran Space Union?
 
-![screenshot-3](https://user-images.githubusercontent.com/1922739/31579733-4444429a-b0f1-11e7-97a9-39dc130a481f.png)
+![screenshot-11](https://user-images.githubusercontent.com/1922739/126397382-bcd1da1d-28cf-4338-a019-086f364cfbe0.png)
 
-![screenshot-4](https://user-images.githubusercontent.com/1922739/31579735-47e75478-b0f1-11e7-95e8-fc3f4833656e.png)
+![screenshot-12](https://user-images.githubusercontent.com/1922739/126397299-11110414-abf5-4472-bf1c-7f2ffd3b9fe9.png)
+
+![screenshot-8](https://user-images.githubusercontent.com/1922739/126326976-fae98c48-7769-42d7-8c39-cae35a7c010f.png)
 
 ![screenshot-5](https://user-images.githubusercontent.com/1922739/31579737-4c056fb8-b0f1-11e7-858d-776fdc241084.png)
 
 # Installation
-Simply download one of the release .zip files and put it in the *resourcepacks* folder inside your Minecraft profile folder (default location is *~/.minecraft* where ~ is either your home directory (unix-like computers) or *C:\Users\<username>\AppData\Roaming* (windows computers)).
+Simply download the release .zip files and put the resource pack files in the *resourcepacks* folder inside your Minecraft profile folder (default location is *C:\Users\<username>\AppData\Roaming\.minecraft* (windows computers) or *~/.minecraft* (unix-like computers)).
+
+To install the data pack, when creating a new world, click *Data Packs* and then *Open Pack Folder*. Then copy the datapack .zip file into that folder and then click the purple triangle to add the data pack to your game.
 
 # 16x16, 32x32, 64x64, and 128x128 Resolution
-This resource pack is available in 4 different resolutions. Note that StarTracks-MCRP **does not replace all default textures**, so if you are using 32x32 or higher resolution, you chould pair this resource pack with another of the same resolution (e.g. [Minecraft HD(64x) by Mrdhobbs](https://www.curseforge.com/minecraft/texture-packs/minecraft-hd-64x-fan-updated-by-mrdhobbs) ) to update the other Minecraft textures not touched by StarTracks-MCRP.
+This resource pack is available in 4 different resolutions. Note that StarTracks-MCRP **does not replace all default textures**, so if you are using 32x32 or higher resolution, you should pair this resource pack with another of the same resolution (e.g. [Minecraft HD(64x) by Mrdhobbs](https://www.curseforge.com/minecraft/texture-packs/minecraft-hd-64x-fan-updated-by-mrdhobbs) ) to update the other Minecraft textures not touched by StarTracks. Move StarTracks to the top of your installed resource packs list.
 
 # License and Redistribution
 This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (see http://creativecommons.org/licenses/by-sa/4.0/ ).

@@ -7,11 +7,16 @@ import hashlib
 import zipfile
 import time
 import threading
+import json
 
 import config
 
 this_dir = path.dirname(path.realpath(__file__))
-
+tmp_dir = path.join(this_dir, 'temp')
+timestamp_cache_file = path.join(tmp_dir, 'timestamps.json')
+cached_timestamps = {}
+current_timestamps = {}
+quick_build = False
 
 
 
@@ -19,28 +24,38 @@ tex_resolutions = [16, 32, 64, 128]
 project_dirs=[]
 
 def main():
-	remakeDir(str(this_dir) + os.sep + 'distributables')
-	import lang_convert
-	lang_convert.main()
-	
-	print('\nBuilding data pack at...\n')
-	datapack_src = path.join(this_dir, 'datapack')
-	zip_file = path.join(this_dir, 'distributables', 'StarTracks_datapack.zip')
-	zipFiles(datapack_src, listFiles(datapack_src), zip_file, zipfile.ZIP_STORED)
-	hashFile(zip_file)
-	
-	if '-p' in sys.argv or '--parallel' in sys.argv:
-		thread_list = []
-		for res in tex_resolutions:
-			t = threading.Thread(target=buildTexPack, args=(res,))
-			thread_list.append(t)
-			t.start()
-		for t in thread_list:
-			t.join()
-	else:
-		for res in tex_resolutions:
-			buildTexPack(res)
-
+	try:
+		if quick_build:
+			print('Slipping unchanged files...')
+		if path.exists(timestamp_cache_file):
+			makeParentDir(timestamp_cache_file)
+			with open(timestamp_cache_file, 'r') as jin:
+				cached_timestamps = json.load(jin)
+		remakeDir(str(this_dir) + os.sep + 'distributables')
+		import lang_convert
+		lang_convert.main()
+		
+		print('\nBuilding data pack at...\n')
+		datapack_src = path.join(this_dir, 'datapack')
+		zip_file = path.join(this_dir, 'distributables', 'StarTracks_datapack.zip')
+		zipFiles(datapack_src, listFiles(datapack_src), zip_file, zipfile.ZIP_STORED)
+		hashFile(zip_file)
+		
+		if '-p' in sys.argv or '--parallel' in sys.argv:
+			thread_list = []
+			for res in tex_resolutions:
+				t = threading.Thread(target=buildTexPack, args=(res,))
+				thread_list.append(t)
+				t.start()
+			for t in thread_list:
+				t.join()
+		else:
+			for res in tex_resolutions:
+				buildTexPack(res)
+	finally:
+		makeParentDir(timestamp_cache_file)
+		with open(timestamp_cache_file, 'w') as jout:
+			json.dump(current_timestamps, jout)
 	print('...done!')
 def buildTexPack(res):
 	# setup build dir
@@ -101,7 +116,7 @@ def listFiles(root_dir):
 	return fl
 def remakeDir(dirpath):
 	"""deletes and recreates a directory"""
-	if (path.exists(dirpath)):
+	if quick_build == False and path.exists(dirpath):
 		for root_dir, dirs, files in os.walk(dirpath):
 			for f in files:
 				os.remove(root_dir + os.sep + f)
@@ -134,7 +149,7 @@ def copyInto(src, dst, skipExisting=True):
 					print("Skipping ", path.relpath(src_filepath,'.'))
 					continue
 				print('Copying file', str(path.relpath(src_filepath,'.')), 'to', str(path.relpath(dst_filepath,'.')))
-				shutil.copyfile(src_filepath, dst_filepath)
+				copyfile(src_filepath, dst_filepath)
 				
 def convertSVGDir(src_dir, dest_dir, mc_resolution, skipExisting=True):
 	# use inkscape commandline
@@ -146,6 +161,7 @@ def convertSVGDir(src_dir, dest_dir, mc_resolution, skipExisting=True):
 				name = f
 				dst_filepath = dest_dir + os.sep + rel_dirpath + os.sep + name.replace('.svg','.png')
 				src_filepath = root_dir + os.sep + name
+				src_ts = timestamp_file(src_filepath)
 				if(skipExisting and alreadyExists(src_filepath, dst_filepath)):
 					print("Skipping ", path.relpath(src_filepath,'.'))
 					continue
@@ -160,7 +176,15 @@ def alreadyExists(src_filepath, dst_filepath):
 		# do nothing if destination is newer than source
 		return (dst_time > src_time)
 	return False
+def timestamp_file(f):
+	ts = path.getmtime(f)
+	current_timestamps[f] = ts
+	return ts
 def convertSVG(src_filepath, dst_filepath, mc_resolution):
+	src_ts = timestamp_file(src_filepath)
+	if quick_build and src_ts == cached_timestamps.get(src_filepath) and path.exists(dst_filepath):
+		print("Skipping", path.relpath(src_filepath,'.'), '(file not changed)')
+		return
 	if "gui" in str(dst_filepath):
 		# fixed resolution for GUI textures
 		mc_resolution = 64
@@ -173,7 +197,12 @@ def convertSVG(src_filepath, dst_filepath, mc_resolution):
 	if( "stained_glass" not in str(dst_filepath) and  "tinted_glass" not in str(dst_filepath) ):
 		# remove transparency, unless it is a tinted glass block texture
 		p_status = config.convert(str(dst_filepath), '-channel', 'alpha', '-threshold', '50%', str(dst_filepath))
-
+def copyfile(src_filepath, dst_filepath):
+	src_ts = timestamp_file(src_filepath)
+	if quick_build and src_ts == cached_timestamps.get(src_filepath) and path.exists(dst_filepath):
+		print("Skipping", path.relpath(src_filepath,'.'), '(file not changed)')
+		return
+	shutil.copyfile(src_filepath, dst_filepath)
 #
 if __name__ == "__main__":
 	main()

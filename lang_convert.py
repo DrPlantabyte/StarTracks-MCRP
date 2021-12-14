@@ -133,6 +133,7 @@ def change(key, val):
 	text = text.replace('Skeleton','Proto-Borg')
 	text = text.replace('Husk','Mummy-Borg')
 	text = text.replace('Stray','Ice-Borg')
+	text = text.replace('Drowned','Hydro-Borg')
 	text = text.replace('Wither Skeleton','Xeno-Borg')
 	text = text.replace('Wither Skull','Xeno-Borg Skull')
 	text = text.replace('Withering Heights','Ultimate Creation')

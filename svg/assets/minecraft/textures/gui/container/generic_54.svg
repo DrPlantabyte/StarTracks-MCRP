@@ -5,7 +5,7 @@
    viewBox="0 0 256 256"
    version="1.1"
    id="svg8"
-   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
    sodipodi:docname="generic_54.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.828427"
-     inkscape:cx="154.32606"
-     inkscape:cy="103.76793"
+     inkscape:zoom="1.4142135"
+     inkscape:cx="-46.315496"
+     inkscape:cy="216.72824"
      inkscape:document-units="px"
      inkscape:current-layer="layer3"
      inkscape:document-rotation="0"
@@ -52,7 +52,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -131,7 +130,7 @@
          sodipodi:nodetypes="ccscccccc" />
       <path
          style="display:inline;opacity:1;fill:#9999ff;fill-opacity:1;stroke:none;stroke-width:0.999999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         d="m 174,130 c 0,-2.21599 -1.78401,-4 -4,-4 H 6 c -2.21599,0 -4,1.78401 -4,4 v 8 h 172 z"
+         d="m 174,131 c 0,-2.21599 -1.78401,-4 -4,-4 H 6 c -2.21599,0 -4,1.78401 -4,4 v 7 h 172 z"
          id="path1312"
          sodipodi:nodetypes="csscccc" />
       <path
@@ -155,6 +154,11 @@
        d="m 170,18 h 4 v 102 c 0,2.21599 -1.78401,4 -4,4 V 54 52 36 34 Z"
        id="path1320"
        sodipodi:nodetypes="ccscccccc" />
+    <path
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.77953;stroke-linecap:round"
+       d="m 1,70 v 2 h 174 v -2 z"
+       id="path875"
+       sodipodi:nodetypes="ccccc" />
   </g>
   <g
      inkscape:groupmode="layer"

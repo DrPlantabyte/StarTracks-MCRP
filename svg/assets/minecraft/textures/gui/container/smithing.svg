@@ -5,7 +5,7 @@
    viewBox="0 0 256 256"
    version="1.1"
    id="svg8"
-   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
    sodipodi:docname="smithing.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="4"
-     inkscape:cx="109.875"
-     inkscape:cy="98.625"
+     inkscape:zoom="16"
+     inkscape:cx="162.59375"
+     inkscape:cy="82.03125"
      inkscape:document-units="px"
      inkscape:current-layer="layer3"
      inkscape:document-rotation="0"
@@ -51,7 +51,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -191,7 +190,7 @@
          sodipodi:nodetypes="ccscccccc" />
       <path
          style="display:inline;fill:#9999ff;fill-opacity:1;stroke:none;stroke-width:0.999999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         d="m 174,74 c 0,-2.21599 -1.78401,-4 -4,-4 H 6 c -2.21599,0 -4,1.78401 -4,4 v 8 h 172 z"
+         d="m 174,75 c 0,-2.21599 -1.78401,-4 -4,-4 H 6 c -2.21599,0 -4,1.78401 -4,4 v 7 h 172 z"
          id="path1312"
          sodipodi:nodetypes="csscccc" />
       <path

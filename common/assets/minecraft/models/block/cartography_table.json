@@ -1,7 +1,7 @@
 {
     "parent": "block/cube_column",
     "textures": {
-        "end": "startracks:block/machine_top",
+        "end": "startracks:block/cartography_table_top",
         "side": "block/cartography_table_top"
     }
 }

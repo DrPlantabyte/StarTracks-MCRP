@@ -21,6 +21,15 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
+					"name": "minecraft:writable_book"
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
 					"name": "minecraft:leather_helmet",
 					"functions": [
 						{

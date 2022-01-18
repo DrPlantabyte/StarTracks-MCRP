@@ -15,7 +15,7 @@ tp @a ~ ~ ~
 fill ~-12 ~ ~-12 ~12 ~32 ~12 minecraft:air
 fill ~-20 ~-1 ~-20 ~20 ~-1 ~20 minecraft:gray_concrete
 fill ~-20 ~-2 ~-20 ~20 ~-6 ~20 minecraft:cobblestone keep
-fill ~-2 ~-6 ~-2 ~2 10 ~2 minecraft:cobblestone keep
+fill ~-2 ~-6 ~-2 ~2 10 ~2 minecraft:cobblestone replace minecraft:water
 fill ~-20 ~ ~-20 ~20 ~4 ~20 minecraft:air
 fill ~-20 ~5 ~-20 ~20 ~9 ~20 minecraft:air
 fill ~-20 ~10 ~-20 ~20 ~14 ~20 minecraft:air

@@ -33,7 +33,7 @@ class Mission:
 		self.reset_objective_score = reset_objective_score
 		self.event_function = event_function
 
-	def write_functions(self, machine_pos: Pos, briefing_timer_scoreboard: str, dirpath, next_mission_id: str = None):
+	def write_functions(self, machine_pos: Pos, briefing_timer_scoreboard: str, dirpath, shared_init_file, next_mission_id: str = None):
 		start_func_name = 'missions/%s_00start' % ( self.mission_id)
 		briefing_loop_func_name = 'missions/%s_01brief_loop' % ( self.mission_id)
 		mission_start_func_name = 'missions/%s_02main_start' % ( self.mission_id)
@@ -61,10 +61,11 @@ class Mission:
 		#setup_commands += ['scoreboard objectives add %s dummy' % briefing_timer_scoreboard ] # assuming briefing timing scoreboard is already setup
 		setup_commands += ['scoreboard players set @a %s 0' % briefing_timer_scoreboard]
 		setup_commands += ['setblock %s minecraft:repeating_command_block[facing=up]{auto:1b,powered:0b,Command:"function startracks:%s"} destroy' % (machine_pos.block_pos(), briefing_loop_func_name)]
-		setup_commands += ['scoreboard objectives add %s %s \"%s\"' % (mission_scoreboard, self.objective_scoreboard_type, self.objective_scoreboard_display_name)]
-		setup_commands += ['scoreboard objectives setdisplay sidebar %s' % mission_scoreboard]
 		if self.reset_objective_score:
-			setup_commands += ['scoreboard players set @a %s 0' % mission_scoreboard]
+			setup_commands += ['scoreboard objectives add %s %s "%s"' % (mission_scoreboard, self.objective_scoreboard_type, self.objective_scoreboard_display_name)]
+		else:
+			# if not resetting, need to initialize at start of game
+			write_to_file('\nscoreboard objectives add %s %s "%s"' % (mission_scoreboard, self.objective_scoreboard_type, self.objective_scoreboard_display_name), shared_init_file, append=True)
 
 		### briefing
 		brief_coms += ['scoreboard players add @a %s 1' % briefing_timer_scoreboard]
@@ -80,12 +81,16 @@ class Mission:
 
 		### mission
 		mission_start_coms += ['setblock %s minecraft:repeating_command_block[facing=up]{auto:1b,powered:0b,Command:"function startracks:%s"} destroy' % (machine_pos.block_pos(), mission_loop_func_name)]
+		mission_start_coms += ['scoreboard objectives setdisplay sidebar %s' % mission_scoreboard]
+		if self.reset_objective_score:
+			mission_start_coms += ['scoreboard players set @a %s 0' % mission_scoreboard]
+		else:
+			mission_start_coms += ['scoreboard players operation @a %s = @s %s' % (mission_scoreboard, mission_scoreboard)]
+		if self.event_function is not None:
+			mission_start_coms += ['function %s' % self.event_function]
 		mission_coms += ['execute as @a if score @s %s matches %s.. run function startracks:%s' % (
 			mission_scoreboard, self.objective_scoreboard_value, mission_end_func_name)]
 		mission_end_coms += ['setblock %s minecraft:repeating_command_block[facing=up]{auto:1b,powered:0b,Command:"function startracks:%s"} destroy' % (machine_pos.block_pos(), debrief_loop_func_name)]
-		if self.reward_items is not None:
-			for item in self.reward_items:
-				mission_end_coms += ['give @a %s' % item]
 		mission_end_coms += ['scoreboard players set @a %s 0' % briefing_timer_scoreboard]
 
 		### debriefing
@@ -102,10 +107,16 @@ class Mission:
 			briefing_timer_scoreboard, btick, final_func_name)]
 
 		### clean-up/next mission
+		if self.reward_items is not None:
+			for item in self.reward_items:
+				final_coms += ['give @a %s' % item]
 		final_coms += ['setblock %s minecraft:bedrock destroy' % machine_pos.block_pos()]
 		if next_mission_id is not None:
 			next_mission_start_func = 'missions/%s_00start' % ( next_mission_id )
 			final_coms += ['function startracks:%s' % next_mission_start_func]
+		final_coms += ['scoreboard objectives setdisplay sidebar']
+		final_coms += ['scoreboard objectives remove %s' % mission_scoreboard]
+
 		# write to files
 		write_to_file('\n'.join(setup_commands), path.join(dirpath, '%s.mcfunction' % start_func_name))
 		write_to_file('\n'.join(brief_coms), path.join(dirpath, '%s.mcfunction' % briefing_loop_func_name))
@@ -116,13 +127,20 @@ class Mission:
 		write_to_file('\n'.join(final_coms), path.join(dirpath, '%s.mcfunction' % final_func_name))
 
 
-def write_to_file(content, filepath):
+def write_to_file(content, filepath, append:bool = False):
 	parent_dir = path.dirname(path.abspath(filepath))
 	if not path.isdir(parent_dir):
 		os.makedirs(parent_dir)
-	with open(filepath, 'w') as fout:
-		print('\t',filepath,sep='')
-		fout.write(content)
-		print(content)
-		print()
+	if append:
+		with open(filepath, 'a') as fout:
+			print('\tappending to:',filepath)
+			fout.write(content)
+			print(content)
+			print()
+	else:
+		with open(filepath, 'w') as fout:
+			print('\twriting to:',filepath)
+			fout.write(content)
+			print(content)
+			print()
 	# done

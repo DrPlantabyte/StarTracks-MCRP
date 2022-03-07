@@ -126,6 +126,8 @@ def change(key, val):
 	
 	
 	## friends and foes
+	text = text.replace('Enderman','Invader')
+	text = text.replace('Wither Skeleton','Xeno-Borg')
 	text = text.replace('Zombified Piglin','Infected Piglin')
 	text = text.replace('Zoglin','Infected Hoglin')
 	text = text.replace('Zombie','Cyborg')
@@ -134,7 +136,6 @@ def change(key, val):
 	text = text.replace('Husk','Mummy-Borg')
 	text = text.replace('Stray','Ice-Borg')
 	text = text.replace('Drowned','Hydro-Borg')
-	text = text.replace('Wither Skeleton','Xeno-Borg')
 	text = text.replace('Wither Skull','Xeno-Borg Skull')
 	text = text.replace('Withering Heights','Ultimate Creation')
 	text = text.replace('Summon the Wither','Build AI Singularity')

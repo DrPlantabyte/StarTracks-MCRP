@@ -61,11 +61,12 @@ class Mission:
 		#setup_commands += ['scoreboard objectives add %s dummy' % briefing_timer_scoreboard ] # assuming briefing timing scoreboard is already setup
 		setup_commands += ['scoreboard players set @a %s 0' % briefing_timer_scoreboard]
 		setup_commands += ['setblock %s minecraft:repeating_command_block[facing=up]{auto:1b,powered:0b,Command:"function startracks:%s"} destroy' % (machine_pos.block_pos(), briefing_loop_func_name)]
-		if self.reset_objective_score:
-			setup_commands += ['scoreboard objectives add %s %s "%s"' % (mission_scoreboard, self.objective_scoreboard_type, self.objective_scoreboard_display_name)]
-		else:
-			# if not resetting, need to initialize at start of game
-			write_to_file('\nscoreboard objectives add %s %s "%s"' % (mission_scoreboard, self.objective_scoreboard_type, self.objective_scoreboard_display_name), shared_init_file, append=True)
+		if self.objective_scoreboard_type is not None:
+			if self.reset_objective_score:
+				setup_commands += ['scoreboard objectives add %s %s "%s"' % (mission_scoreboard, self.objective_scoreboard_type, self.objective_scoreboard_display_name)]
+			else:
+				# if not resetting, need to initialize at start of game
+				write_to_file('\nscoreboard objectives add %s %s "%s"' % (mission_scoreboard, self.objective_scoreboard_type, self.objective_scoreboard_display_name), shared_init_file, append=True)
 
 		### briefing
 		brief_coms += ['scoreboard players add @a %s 1' % briefing_timer_scoreboard]
@@ -81,15 +82,20 @@ class Mission:
 
 		### mission
 		mission_start_coms += ['setblock %s minecraft:repeating_command_block[facing=up]{auto:1b,powered:0b,Command:"function startracks:%s"} destroy' % (machine_pos.block_pos(), mission_loop_func_name)]
-		mission_start_coms += ['scoreboard objectives setdisplay sidebar %s' % mission_scoreboard]
-		if self.reset_objective_score:
-			mission_start_coms += ['scoreboard players set @a %s 0' % mission_scoreboard]
-		else:
-			mission_start_coms += ['scoreboard players operation @a %s = @s %s' % (mission_scoreboard, mission_scoreboard)]
+		if self.objective_scoreboard_type is not None:
+			mission_start_coms += ['scoreboard objectives setdisplay sidebar %s' % mission_scoreboard]
+			if self.reset_objective_score:
+				mission_start_coms += ['scoreboard players set @a %s 0' % mission_scoreboard]
+			else:
+				mission_start_coms += ['scoreboard players operation @a %s = @s %s' % (mission_scoreboard, mission_scoreboard)]
 		if self.event_function is not None:
 			mission_start_coms += ['function %s' % self.event_function]
-		mission_coms += ['execute as @a if score @s %s matches %s.. run function startracks:%s' % (
-			mission_scoreboard, self.objective_scoreboard_value, mission_end_func_name)]
+		if self.objective_scoreboard_type is not None:
+			mission_coms += ['execute as @a if score @s %s matches %s.. run function startracks:%s' % (
+				mission_scoreboard, self.objective_scoreboard_value, mission_end_func_name)]
+		else:
+			## self.objective_scoreboard_type is None if there is not meant to be a loop (dialog-only and/or single event)
+			mission_coms += ['function startracks:%s' % ( mission_end_func_name)]
 		mission_end_coms += ['setblock %s minecraft:repeating_command_block[facing=up]{auto:1b,powered:0b,Command:"function startracks:%s"} destroy' % (machine_pos.block_pos(), debrief_loop_func_name)]
 		mission_end_coms += ['scoreboard players set @a %s 0' % briefing_timer_scoreboard]
 
@@ -115,7 +121,8 @@ class Mission:
 			next_mission_start_func = 'missions/%s_00start' % ( next_mission_id )
 			final_coms += ['function startracks:%s' % next_mission_start_func]
 		final_coms += ['scoreboard objectives setdisplay sidebar']
-		final_coms += ['scoreboard objectives remove %s' % mission_scoreboard]
+		if self.objective_scoreboard_type is not None:
+			final_coms += ['scoreboard objectives remove %s' % mission_scoreboard]
 
 		# write to files
 		write_to_file('\n'.join(setup_commands), path.join(dirpath, '%s.mcfunction' % start_func_name))

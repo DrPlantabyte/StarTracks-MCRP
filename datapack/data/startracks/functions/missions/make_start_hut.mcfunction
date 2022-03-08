@@ -6,10 +6,10 @@ forceload add -16 -20 -16 20
 forceload add -20 16 20 16
 forceload add -20 -16 20 -16
 ## player spawn
-setworldspawn ~ ~ ~
+setworldspawn 8 68 8
 ### use levitate to fix falling into ground because of server lag
 effect give @a minecraft:levitation 2
-tp @a ~ ~ ~
+tp @a 8 68 8
 
 # clear area
 fill ~-12 ~ ~-12 ~12 ~32 ~12 minecraft:air

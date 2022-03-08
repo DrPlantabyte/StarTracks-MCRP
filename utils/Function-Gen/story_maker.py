@@ -4,6 +4,11 @@ from os import path
 from data import *
 from commands import *
 
+
+def time_for(msg: str):
+	return int(5 + (len(msg)/40))
+
+
 class Mission:
 	def __init__(
 			self,
@@ -18,7 +23,7 @@ class Mission:
 			debriefing: list[str],
 			reward_items: list[Item],
 			reset_objective_score:bool = False,
-			event_function:str = None,
+			event_functions: list[str] = None,
 			existing_scoreboard: str = None,
 	):
 		self.mission_id = mission_id
@@ -32,7 +37,7 @@ class Mission:
 		self.debriefing = debriefing
 		self.reward_items = reward_items
 		self.reset_objective_score = reset_objective_score
-		self.event_function = event_function
+		self.event_functions = event_functions
 		self.existing_scoreboard = existing_scoreboard
 
 	def write_functions(self, machine_pos: Pos, briefing_timer_scoreboard: str, dirpath, shared_init_file, next_mission_id: str = None):
@@ -75,14 +80,14 @@ class Mission:
 
 		### briefing
 		brief_coms += ['scoreboard players add @a %s 1' % briefing_timer_scoreboard]
-		briefing_interval_time_seconds = 9 # time between messages during briefing
 		btick = 30
 		for msg in self.briefing:
-			brief_coms += ['execute as @a if score @s %s matches %s run tellraw @s ["",{"text":"[%s] ","color":"%s"},{"text":"%s","color":"white"}]' % (briefing_timer_scoreboard, int(btick), self.briefer, self.briefer_color, msg)]
+			briefing_interval_time_seconds = time_for(msg)
+			brief_coms += ['execute as @a at @s if score @s %s matches %s run tellraw @s ["",{"text":"[%s] ","color":"%s"},{"text":"%s","color":"white"}]' % (briefing_timer_scoreboard, int(btick), self.briefer, self.briefer_color, msg)]
 			#
 			btick += briefing_interval_time_seconds * 20 # 20 ticker per second
 		brief_coms += [
-			'execute as @a if score @s %s matches %s.. run function startracks:%s' % (
+			'execute as @a at @s if score @s %s matches %s.. run function startracks:%s' % (
 			briefing_timer_scoreboard, btick, mission_start_func_name)]
 
 		### mission
@@ -94,10 +99,10 @@ class Mission:
 				mission_start_coms += ['scoreboard players set @a %s 0' % mission_scoreboard]
 			else:
 				mission_start_coms += ['scoreboard players operation @a %s = @s %s' % (mission_scoreboard, mission_scoreboard)]
-		if self.event_function is not None:
-			mission_start_coms += ['function %s' % self.event_function]
+		if self.event_functions is not None and len(self.event_functions) > 0:
+			mission_start_coms += self.event_functions
 		if self.objective_scoreboard_type is not None:
-			mission_coms += ['execute as @a if score @s %s matches %s.. run function startracks:%s' % (
+			mission_coms += ['execute as @a at @s if score @s %s matches %s.. run function startracks:%s' % (
 				mission_scoreboard, self.objective_scoreboard_value, mission_end_func_name)]
 		else:
 			## self.objective_scoreboard_type is None if there is not meant to be a loop (dialog-only and/or single event)
@@ -109,13 +114,14 @@ class Mission:
 		debrief_coms += ['scoreboard players add @a %s 1' % briefing_timer_scoreboard]
 		btick = 30
 		for msg in self.debriefing:
+			briefing_interval_time_seconds = time_for(msg)
 			debrief_coms += [
-				'execute as @a if score @s %s matches %s run tellraw @s ["",{"text":"[%s] ","color":"%s"},{"text":"%s","color":"white"}]' % (
+				'execute as @a at @s if score @s %s matches %s run tellraw @s ["",{"text":"[%s] ","color":"%s"},{"text":"%s","color":"white"}]' % (
 				briefing_timer_scoreboard, int(btick), self.briefer, self.briefer_color, msg)]
 			#
 			btick += briefing_interval_time_seconds * 20  # 20 ticker per second
 		debrief_coms += [
-			'execute as @a if score @s %s matches %s.. run function startracks:%s' % (
+			'execute as @a at @s if score @s %s matches %s.. run function startracks:%s' % (
 			briefing_timer_scoreboard, btick, final_func_name)]
 
 		### clean-up/next mission

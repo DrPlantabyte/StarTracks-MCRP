@@ -19,7 +19,7 @@ story_missions.append(Mission(
 	debriefing = [],
 	reward_items = [],
 	reset_objective_score = True,
-	event_function = None
+	event_functions = None
 
 ))
 story_missions.append(Mission(
@@ -38,7 +38,7 @@ story_missions.append(Mission(
 	],
 	reward_items = [],
 	reset_objective_score = True,
-	event_function = None
+	event_functions = None
 
 ))
 story_missions.append(Mission(
@@ -58,7 +58,7 @@ story_missions.append(Mission(
 	],
 	reward_items = [],
 	reset_objective_score = True,
-	event_function = None
+	event_functions = None
 ))
 story_missions.append(Mission(
 	mission_id='base1b',
@@ -76,7 +76,7 @@ story_missions.append(Mission(
 	],
 	reward_items = [],
 	reset_objective_score = False,
-	event_function = None
+	event_functions = None
 ))
 story_missions.append(Mission(
 	mission_id='base1c',
@@ -94,7 +94,7 @@ story_missions.append(Mission(
 	],
 	reward_items = [],
 	reset_objective_score = True,
-	event_function = None
+	event_functions = None
 ))
 story_missions.append(Mission(
 	mission_id='base1d',
@@ -114,7 +114,7 @@ story_missions.append(Mission(
 	reward_items = [Item('minecraft:glass', 64), Item('minecraft:red_carpet', 64),
 					Item('minecraft:yellow_concrete', 64), Item('minecraft:blue_concrete', 64)],
 	reset_objective_score = False,
-	event_function = None
+	event_functions = None
 ))
 story_missions.append(Mission(
 	mission_id='cave1',
@@ -135,7 +135,7 @@ story_missions.append(Mission(
 	reward_items = [Item('minecraft:iron_helmet'), Item('minecraft:iron_chestplate'),
 					Item('minecraft:iron_leggings'), Item('minecraft:iron_boots')],
 	reset_objective_score = False,
-	event_function = None
+	event_functions = None
 ))
 story_missions.append(Mission(
 	mission_id='farm1a',
@@ -155,7 +155,7 @@ story_missions.append(Mission(
 	],
 	reward_items = [Item('minecraft:beetroot_seeds', 3), Item('minecraft:pumpkin_seeds', 3)],
 	reset_objective_score = False,
-	event_function = None
+	event_functions = None
 ))
 
 story_missions.append(Mission(
@@ -175,7 +175,7 @@ story_missions.append(Mission(
 	],
 	reward_items = [Item('minecraft:name_tag', 12), Item('minecraft:lead', 1)],
 	reset_objective_score = True,
-	event_function = None
+	event_functions = None
 ))
 story_missions.append(Mission(
 	mission_id='village1a',
@@ -193,7 +193,7 @@ story_missions.append(Mission(
 	],
 	reward_items = [Item('minecraft:emerald', 3)],
 	reset_objective_score = True,
-	event_function = None
+	event_functions = None
 ))
 story_missions.append(Mission(
 	mission_id='village1b',
@@ -211,7 +211,7 @@ story_missions.append(Mission(
 	],
 	reward_items = [Item('minecraft:emerald', 3)],
 	reset_objective_score = True,
-	event_function = None
+	event_functions = None
 ))
 story_missions.append(Mission(
 	mission_id='village1c',
@@ -232,7 +232,7 @@ story_missions.append(Mission(
 	],
 	reward_items = [Item('minecraft:iron_block', 4), Item('minecraft:carved_pumpkin',1)],
 	reset_objective_score = True,
-	event_function = 'startracks:events/give_bad_omen'
+	event_functions = ['execute as @s at @s run function startracks:events/give_bad_omen']
 ))
 story_missions.append(Mission(
 	mission_id='farm2',
@@ -251,7 +251,7 @@ story_missions.append(Mission(
 	],
 	reward_items = [Item('minecraft:honey_bottle', 3), Item('minecraft:blue_candle', 3)],
 	reset_objective_score = True,
-	event_function = None
+	event_functions = None
 ))
 
 story_missions.append(Mission(
@@ -272,7 +272,7 @@ story_missions.append(Mission(
 	],
 	reward_items = [],
 	reset_objective_score = True,
-	event_function = None
+	event_functions = None
 ))
 
 story_missions.append(Mission(
@@ -291,7 +291,7 @@ story_missions.append(Mission(
 	],
 	reward_items = [],
 	reset_objective_score = True,
-	event_function = None
+	event_functions = None
 ))
 story_missions.append(Mission(
 	mission_id='nether1a',
@@ -299,7 +299,7 @@ story_missions.append(Mission(
 	briefer = 'Commander Steve',
 	briefer_color = 'blue',
 	briefing = [
-		"Gadzooks! The invaders are using hyperspace to send an attack squad. Prepare to fight!"
+		"Gadzooks! The invaders are using netherspace to send an attack squad. Prepare to fight!"
 	],
 	objective_scoreboard_type = None, # None type to not have a scoreboard
 	objective_scoreboard_display_name = None,
@@ -309,7 +309,7 @@ story_missions.append(Mission(
 	],
 	reward_items = [Item('minecraft:bow'), Item('minecraft:arrow', 24)],
 	reset_objective_score = True,
-	event_function = 'startracks:events/portal_attack_all'
+	event_functions = ['execute as @s at @s run function startracks:events/portal_attack']
 ))
 story_missions.append(Mission(
 	mission_id='nether1b',
@@ -325,7 +325,7 @@ story_missions.append(Mission(
 	],
 	reward_items = [Item('minecraft:nether_wart', 1)],
 	reset_objective_score = True,
-	event_function = None
+	event_functions = None
 ))
 story_missions.append(Mission(
 	mission_id='nether1c',
@@ -334,17 +334,17 @@ story_missions.append(Mission(
 	briefer_color = 'green',
 	briefing = [
 		"Fascinating! It appears to be a bryophyte, some kind of wart, made of neutron-dense elements. It must be a netherspace native plant.",
-		"Cadet, this is a clue to the invader's dark-photon technology. You must go to netherspace collect more samples."
+		"Cadet, this is a clue to the invader's dark-photon technology. You must go to netherspace collect more samples and then return to this world."
 	],
 	objective_scoreboard_type = 'minecraft.mined:minecraft.nether_wart',
-	objective_scoreboard_display_name = 'Collect 10 Nano-Mold',
+	objective_scoreboard_display_name = 'Bring back 10 Nano-Mold',
 	objective_scoreboard_value = 10,
 	debriefing = [
 		"I see... This organism creates nanoscopic fuels. You can use it to create nanite serums. I'd recommend making fire protection nanite serum."
 	],
 	reward_items = [],
 	reset_objective_score = True,
-	event_function = None
+	event_functions = None
 ))
 story_missions.append(Mission(
 	mission_id='nether1d',
@@ -363,25 +363,7 @@ story_missions.append(Mission(
 	],
 	reward_items = [Item('minecraft:glass_bottle',3)],
 	reset_objective_score = False,
-	event_function = None
-))
-story_missions.append(Mission(
-	mission_id='nether1e',
-	mission_name = 'Nether 1E',
-	briefer = 'Chief Scientist Alex',
-	briefer_color = 'green',
-	briefing = [
-		"Your excursion into netherspace has exposed you to hazardous contaminants. You should go wash it off in water."
-	],
-	objective_scoreboard_type = 'minecraft.custom:minecraft.swim_one_cm',
-	objective_scoreboard_display_name = 'Swim in Water',
-	objective_scoreboard_value = 1000,
-	debriefing = [
-		"You're clean now! I've taken the liberty to install a self-cleaning upgrade to your DNA. You should be fine from now on."
-	],
-	reward_items = [],
-	reset_objective_score = True,
-	event_function = None
+	event_functions = None
 ))
 
 story_missions.append(Mission(
@@ -401,7 +383,7 @@ story_missions.append(Mission(
 	],
 	reward_items = [Item('minecraft:potion', 2, {'Potion':"minecraft:night_vision"})],
 	reset_objective_score = True,
-	event_function = None,
+	event_functions = None,
 	existing_scoreboard = depth_scoreboard_name,
 ))
 story_missions.append(Mission(
@@ -420,7 +402,7 @@ story_missions.append(Mission(
 	],
 	reward_items = [Item('minecraft:diamond_pickaxe',1,{'Enchantments':[{'id':'fortune','lvl':3},{'id':'unbreaking','lvl':3}]})],
 	reset_objective_score = True,
-	event_function = None,
+	event_functions = None,
 	existing_scoreboard = depth_scoreboard_name,
 ))
 
@@ -436,7 +418,7 @@ story_missions.append(Mission(
 	debriefing = [],
 	reward_items = [],
 	reset_objective_score = True,
-	event_function = "startracks:events/storm"
+	event_functions = ["function startracks:events/storm"]
 ))
 story_missions.append(Mission(
 	mission_id='guard1',
@@ -456,7 +438,7 @@ story_missions.append(Mission(
 	],
 	reward_items = [],
 	reset_objective_score = True,
-	event_function = "startracks:events/storm"
+	event_functions = ["function startracks:events/storm"]
 ))
 story_missions.append(Mission(
 	mission_id='guard2',
@@ -475,7 +457,7 @@ story_missions.append(Mission(
 	],
 	reward_items = [Item('minecraft:cooked_cod', 3)],
 	reset_objective_score = False,
-	event_function = 'startracks:events/permastorm_start'
+	event_functions = ['function startracks:events/permastorm_start']
 ))
 story_missions.append(Mission(
 	mission_id='guard3',
@@ -491,7 +473,7 @@ story_missions.append(Mission(
 	debriefing = [],
 	reward_items = [Item('minecraft:enchanted_golden_apple',2)],
 	reset_objective_score = False,
-	event_function = 'startracks:events/permastorm_end'
+	event_functions = ['function startracks:events/permastorm_end']
 ))
 
 story_missions.append(Mission(
@@ -512,7 +494,7 @@ story_missions.append(Mission(
 	],
 	reward_items = [Item('minecraft:wither_skeleton_skull',3)],
 	reset_objective_score = True,
-	event_function = None
+	event_functions = None
 ))
 story_missions.append(Mission(
 	mission_id='nether2b',
@@ -532,7 +514,7 @@ story_missions.append(Mission(
 	],
 	reward_items = [Item('minecraft:gold_block',35)],
 	reset_objective_score = False,
-	event_function = None
+	event_functions = None
 ))
 
 story_missions.append(Mission(
@@ -552,7 +534,7 @@ story_missions.append(Mission(
 	],
 	reward_items = [Item('minecraft:ender_pearl',1)],
 	reset_objective_score = True,
-	event_function = None
+	event_functions = None
 ))
 story_missions.append(Mission(
 	mission_id='ender1b',
@@ -570,7 +552,7 @@ story_missions.append(Mission(
 	],
 	reward_items = [],
 	reset_objective_score = False,
-	event_function = None
+	event_functions = None
 ))
 story_missions.append(Mission(
 	mission_id='ender1c',
@@ -589,7 +571,7 @@ story_missions.append(Mission(
 	],
 	reward_items = [Item('minecraft:diamond',24)],
 	reset_objective_score = True,
-	event_function = None,
+	event_functions = None,
 	existing_scoreboard=end_frame_score_name
 ))
 story_missions.append(Mission(
@@ -610,7 +592,7 @@ story_missions.append(Mission(
 	],
 	reward_items = [Item('minecraft:ender_pearl',16)],
 	reset_objective_score = True,
-	event_function = None
+	event_functions = None
 ))
 story_missions.append(Mission(
 	mission_id='ender1e',
@@ -627,7 +609,7 @@ story_missions.append(Mission(
 	debriefing = [],
 	reward_items = [],
 	reset_objective_score = False,
-	event_function = 'startracks:events/endgame_reward'
+	event_functions = ['function startracks:events/endgame_reward']
 ))
 
 
@@ -643,10 +625,10 @@ mission_init = 'missions/m0_story_start.mcfunction'
 init_coms = ['# start of story missions']
 init_coms += ['gamerule doPatrolSpawning true']
 init_coms += ['scoreboard objectives add %s dummy' % briefing_scoreboard]
-init_coms += ['scoreboard objectives add %s dummy' % depth_scoreboard_name]
+init_coms += ['scoreboard objectives add %s dummy "Go Deeper Underground"' % depth_scoreboard_name]
 init_coms += ['scoreboard objectives add %s dummy' % end_frame_score_name]
 init_coms += ['setblock 7 7 5 minecraft:repeating_command_block[facing=up]{auto:1b,powered:0b,Command:"scoreboard players set @a[y=-64,dy=14] %s 50"} destroy' % (depth_scoreboard_name)]
-init_coms += ['setblock 7 7 3 minecraft:repeating_command_block[facing=up]{auto:1b,powered:0b,Command:"execute as @a if block ~ ~-1 ~ minecraft:end_portal_frame run scoreboard players set @s %s 1"} destroy' % (end_frame_score_name)]
+init_coms += ['setblock 7 7 3 minecraft:repeating_command_block[facing=up]{auto:1b,powered:0b,Command:"execute as @a at @s if block ~ ~-1 ~ minecraft:end_portal_frame run scoreboard players set @s %s 1"} destroy' % (end_frame_score_name)]
 init_coms += ['function startracks:missions/%s_00start' % story_missions[0].mission_id]
 write_to_file( '\n'.join(init_coms), mission_init)
 

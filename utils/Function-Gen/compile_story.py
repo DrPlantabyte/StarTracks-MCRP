@@ -106,7 +106,7 @@ story_missions.append(Mission(
 		"I'll give you a house warming gift when you do.",
 	],
 	objective_scoreboard_type = 'minecraft.crafted:minecraft.white_bed',
-	objective_scoreboard_display_name = 'Craft a White Crafting Bed',
+	objective_scoreboard_display_name = 'Craft a White Bed',
 	objective_scoreboard_value = 1,
 	debriefing = [
 		"Well done! What a beautiful little hovel you've built. Here, take these materials to help decorate your new home."
@@ -220,18 +220,19 @@ story_missions.append(Mission(
 	briefer_color = 'blue',
 	briefing = [
 		"The representative from the Boid Federation tells me that the Invaders are sending robot pillagers to harass the villagers",
-		"Go kill a couple of them to send a message that we're serious about defending the Boids (and selling them defense contracts)"
+		"They hide out in watch towers between raids.",
+		"Go destroy a few of these pillagers to send a message that we're serious about defending the Boids (and selling them defense contracts)"
 	],
 	objective_scoreboard_type = 'minecraft.killed:minecraft.pillager',
-	objective_scoreboard_display_name = 'Destroy 10 Pillagers',
-	objective_scoreboard_value = 10,
+	objective_scoreboard_display_name = 'Destroy 5 Pillagers',
+	objective_scoreboard_value = 5,
 	debriefing = [
 		"That'll teach them!",
 		"Here's a Defendo-Bot defense kit to protect the village while you're away. I've lost the manual, but I'm sure you'll figure it out."
 	],
 	reward_items = [Item('minecraft:iron_block', 4), Item('minecraft:carved_pumpkin',1)],
 	reset_objective_score = True,
-	event_function = None
+	event_function = 'startracks:events/give_bad_omen'
 ))
 story_missions.append(Mission(
 	mission_id='farm2',
@@ -630,13 +631,17 @@ story_missions.append(Mission(
 ))
 
 
+## prefix story order
+for i in range(0,len(story_missions)):
+	story_missions[i].mission_id = 'm%s_%s' % (i+1, story_missions[i].mission_id)
 
 ## setup
 output_dir = '.'
 machine_pos = Pos(7, 7, 7)
 briefing_scoreboard = '_st_briefing'
-mission_init = 'missions/story_start.mcfunction'
+mission_init = 'missions/m0_story_start.mcfunction'
 init_coms = ['# start of story missions']
+init_coms += ['gamerule doPatrolSpawning true']
 init_coms += ['scoreboard objectives add %s dummy' % briefing_scoreboard]
 init_coms += ['scoreboard objectives add %s dummy' % depth_scoreboard_name]
 init_coms += ['scoreboard objectives add %s dummy' % end_frame_score_name]
@@ -644,9 +649,7 @@ init_coms += ['setblock 7 7 5 minecraft:repeating_command_block[facing=up]{auto:
 init_coms += ['setblock 7 7 3 minecraft:repeating_command_block[facing=up]{auto:1b,powered:0b,Command:"execute as @a if block ~ ~-1 ~ minecraft:end_portal_frame run scoreboard players set @s %s 1"} destroy' % (end_frame_score_name)]
 init_coms += ['function startracks:missions/%s_00start' % story_missions[0].mission_id]
 write_to_file( '\n'.join(init_coms), mission_init)
-## prefix story order
-for i in range(0,len(story_missions)):
-	story_missions[i].mission_id = 'm%s_%s' % (i, story_missions[i].mission_id)
+
 ## write files
 for i in range(0,len(story_missions)-1):
 	story_missions[i].write_functions(

@@ -196,8 +196,4 @@ forceload remove -20 -16 20 -16
 
 # start missions
 schedule function startracks:missions/mission_greeting_setup 1s
-schedule function startracks:missions/mission_basebuilder_setup 2s
-schedule function startracks:missions/mission_dragonhunter_setup 3s
-schedule function startracks:missions/mission_minetime_setup 4s
-schedule function startracks:missions/mission_claimtheocea_setup 5s
-schedule function startracks:missions/mission_findavillage_setup 6s
+schedule function startracks:missions/m0_story_start 2s

@@ -1,1 +1,1 @@
-weather thunder 12000
+weather thunder 300

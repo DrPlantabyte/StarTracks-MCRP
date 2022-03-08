@@ -2,21 +2,33 @@ from story_maker import *
 import os, sys
 from os import path
 
+depth_scoreboard_name = '_st_depth'
+end_frame_score_name = '_st_onframe'
 
 ## missions
 story_missions = []
 story_missions.append(Mission(
-	mission_id='greet',
-	mission_name = 'Greetings',
+	mission_id='start1',
+	mission_name = 'Start 1',
+	briefer = 'Commander Steve',
+	briefer_color = 'blue',
+	briefing = [],
+	objective_scoreboard_type = 'minecraft.custom:minecraft.time_since_death',
+	objective_scoreboard_display_name = '', # empty string for hidden scoreboard
+	objective_scoreboard_value = 2400,
+	debriefing = [],
+	reward_items = [],
+	reset_objective_score = True,
+	event_function = None
+
+))
+story_missions.append(Mission(
+	mission_id='start2',
+	mission_name = 'Start 2',
 	briefer = 'Commander Steve',
 	briefer_color = 'blue',
 	briefing = [
-		"Welcome new clone- I mean cadet- Welcome new cadet to the Terran Space Union!",
-		"We've sent you to this recently terraformed planet to build an outpost and explore this world (for potential profits).",
-		"We've already sold a number of colony contracts to the Boids, but they may need help defending their new villages.",
-		"Oh, that reminds me: our enemies, the Invaders of Ender, are here too. They're trying to destroy this world and claim it for themselves.",
-		"Their dark-photon technology allows them to teleport their cybernetic monsters to any dark shadow. Be careful and place lights everywhere!",
-		"Now go out there and show them the might of the Terran Space Union! Over and out."
+		"Now that you've explored a little, make a crafting station so you can produce your own supplies as you bravely explore this new world."
 	],
 	objective_scoreboard_type = 'minecraft.crafted:minecraft.crafting_table',
 	objective_scoreboard_display_name = 'Craft a Crafting Station',
@@ -35,17 +47,17 @@ story_missions.append(Mission(
 	briefer = 'Commander Steve',
 	briefer_color = 'blue',
 	briefing = [
-		"With all the cyborg monsters and kill bots coming out at night, you'll need to build a defensible base to call home.",
-		"First, you'll want to make a pickaxe so you can collect some stone"
+		"With all the cyborg monsters and kill-bots coming out at night, you'll need to build a defensible base to call home.",
+		"Thanks to the latest advancements in budget-saving technology, you can craft a pickaxe from almost any material, even wood!"
 	],
-	objective_scoreboard_type = 'minecraft.crafted:minecraft.stone_pickaxe',
-	objective_scoreboard_display_name = 'Craft a Stone Pickaxe',
+	objective_scoreboard_type = 'minecraft.crafted:minecraft.wooden_pickaxe',
+	objective_scoreboard_display_name = 'Craft a Wooden Pickaxe',
 	objective_scoreboard_value = 1,
 	debriefing = [
-		"Good job!"
+		"Good job! Now go mine some stone."
 	],
 	reward_items = [],
-	reset_objective_score = False,
+	reset_objective_score = True,
 	event_function = None
 ))
 story_missions.append(Mission(
@@ -54,7 +66,7 @@ story_missions.append(Mission(
 	briefer = 'Commander Steve',
 	briefer_color = 'blue',
 	briefing = [
-		"Next you'll need a furnace."
+		"Next you'll need a furnace so that you can smelt toxic ores into metal ingots and cook your food too."
 	],
 	objective_scoreboard_type = 'minecraft.crafted:minecraft.furnace',
 	objective_scoreboard_display_name = 'Craft a Furnace',
@@ -72,7 +84,7 @@ story_missions.append(Mission(
 	briefer = 'Commander Steve',
 	briefer_color = 'blue',
 	briefing = [
-		"Next you'll need lots of light. Craft 20 lights."
+		"Next you'll need lots of light to repel the invaders' dark-photon monster teleportation technology. 20 lights should be enough to start with."
 	],
 	objective_scoreboard_type = 'minecraft.crafted:minecraft.torch',
 	objective_scoreboard_display_name = 'Craft 20 Lights',
@@ -138,9 +150,10 @@ story_missions.append(Mission(
 	objective_scoreboard_display_name = 'Collect 12 Seeds',
 	objective_scoreboard_value = 12,
 	debriefing = [
-		"That will be sufficient to start a primitive farm. Use a hoe to till the soil and then plant the seeds near open water."
+		"That will be sufficient to start a primitive farm. Use a hoe to till the soil and then plant the seeds near open water.",
+		"Here's a few more seeds for you to add diversity to your diet."
 	],
-	reward_items = [],
+	reward_items = [Item('minecraft:beetroot_seeds', 3), Item('minecraft:pumpkin_seeds', 3)],
 	reset_objective_score = False,
 	event_function = None
 ))
@@ -158,10 +171,10 @@ story_missions.append(Mission(
 	objective_scoreboard_display_name = 'Breed 2 Animals',
 	objective_scoreboard_value = 2,
 	debriefing = [
-		"In case you feel particularly attached to your animals, here are some name tags."
+		"In case you feel particularly attached to your animals, here are some name tags and a leash."
 	],
-	reward_items = [Item('minecraft:name_tag', 12)],
-	reset_objective_score = False,
+	reward_items = [Item('minecraft:name_tag', 12), Item('minecraft:lead', 1)],
+	reset_objective_score = True,
 	event_function = None
 ))
 story_missions.append(Mission(
@@ -170,7 +183,7 @@ story_missions.append(Mission(
 	briefer = 'Commander Steve',
 	briefer_color = 'blue',
 	briefing = [
-		"It's time we start helping (and profiting from) the Boid Villagers. Go make contact with the nearest village",
+		"It's time we start helping the Boid Villagers. Go find a village and make contact with them",
 	],
 	objective_scoreboard_type = 'minecraft.custom:minecraft.talked_to_villager',
 	objective_scoreboard_display_name = 'Talk to a Villager',
@@ -184,7 +197,25 @@ story_missions.append(Mission(
 ))
 story_missions.append(Mission(
 	mission_id='village1b',
-	mission_name = 'Village 1B',
+	mission_name = 'Village1B',
+	briefer = 'Commander Steve',
+	briefer_color = 'blue',
+	briefing = [
+		"According to my translator, the Boids are telling you that they need more lights around the village.",
+	],
+	objective_scoreboard_type = 'minecraft.used:minecraft.torch',
+	objective_scoreboard_display_name = 'Place 100 Lights',
+	objective_scoreboard_value = 100,
+	debriefing = [
+		"Good work! Here's some more emeralds to trade with them."
+	],
+	reward_items = [Item('minecraft:emerald', 3)],
+	reset_objective_score = True,
+	event_function = None
+))
+story_missions.append(Mission(
+	mission_id='village1c',
+	mission_name = 'Village 1C',
 	briefer = 'Commander Steve',
 	briefer_color = 'blue',
 	briefing = [
@@ -223,8 +254,8 @@ story_missions.append(Mission(
 ))
 
 story_missions.append(Mission(
-	mission_id='cave2a',
-	mission_name = 'Geological Survey 2a',
+	mission_id='cave2',
+	mission_name = 'Geological Survey 2',
 	briefer = 'Chief Scientist Alex',
 	briefer_color = 'green',
 	briefing = [
@@ -249,7 +280,7 @@ story_missions.append(Mission(
 	briefer = 'Commander Steve',
 	briefer_color = 'blue',
 	briefing = [
-		"The Boids are complaining that nobody is buying their wares. Do some trading with them to improve their economy."
+		"The Boids are complaining again. They say that nobody is buying their wares. Do some trading with them to improve their economy."
 	],
 	objective_scoreboard_type = 'minecraft.custom:minecraft.traded_with_villager',
 	objective_scoreboard_display_name = '12 Villager Trades',
@@ -324,7 +355,7 @@ story_missions.append(Mission(
 		"You should be able to, *ahem*, 'liberate' some from one of those fire-shooting probes"
 	],
 	objective_scoreboard_type = 'minecraft.picked_up:minecraft.blaze_rod',
-	objective_scoreboard_display_name = 'Collect 3  Nanite Reactors',
+	objective_scoreboard_display_name = 'Collect 3 Nanite Reactors',
 	objective_scoreboard_value = 3,
 	debriefing = [
 		"You can now build a nanite factory and start making nanite serum. Here's some glass bottles to help get you started."
@@ -333,18 +364,90 @@ story_missions.append(Mission(
 	reset_objective_score = False,
 	event_function = None
 ))
+story_missions.append(Mission(
+	mission_id='nether1e',
+	mission_name = 'Nether 1E',
+	briefer = 'Chief Scientist Alex',
+	briefer_color = 'green',
+	briefing = [
+		"Your excursion into netherspace has exposed you to hazardous contaminants. You should go wash it off in water."
+	],
+	objective_scoreboard_type = 'minecraft.custom:minecraft.swim_one_cm',
+	objective_scoreboard_display_name = 'Swim in Water',
+	objective_scoreboard_value = 1000,
+	debriefing = [
+		"You're clean now! I've taken the liberty to install a self-cleaning upgrade to your DNA. You should be fine from now on."
+	],
+	reward_items = [],
+	reset_objective_score = True,
+	event_function = None
+))
 
+story_missions.append(Mission(
+	mission_id='cave3a',
+	mission_name = 'Geological Survey 3A',
+	briefer = 'Chief Scientist Alex',
+	briefer_color = 'green',
+	briefing = [
+		"I have another scientific mission for you. I need you to get close to the planet's mantel and take a sample.",
+		"You'll need to go deep into the caves. Very deep."
+	],
+	objective_scoreboard_type = 'dummy',
+	objective_scoreboard_display_name = 'Go Deeper',
+	objective_scoreboard_value = 50,
+	debriefing = [
+		"Interesting... Very Interesting... You be careful down there. Here, this should help you avoid some of the dangers."
+	],
+	reward_items = [Item('minecraft:potion', 2, {'Potion':"minecraft:night_vision"})],
+	reset_objective_score = True,
+	event_function = None,
+	existing_scoreboard = depth_scoreboard_name,
+))
+story_missions.append(Mission(
+	mission_id='cave3b',
+	mission_name = 'Geological Survey 3B',
+	briefer = 'Chief Scientist Alex',
+	briefer_color = 'green',
+	briefing = [
+		"Now take a few samples from the deepslate rock. The deeper the better!"
+	],
+	objective_scoreboard_type = 'minecraft.mined:minecraft.deepslate',
+	objective_scoreboard_display_name = 'Mine 20 Deepslate',
+	objective_scoreboard_value = 20,
+	debriefing = [
+		"Perfect! With this information, I'm able to craft for you a cybernetically enhanced pick that is able to more efficiently gather resources."
+	],
+	reward_items = [Item('minecraft:diamond_pickaxe',1,{'Enchantments':[{'id':'fortune','lvl':3},{'id':'unbreaking','lvl':3}]})],
+	reset_objective_score = True,
+	event_function = None,
+	existing_scoreboard = depth_scoreboard_name,
+))
+
+story_missions.append(Mission(
+	mission_id='guard0',
+	mission_name = 'Guard0',
+	briefer = 'Chief Scientist Alex',
+	briefer_color = 'green',
+	briefing = [],
+	objective_scoreboard_type = None,
+	objective_scoreboard_display_name = None,
+	objective_scoreboard_value = 0,
+	debriefing = [],
+	reward_items = [],
+	reset_objective_score = True,
+	event_function = "startracks:events/storm"
+))
 story_missions.append(Mission(
 	mission_id='guard1',
 	mission_name = 'Guard1',
 	briefer = 'Chief Scientist Alex',
 	briefer_color = 'green',
 	briefing = [
-		"We are detecting strange signals from a strange monuments out in the ocean. IT appears to be interfering with the planet's climate systems.",
-		"Go find one of these monuments and if you encounter any unusual organisms, dissect one of them for science!",
+		"We are detecting strange signals from a strange monuments out in the ocean. It appears to be interfering with the planet's climate systems.",
+		"Go find one of these monuments and if you encounter any unusual organisms, dissect one of them for thorough identification.",
 	],
 	objective_scoreboard_type = 'minecraft.killed:minecraft.guardian',
-	objective_scoreboard_display_name = 'Kill a Guardian (for science)',
+	objective_scoreboard_display_name = 'Kill an Ocean Guardian',
 	objective_scoreboard_value = 1,
 	debriefing = [
 		"Fascinating! These creatures are not native to this planet. They came from somewhere else, and it appears they are trying to flood the whole planet.",
@@ -379,13 +482,13 @@ story_missions.append(Mission(
 	briefer = 'Chief Scientist Alex',
 	briefer_color = 'green',
 	briefing = [
-		"With the elder guardians defeated, the climate is returning to normal."
+		"With the elder guardians defeated, the climate is returning to normal. Here's a proper reward for your heroic actions."
 	],
 	objective_scoreboard_type = None,
 	objective_scoreboard_display_name = None,
 	objective_scoreboard_value = 0,
 	debriefing = [],
-	reward_items = [],
+	reward_items = [Item('minecraft:enchanted_golden_apple',2)],
 	reset_objective_score = False,
 	event_function = 'startracks:events/permastorm_end'
 ))
@@ -424,11 +527,106 @@ story_missions.append(Mission(
 	objective_scoreboard_value = 1,
 	debriefing = [
 		"Victory! Well done clone! You've made the Terran Space Union proud!",
-		"Please accept this 0.001% royalty payment from the technology we've gained by your efforts."
+		"Please accept your contractual 0.001% royalty payment from the technology we've gained by your efforts."
 	],
 	reward_items = [Item('minecraft:gold_block',35)],
 	reset_objective_score = False,
 	event_function = None
+))
+
+story_missions.append(Mission(
+	mission_id='ender1a',
+	mission_name = 'Ender 1A',
+	briefer = 'Commander Steve',
+	briefer_color = 'blue',
+	briefing = [
+		"These Invaders of Ender and their cybernetic minions are really causing a lot of trouble. It's time to take the fight to them!",
+		"Go take out a few of the invaders and collect their phase crystals."
+	],
+	objective_scoreboard_type = 'minecraft.killed:minecraft.enderman',
+	objective_scoreboard_display_name = "Slay 4 Invaders",
+	objective_scoreboard_value = 4,
+	debriefing = [
+		"Yes! Take that, invaders! You cannot stop the Terran Space Union!"
+	],
+	reward_items = [Item('minecraft:ender_pearl',1)],
+	reset_objective_score = True,
+	event_function = None
+))
+story_missions.append(Mission(
+	mission_id='ender1b',
+	mission_name = 'Ender 1B',
+	briefer = 'Chief Scientist Alex',
+	briefer_color = 'green',
+	briefing = [
+		"Their phase crystals are an advanced form of teleportation technology. However, I may be able to hack into it's memory with the use of nanite dust."
+	],
+	objective_scoreboard_type = 'minecraft.crafted:minecraft.ender_eye',
+	objective_scoreboard_display_name = "Craft Ender Seeker",
+	objective_scoreboard_value = 1,
+	debriefing = [
+		"Success! The crystal has been reprogrammed to move in the direction of the invader's Ender Portal when thrown."
+	],
+	reward_items = [],
+	reset_objective_score = False,
+	event_function = None
+))
+story_missions.append(Mission(
+	mission_id='ender1c',
+	mission_name = 'Ender 1C',
+	briefer = 'Commander Steve',
+	briefer_color = 'blue',
+	briefing = [
+		"Use the Ender Seeker to find the portal to the invader's homeworld, and then stand on it so our sensors can study it."
+	],
+	objective_scoreboard_type = 'dummy',
+	objective_scoreboard_display_name = "Find Ender Portal",
+	objective_scoreboard_value = 1,
+	debriefing = [
+		"Yes, this is it! This is the portal to Ender, homeworld of the Invaders.",
+		"Here, take these diamonds as a reward for your dedication. You're probably going to need them."
+	],
+	reward_items = [Item('minecraft:diamond',24)],
+	reset_objective_score = True,
+	event_function = None,
+	existing_scoreboard=end_frame_score_name
+))
+story_missions.append(Mission(
+	mission_id='ender1d',
+	mission_name = 'Ender 1D',
+	briefer = 'Commander Steve',
+	briefer_color = 'blue',
+	briefing = [
+		"According to intel, the Invaders of Ender are lead by the Ender Dragon, a being of great power and cunning.",
+		"Your mission, if you choose to accept it, is to go to Ender and slay the Ender Dragon",
+		"Now prepare yourself! You will need to be prepared for a very difficult fight."
+	],
+	objective_scoreboard_type = 'minecraft.killed:minecraft.ender_dragon',
+	objective_scoreboard_display_name = "Slay the Dragon",
+	objective_scoreboard_value = 1,
+	debriefing = [
+		"Incredible! Cadet, you have earned a great victory for the Terran Space Union!"
+	],
+	reward_items = [Item('minecraft:ender_pearl',16)],
+	reset_objective_score = True,
+	event_function = None
+))
+story_missions.append(Mission(
+	mission_id='ender1e',
+	mission_name = 'Ender 1E',
+	briefer = 'Chief Scientist Alex',
+	briefer_color = 'green',
+	briefing = [
+		"Without the Ender Dragon, the cyborg threat has been eliminated within 1 kilometer of the outpost. Lands farther out may still be dangerous.'",
+		"There is still much to discover. Safe journey, brave explorer. Over and out."
+	],
+	objective_scoreboard_type = None,
+	objective_scoreboard_display_name = None,
+	objective_scoreboard_value = 0,
+	debriefing = [],
+	reward_items = [],
+	reset_objective_score = False,
+	event_function = 'startracks:events/endgame_reward'
 ))
 
 
@@ -437,9 +635,13 @@ story_missions.append(Mission(
 output_dir = '.'
 machine_pos = Pos(7, 7, 7)
 briefing_scoreboard = '_st_briefing'
-mission_init = 'story_start.mcfunction'
+mission_init = 'missions/story_start.mcfunction'
 init_coms = ['# start of story missions']
 init_coms += ['scoreboard objectives add %s dummy' % briefing_scoreboard]
+init_coms += ['scoreboard objectives add %s dummy' % depth_scoreboard_name]
+init_coms += ['scoreboard objectives add %s dummy' % end_frame_score_name]
+init_coms += ['setblock 7 7 5 minecraft:repeating_command_block[facing=up]{auto:1b,powered:0b,Command:"scoreboard players set @a[y=-64,dy=14] %s 50"} destroy' % (depth_scoreboard_name)]
+init_coms += ['setblock 7 7 3 minecraft:repeating_command_block[facing=up]{auto:1b,powered:0b,Command:"execute as @a if block ~ ~-1 ~ minecraft:end_portal_frame run scoreboard players set @s %s 1"} destroy' % (end_frame_score_name)]
 init_coms += ['function startracks:missions/%s_00start' % story_missions[0].mission_id]
 write_to_file( '\n'.join(init_coms), mission_init)
 ## prefix story order

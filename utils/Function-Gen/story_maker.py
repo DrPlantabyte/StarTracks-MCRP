@@ -18,7 +18,8 @@ class Mission:
 			debriefing: list[str],
 			reward_items: list[Item],
 			reset_objective_score:bool = False,
-			event_function:str = None
+			event_function:str = None,
+			existing_scoreboard: str = None,
 	):
 		self.mission_id = mission_id
 		self.mission_name = mission_name
@@ -32,6 +33,7 @@ class Mission:
 		self.reward_items = reward_items
 		self.reset_objective_score = reset_objective_score
 		self.event_function = event_function
+		self.existing_scoreboard = existing_scoreboard
 
 	def write_functions(self, machine_pos: Pos, briefing_timer_scoreboard: str, dirpath, shared_init_file, next_mission_id: str = None):
 		start_func_name = 'missions/%s_00start' % ( self.mission_id)
@@ -42,7 +44,10 @@ class Mission:
 		debrief_loop_func_name = 'missions/%s_05debrf_loop' % ( self.mission_id)
 		final_func_name = 'missions/%s_06end' % ( self.mission_id)
 
-		mission_scoreboard = '_st_%s' % self.mission_id
+		if self.existing_scoreboard is None:
+			mission_scoreboard = '_st_%s' % self.mission_id
+		else:
+			mission_scoreboard = self.existing_scoreboard
 		## MC data storage examples:
 		# /data modify storage startracks:data briefing_tick set value 0
 		#
@@ -61,7 +66,7 @@ class Mission:
 		#setup_commands += ['scoreboard objectives add %s dummy' % briefing_timer_scoreboard ] # assuming briefing timing scoreboard is already setup
 		setup_commands += ['scoreboard players set @a %s 0' % briefing_timer_scoreboard]
 		setup_commands += ['setblock %s minecraft:repeating_command_block[facing=up]{auto:1b,powered:0b,Command:"function startracks:%s"} destroy' % (machine_pos.block_pos(), briefing_loop_func_name)]
-		if self.objective_scoreboard_type is not None:
+		if self.objective_scoreboard_type is not None and self.existing_scoreboard is None:
 			if self.reset_objective_score:
 				setup_commands += ['scoreboard objectives add %s %s "%s"' % (mission_scoreboard, self.objective_scoreboard_type, self.objective_scoreboard_display_name)]
 			else:
@@ -83,7 +88,8 @@ class Mission:
 		### mission
 		mission_start_coms += ['setblock %s minecraft:repeating_command_block[facing=up]{auto:1b,powered:0b,Command:"function startracks:%s"} destroy' % (machine_pos.block_pos(), mission_loop_func_name)]
 		if self.objective_scoreboard_type is not None:
-			mission_start_coms += ['scoreboard objectives setdisplay sidebar %s' % mission_scoreboard]
+			if self.objective_scoreboard_display_name is not None and len(self.objective_scoreboard_display_name) > 0:
+				mission_start_coms += ['scoreboard objectives setdisplay sidebar %s' % mission_scoreboard]
 			if self.reset_objective_score:
 				mission_start_coms += ['scoreboard players set @a %s 0' % mission_scoreboard]
 			else:

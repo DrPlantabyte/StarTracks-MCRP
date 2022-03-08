@@ -199,6 +199,7 @@ def change(key, val):
 	text = text.replace('Painting','View Screen')
 	text = text.replace(' enchantment',' upgrade')
 	text = text.replace('Quill','Stylus')
+	if text == 'Lead': text = 'Leash';
 	text = text.replace('Curse of ','Glitch: ')
 	text = text.replace('Bed','Cloning Bed')
 	text = text.replace('Respawn Anchor','Recall Anchor')

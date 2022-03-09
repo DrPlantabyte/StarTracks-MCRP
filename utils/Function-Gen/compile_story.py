@@ -377,13 +377,13 @@ story_missions.append(Mission(
 	],
 	objective_scoreboard_type = 'dummy',
 	objective_scoreboard_display_name = 'Go Deeper',
-	objective_scoreboard_value = 50,
+	objective_scoreboard_value = 100,
 	debriefing = [
 		"Interesting... Very Interesting... You be careful down there. Here, this should help you avoid some of the dangers."
 	],
 	reward_items = [Item('minecraft:potion', 2, {'Potion':"minecraft:night_vision"})],
-	reset_objective_score = True,
-	event_functions = None,
+	reset_objective_score = False,
+	event_functions = ['function startracks:misc/depth_check_start'],
 	existing_scoreboard = depth_scoreboard_name,
 ))
 story_missions.append(Mission(
@@ -402,7 +402,7 @@ story_missions.append(Mission(
 	],
 	reward_items = [Item('minecraft:diamond_pickaxe',1,{'Enchantments':[{'id':'fortune','lvl':3},{'id':'unbreaking','lvl':3}]})],
 	reset_objective_score = True,
-	event_functions = None,
+	event_functions = ['function startracks:misc/depth_check_stop'],
 	existing_scoreboard = depth_scoreboard_name,
 ))
 
@@ -625,7 +625,6 @@ mission_init = 'missions/m0_story_start.mcfunction'
 init_coms = ['# start of story missions']
 init_coms += ['gamerule doPatrolSpawning true']
 init_coms += ['scoreboard objectives add %s dummy' % briefing_scoreboard]
-init_coms += ['scoreboard objectives add %s dummy "Go Deeper Underground"' % depth_scoreboard_name]
 init_coms += ['scoreboard objectives add %s dummy' % end_frame_score_name]
 init_coms += ['setblock 7 7 5 minecraft:repeating_command_block[facing=up]{auto:1b,powered:0b,Command:"scoreboard players set @a[y=-64,dy=14] %s 50"} destroy' % (depth_scoreboard_name)]
 init_coms += ['setblock 7 7 3 minecraft:repeating_command_block[facing=up]{auto:1b,powered:0b,Command:"execute as @a at @s if block ~ ~-1 ~ minecraft:end_portal_frame run scoreboard players set @s %s 1"} destroy' % (end_frame_score_name)]

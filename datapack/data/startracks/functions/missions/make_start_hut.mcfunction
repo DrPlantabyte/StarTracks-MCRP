@@ -9,7 +9,7 @@ forceload add -20 -16 20 -16
 setworldspawn 8 68 8
 ### use levitate to fix falling into ground because of server lag
 effect give @a minecraft:levitation 2
-tp @a 8 68 8
+teleport @a 8 68 8 facing 7 68 8
 
 # clear area
 fill ~-12 ~ ~-12 ~12 ~32 ~12 minecraft:air
@@ -195,5 +195,6 @@ forceload remove -20 16 20 16
 forceload remove -20 -16 20 -16
 
 # start missions
+teleport @a 8 68 8 facing 7 68 8
 schedule function startracks:missions/mission_greeting_setup 1s
 schedule function startracks:missions/m0_story_start 2s

@@ -1,7 +1,6 @@
 # start of story missions
 gamerule doPatrolSpawning true
 scoreboard objectives add _st_briefing dummy
-scoreboard objectives add _st_depth dummy
 scoreboard objectives add _st_onframe dummy
 setblock 7 7 5 minecraft:repeating_command_block[facing=up]{auto:1b,powered:0b,Command:"scoreboard players set @a[y=-64,dy=14] _st_depth 50"} destroy
 setblock 7 7 3 minecraft:repeating_command_block[facing=up]{auto:1b,powered:0b,Command:"execute as @a at @s if block ~ ~-1 ~ minecraft:end_portal_frame run scoreboard players set @s _st_onframe 1"} destroy

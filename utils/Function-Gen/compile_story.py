@@ -455,7 +455,7 @@ story_missions.append(Mission(
 	debriefing = [
 		"Good work! Let's celebrate your success with some grilled fish!"
 	],
-	reward_items = [Item('minecraft:cooked_cod', 3)],
+	reward_items = [Item('minecraft:cooked_cod', 3), Item('minecraft:golden_apple', 1)],
 	reset_objective_score = False,
 	event_functions = ['function startracks:events/permastorm_start']
 ))

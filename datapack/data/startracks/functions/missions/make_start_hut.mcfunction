@@ -194,7 +194,5 @@ forceload remove -16 -20 -16 20
 forceload remove -20 16 20 16
 forceload remove -20 -16 20 -16
 
-# start missions
-teleport @a 8 68 8 facing 7 68 8
-schedule function startracks:missions/mission_greeting_setup 1s
-schedule function startracks:missions/m0_story_start 2s
+# start greeting
+function startracks:missions/mission_greeting_setup

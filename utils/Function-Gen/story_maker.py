@@ -25,6 +25,7 @@ class Mission:
 			reset_objective_score:bool = False,
 			event_functions: list[str] = None,
 			existing_scoreboard: str = None,
+			transmission_sound = 'minecraft:block.note_block.iron_xylophone'
 	):
 		self.mission_id = mission_id
 		self.mission_name = mission_name
@@ -39,6 +40,7 @@ class Mission:
 		self.reset_objective_score = reset_objective_score
 		self.event_functions = event_functions
 		self.existing_scoreboard = existing_scoreboard
+		self.transmission_sound = transmission_sound
 
 	def write_functions(self, machine_pos: Pos, briefing_timer_scoreboard: str, dirpath, shared_init_file, next_mission_id: str = None):
 		start_func_name = 'missions/%s_00start' % ( self.mission_id)
@@ -83,6 +85,7 @@ class Mission:
 		btick = 30
 		for msg in self.briefing:
 			briefing_interval_time_seconds = time_for(msg)
+			brief_coms += ['execute as @a at @s if score @s %s matches %s run playsound %s master @s ~ ~ ~' % (briefing_timer_scoreboard, int(btick), self.transmission_sound)]
 			brief_coms += ['execute as @a at @s if score @s %s matches %s run tellraw @s ["",{"text":"[%s] ","color":"%s"},{"text":"%s","color":"white"}]' % (briefing_timer_scoreboard, int(btick), self.briefer, self.briefer_color, msg)]
 			#
 			btick += briefing_interval_time_seconds * 20 # 20 ticker per second
@@ -115,6 +118,7 @@ class Mission:
 		btick = 30
 		for msg in self.debriefing:
 			briefing_interval_time_seconds = time_for(msg)
+			debrief_coms += ['execute as @a at @s if score @s %s matches %s run playsound %s master @s ~ ~ ~' % (briefing_timer_scoreboard, int(btick), self.transmission_sound)]
 			debrief_coms += [
 				'execute as @a at @s if score @s %s matches %s run tellraw @s ["",{"text":"[%s] ","color":"%s"},{"text":"%s","color":"white"}]' % (
 				briefing_timer_scoreboard, int(btick), self.briefer, self.briefer_color, msg)]

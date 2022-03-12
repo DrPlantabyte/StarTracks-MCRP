@@ -37,7 +37,7 @@ story_missions.append(Mission(
 		"Splendid! The crafting station will help you convert resources into useful items."
 	],
 	reward_items = [],
-	reset_objective_score = True,
+	reset_objective_score = False,
 	event_functions = None
 
 ))
@@ -57,7 +57,7 @@ story_missions.append(Mission(
 		"Good job! Now go mine some stone."
 	],
 	reward_items = [],
-	reset_objective_score = True,
+	reset_objective_score = False,
 	event_functions = None
 ))
 story_missions.append(Mission(
@@ -93,7 +93,7 @@ story_missions.append(Mission(
 		"Good job!"
 	],
 	reward_items = [],
-	reset_objective_score = True,
+	reset_objective_score = False,
 	event_functions = None
 ))
 story_missions.append(Mission(
@@ -382,7 +382,7 @@ story_missions.append(Mission(
 		"Interesting... Very Interesting... You be careful down there. Here, this should help you avoid some of the dangers."
 	],
 	reward_items = [Item('minecraft:potion', 2, {'Potion':"minecraft:night_vision"})],
-	reset_objective_score = False,
+	reset_objective_score = True,
 	event_functions = ['function startracks:misc/depth_check_start'],
 	existing_scoreboard = depth_scoreboard_name,
 ))
@@ -403,7 +403,7 @@ story_missions.append(Mission(
 	reward_items = [Item('minecraft:diamond_pickaxe',1,{'Enchantments':[{'id':'fortune','lvl':3},{'id':'unbreaking','lvl':3}]})],
 	reset_objective_score = True,
 	event_functions = ['function startracks:misc/depth_check_stop'],
-	existing_scoreboard = depth_scoreboard_name,
+	existing_scoreboard = None,
 ))
 
 story_missions.append(Mission(
@@ -426,7 +426,7 @@ story_missions.append(Mission(
 	briefer = 'Chief Scientist Alex',
 	briefer_color = 'green',
 	briefing = [
-		"We are detecting strange signals from a strange monuments out in the ocean. It appears to be interfering with the planet's climate systems.",
+		"We are detecting energy signatures from a strange monument out in the ocean. It appears to be interfering with the planet's climate systems.",
 		"Go find one of these monuments and if you encounter any unusual organisms, dissect one of them for thorough identification.",
 	],
 	objective_scoreboard_type = 'minecraft.killed:minecraft.guardian',
@@ -447,7 +447,7 @@ story_missions.append(Mission(
 	briefer_color = 'blue',
 	briefing = [
 		"These ocean-dwelling aliens must be stopped before they flood the whole world!",
-		"I'm detecting three particularly large ones nearby, emitting energy fields that are manipulating the climate to make it constantly rain. Eliminate them!"
+		"I'm detecting three particularly large ones nearby. They've started manipulating the climate to make it constantly rain. Eliminate them to stop the storm!"
 	],
 	objective_scoreboard_type = 'minecraft.killed:minecraft.elder_guardian',
 	objective_scoreboard_display_name = 'Kill 3 Elder Guardians',
@@ -455,7 +455,7 @@ story_missions.append(Mission(
 	debriefing = [
 		"Good work! Let's celebrate your success with some grilled fish!"
 	],
-	reward_items = [Item('minecraft:cooked_cod', 3), Item('minecraft:golden_apple', 1)],
+	reward_items = [Item('minecraft:cooked_cod', 3), Item('minecraft:enchanted_golden_apple', 1)],
 	reset_objective_score = False,
 	event_functions = ['function startracks:events/permastorm_start']
 ))
@@ -471,7 +471,7 @@ story_missions.append(Mission(
 	objective_scoreboard_display_name = None,
 	objective_scoreboard_value = 0,
 	debriefing = [],
-	reward_items = [Item('minecraft:enchanted_golden_apple',2)],
+	reward_items = [],
 	reset_objective_score = False,
 	event_functions = ['function startracks:events/permastorm_end']
 ))
@@ -551,7 +551,7 @@ story_missions.append(Mission(
 		"Success! The crystal has been reprogrammed to move in the direction of the invader's Ender Portal when thrown."
 	],
 	reward_items = [],
-	reset_objective_score = False,
+	reset_objective_score = True,
 	event_functions = None
 ))
 story_missions.append(Mission(
@@ -563,7 +563,7 @@ story_missions.append(Mission(
 		"Use the Ender Seeker to find the portal to the invader's homeworld, and then stand on it so our sensors can study it."
 	],
 	objective_scoreboard_type = 'dummy',
-	objective_scoreboard_display_name = "Find Ender Portal",
+	objective_scoreboard_display_name = "Stand on Ender Portal",
 	objective_scoreboard_value = 1,
 	debriefing = [
 		"Yes, this is it! This is the portal to Ender, homeworld of the Invaders.",
@@ -582,7 +582,7 @@ story_missions.append(Mission(
 	briefing = [
 		"According to intel, the Invaders of Ender are lead by the Ender Dragon, a being of great power and cunning.",
 		"Your mission, if you choose to accept it, is to go to Ender and slay the Ender Dragon",
-		"Now prepare yourself! You will need to be prepared for a very difficult fight."
+		"Now prepare yourself! It will be a very difficult fight."
 	],
 	objective_scoreboard_type = 'minecraft.killed:minecraft.ender_dragon',
 	objective_scoreboard_display_name = "Slay the Dragon",
@@ -591,7 +591,7 @@ story_missions.append(Mission(
 		"Incredible! Cadet, you have earned a great victory for the Terran Space Union!"
 	],
 	reward_items = [Item('minecraft:ender_pearl',16)],
-	reset_objective_score = True,
+	reset_objective_score = False,
 	event_functions = None
 ))
 story_missions.append(Mission(
@@ -625,18 +625,27 @@ mission_init = 'missions/m0_story_start.mcfunction'
 init_coms = ['# start of story missions']
 init_coms += ['gamerule doPatrolSpawning true']
 init_coms += ['scoreboard objectives add %s dummy' % briefing_scoreboard]
-init_coms += ['scoreboard objectives add %s dummy' % end_frame_score_name]
+init_coms += ['scoreboard objectives add %s dummy "Stand on Ender Portal"' % end_frame_score_name]
 init_coms += ['setblock 7 7 5 minecraft:repeating_command_block[facing=up]{auto:1b,powered:0b,Command:"scoreboard players set @a[y=-64,dy=14] %s 50"} destroy' % (depth_scoreboard_name)]
 init_coms += ['setblock 7 7 3 minecraft:repeating_command_block[facing=up]{auto:1b,powered:0b,Command:"execute as @a at @s if block ~ ~-1 ~ minecraft:end_portal_frame run scoreboard players set @s %s 1"} destroy' % (end_frame_score_name)]
 init_coms += ['function startracks:missions/%s_00start' % story_missions[0].mission_id]
 write_to_file( '\n'.join(init_coms), mission_init)
 
 ## write files
-for i in range(0,len(story_missions)-1):
-	story_missions[i].write_functions(
-		machine_pos=machine_pos,
-		briefing_timer_scoreboard=briefing_scoreboard,
-		dirpath=output_dir,
-		shared_init_file=mission_init,
-		next_mission_id=story_missions[i+1].mission_id
-	)
+for i in range(0,len(story_missions)):
+	if (i+1) < len(story_missions):
+		story_missions[i].write_functions(
+			machine_pos=machine_pos,
+			briefing_timer_scoreboard=briefing_scoreboard,
+			dirpath=output_dir,
+			shared_init_file=mission_init,
+			next_mission_id=story_missions[i+1].mission_id
+		)
+	else:
+		story_missions[i].write_functions(
+			machine_pos=machine_pos,
+			briefing_timer_scoreboard=briefing_scoreboard,
+			dirpath=output_dir,
+			shared_init_file=mission_init,
+			next_mission_id=None
+		)

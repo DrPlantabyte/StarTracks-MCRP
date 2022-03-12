@@ -1,1 +1,1 @@
-setblock 3 3 3 minecraft:repeating_command_block[facing=up]{auto:1b,powered:0b,Command:"execute as @a if block ~ ~-1 ~ minecraft:end_portal_frame run function startracks:events/endgame_reward_tick"} destroy
+setblock 3 3 3 minecraft:repeating_command_block[facing=up]{auto:1b,powered:0b,Command:"function startracks:events/endgame_reward_tick"} destroy

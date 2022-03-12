@@ -94,6 +94,8 @@ class Mission:
 			briefing_timer_scoreboard, btick, mission_start_func_name)]
 
 		### mission
+		if self.event_functions is not None and len(self.event_functions) > 0:
+			mission_start_coms += self.event_functions
 		mission_start_coms += ['setblock %s minecraft:repeating_command_block[facing=up]{auto:1b,powered:0b,Command:"function startracks:%s"} destroy' % (machine_pos.block_pos(), mission_loop_func_name)]
 		if self.objective_scoreboard_type is not None:
 			if self.objective_scoreboard_display_name is not None and len(self.objective_scoreboard_display_name) > 0:
@@ -102,8 +104,6 @@ class Mission:
 				mission_start_coms += ['scoreboard players set @a %s 0' % mission_scoreboard]
 			else:
 				mission_start_coms += ['scoreboard players operation @a %s = @s %s' % (mission_scoreboard, mission_scoreboard)]
-		if self.event_functions is not None and len(self.event_functions) > 0:
-			mission_start_coms += self.event_functions
 		if self.objective_scoreboard_type is not None:
 			mission_coms += ['execute as @a at @s if score @s %s matches %s.. run function startracks:%s' % (
 				mission_scoreboard, self.objective_scoreboard_value, mission_end_func_name)]

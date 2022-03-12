@@ -1,4 +1,5 @@
 # setup function
+setworldspawn 8 68 8
 ## first, use marker block to track first load
 gamerule commandBlockOutput false
 forceload add 0 0 15 15

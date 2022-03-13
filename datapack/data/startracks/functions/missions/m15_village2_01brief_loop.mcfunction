@@ -1,0 +1,5 @@
+# Village2 briefing loop
+scoreboard players add @a _st_briefing 1
+execute as @a at @s if score @s _st_briefing matches 30 run playsound minecraft:block.note_block.iron_xylophone master @s ~ ~ ~
+execute as @a at @s if score @s _st_briefing matches 30 run tellraw @s ["",{"text":"[Commander Steve] ","color":"blue"},{"text":"The Boids are complaining again. They say that nobody is buying their wares. Do some trading with them to improve their economy.","color":"white"}]
+execute as @a at @s if score @s _st_briefing matches 190.. run function startracks:missions/m15_village2_02main_start

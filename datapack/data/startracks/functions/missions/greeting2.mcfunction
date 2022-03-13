@@ -1,1 +1,2 @@
 tellraw @s [{"text":"[Commander Steve] ","color":"blue"},{"text":"We've sent you to this recently terraformed planet to build an outpost and explore this world (for potential profits).","color":"white"}]
+execute as @s at @s run playsound minecraft:block.note_block.iron_xylophone master @s ~ ~ ~

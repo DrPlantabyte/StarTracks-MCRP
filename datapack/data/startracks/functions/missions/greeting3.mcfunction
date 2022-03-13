@@ -1,1 +1,2 @@
 tellraw @s [{"text":"[Commander Steve] ","color":"blue"},{"text":"We've already sold a number of colony contracts to Boid Villagers, but they may need help defending their new villages.","color":"white"}]
+execute as @s at @s run playsound minecraft:block.note_block.iron_xylophone master @s ~ ~ ~

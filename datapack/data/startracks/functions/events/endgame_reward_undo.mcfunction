@@ -1,0 +1,1 @@
+setblock 3 3 3 minecraft:bedrock destroy

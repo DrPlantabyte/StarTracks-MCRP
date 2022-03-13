@@ -1,6 +1,7 @@
 # ignore generated files
 distributables/**
 build/**
+temp/**
 
 # ignore lock files
 # Open/Libre Office

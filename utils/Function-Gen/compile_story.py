@@ -600,7 +600,7 @@ story_missions.append(Mission(
 	briefer = 'Chief Scientist Alex',
 	briefer_color = 'green',
 	briefing = [
-		"Without the Ender Dragon, the cyborg threat has been eliminated within 1 kilometer of the outpost. Lands farther out may still be dangerous.'",
+		"Without the Ender Dragon, the cyborg threat has been eliminated within 2.5 kilometers of the outpost. Lands farther out may still be dangerous.'",
 		"There is still much to discover. Safe journey, brave explorer. Over and out."
 	],
 	objective_scoreboard_type = None,

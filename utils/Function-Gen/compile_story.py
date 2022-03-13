@@ -232,7 +232,7 @@ story_missions.append(Mission(
 	],
 	reward_items = [Item('minecraft:iron_block', 4), Item('minecraft:carved_pumpkin',1)],
 	reset_objective_score = True,
-	event_functions = ['execute as @s at @s run function startracks:events/give_bad_omen']
+	event_functions = ['execute as @s at @s run function startracks:events/flying_pillager_attack']
 ))
 story_missions.append(Mission(
 	mission_id='farm2',
@@ -455,7 +455,7 @@ story_missions.append(Mission(
 	debriefing = [
 		"Good work! Let's celebrate your success with some grilled fish!"
 	],
-	reward_items = [Item('minecraft:cooked_cod', 3), Item('minecraft:enchanted_golden_apple', 1)],
+	reward_items = [Item('minecraft:cooked_cod', 3)],
 	reset_objective_score = False,
 	event_functions = ['function startracks:events/permastorm_start']
 ))
@@ -471,7 +471,7 @@ story_missions.append(Mission(
 	objective_scoreboard_display_name = None,
 	objective_scoreboard_value = 0,
 	debriefing = [],
-	reward_items = [],
+	reward_items = [Item('minecraft:enchanted_golden_apple', 1)],
 	reset_objective_score = False,
 	event_functions = ['function startracks:events/permastorm_end']
 ))
@@ -502,7 +502,7 @@ story_missions.append(Mission(
 	briefer = 'Commander Steve',
 	briefer_color = 'blue',
 	briefing = [
-		"When you are ready, brave clo- brave cadet, build the AI singularity.",
+		"When you are ready, brave clo- brave cadet, build the AI singularity by making a T with 4 blocks of Neutron Sand and then placing 3 Xeno-Borg Skulls on top.",
 		"Then kill it and take it's Quantum Reactor."
 	],
 	objective_scoreboard_type = 'minecraft.killed:minecraft.wither',

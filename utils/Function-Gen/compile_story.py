@@ -398,11 +398,73 @@ story_missions.append(Mission(
 	objective_scoreboard_display_name = 'Mine 20 Deepslate',
 	objective_scoreboard_value = 20,
 	debriefing = [
-		"Perfect! With this information, I'm able to craft for you a cybernetically enhanced pick that is able to more efficiently gather resources."
+		"Perfect! With this information, I'm able to craft for you a cybernetically enhanced pick that is able to more efficiently gather resources.",
+		"Wait, I'm picking up a strange signal from deep underground... Commander Steve, you need to see this!"
 	],
 	reward_items = [Item('minecraft:diamond_pickaxe',1,{'Enchantments':[{'id':'fortune','lvl':3},{'id':'unbreaking','lvl':3}]})],
 	reset_objective_score = True,
 	event_functions = ['function startracks:misc/depth_check_stop'],
+	existing_scoreboard = None,
+))
+story_missions.append(Mission(
+	mission_id='cave3c',
+	mission_name = 'Geological Survey 3C',
+	briefer = 'Commander Steve',
+	briefer_color = 'blue',
+	briefing = [
+		"Space cadet! Those rocks you've just mined are contaminated with Sculk DNA!",
+		"Sculk is an invasive and hostile organism that spreads like a fungus, devouring the world from within!",
+		"This world has been infected with the Sculk! Search for it's spores and take a sample so we can locate the source."
+	],
+	objective_scoreboard_type = 'minecraft.mined:minecraft.sculk_vein',
+	objective_scoreboard_display_name = 'Sample 5 Sculk Spores',
+	objective_scoreboard_value = 5,
+	debriefing = [
+		"Excelent work, clone- I mean cadet! Chief Scientist Alex, what's the diagnosis?"
+	],
+	reward_items = [Item('minecraft:potion', 1, {'Potion':"minecraft:regeneration"})],
+	reset_objective_score = True,
+	event_functions = [],
+	existing_scoreboard = None,
+))
+story_missions.append(Mission(
+	mission_id='cave3d',
+	mission_name = 'Geological Survey 3d',
+	briefer = 'Chief Scientist Alex',
+	briefer_color = 'green',
+	briefing = [
+		"This is bad! The Sculk infection is maturing, producing Sculk Catalysts that are emitting the spores whenever a creature dies nearby.",
+		"Cadet, I need more data. Find and break 3 Sculk Catalysts."
+	],
+	objective_scoreboard_type = 'minecraft.mined:minecraft.sculk_catalyst',
+	objective_scoreboard_display_name = 'Break 3 Sculk Catalysts',
+	objective_scoreboard_value = 5,
+	debriefing = [
+		"Unbelievable! The Sculk did not get here by accident! Some evil being has been cultivating it, protecting it, and helping it spread.",
+		"There's some kind of Sculk Warden on this world. They probably have some kind of Sculk lab or garden hidden deep underground."
+	],
+	reward_items = [Item('minecraft:golden_apple', 1)],
+	reset_objective_score = True,
+	event_functions = [],
+	existing_scoreboard = None,
+))
+story_missions.append(Mission(
+	mission_id='cave3e',
+	mission_name = 'Geological Survey 3E',
+	briefer = 'Commander Steve',
+	briefer_color = 'blue',
+	briefing = [
+		"Space cadet! Your mission is to find this vile Sculk Warden in their evil lair, and destroy them!"
+	],
+	objective_scoreboard_type = 'minecraft.killed:minecraft.warden',
+	objective_scoreboard_display_name = 'Kill the Warden',
+	objective_scoreboard_value = 1,
+	debriefing = [
+		"Another space villain brought to justice! Good work, clone! Take these blocks of diamond as your reward"
+	],
+	reward_items = [Item('minecraft:diamond_block', 3)],
+	reset_objective_score = True,
+	event_functions = [],
 	existing_scoreboard = None,
 ))
 

@@ -59,6 +59,7 @@ def change(key, val):
 		text = text.replace('Chainmail Chestplate','Chainmail Shirt').replace('Chainmail Hemlet','Chainmail Hood')
 	
 	## plants and animals
+	text = text.replace('Frog', 'Croaker')
 	text = text.replace('Turtle', 'Turdle')
 	text = text.replace('Apple','Starfruit')
 	text = text.replace('Wheat','Space Wheat')

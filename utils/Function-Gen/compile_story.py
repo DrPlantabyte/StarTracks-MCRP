@@ -251,7 +251,7 @@ story_missions.append(Mission(
 	],
 	reward_items = [Item('minecraft:honey_bottle', 3), Item('minecraft:blue_candle', 3)],
 	reset_objective_score = True,
-	event_functions = None
+	event_functions = ['recipe give @a beehive']
 ))
 
 story_missions.append(Mission(

@@ -24,7 +24,7 @@ Simply download the release .zip files and put the resource pack files in the *r
 To install the data pack, when creating a new world, click *Data Packs* and then *Open Pack Folder*. Then copy the datapack .zip file into that folder and then click the purple triangle to add the data pack to your game.
 
 # 16x16, 32x32, 64x64, and 128x128 Resolution
-This resource pack is available in 4 different resolutions. Note that StarTracks-MCRP **does not replace all default textures**, so if you are using 32x32 or higher resolution, you should pair this resource pack with another of the same resolution (e.g. [Minecraft HD(64x) by Mrdhobbs](https://www.curseforge.com/minecraft/texture-packs/minecraft-hd-64x-fan-updated-by-mrdhobbs) ) to update the other Minecraft textures not touched by StarTracks. Move StarTracks to the top of your installed resource packs list.
+This resource pack is available in 4 different resolutions. Note that StarTracks-MCRP **does not replace all default textures**, so if you are using 32x32 or higher resolution, you should pair this resource pack with another of the same resolution (e.g. [Steven's Traditional Resourcepack by StevenZocktFett ](https://www.curseforge.com/minecraft/texture-packs/stevens-traditional) ) to update the other Minecraft textures not touched by StarTracks. *Be sure to move StarTracks to the top of your installed resource packs list.*
 
 # License and Redistribution
 This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (see http://creativecommons.org/licenses/by-sa/4.0/ ).

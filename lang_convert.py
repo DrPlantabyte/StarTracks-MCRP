@@ -157,6 +157,7 @@ def change(key, val):
 	text = text.replace('Eye of Ender','Ender Seeker')
 
 	## blocks and machines
+	text = text.replace('Sculk Vein', 'Sculk Spores')
 	text = text.replace('Chipped Anvil','Aging Repair-Bot')
 	text = text.replace('Anvil','Repair-Bot')
 	text = text.replace('Bookshelf','Data Core')

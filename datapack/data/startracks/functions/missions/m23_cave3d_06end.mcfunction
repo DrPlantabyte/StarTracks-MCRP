@@ -1,5 +1,5 @@
 # Geological Survey 3d cleanup
-give @a minecraft:golden_apple 1
+give @a minecraft:potion{"Potion": "minecraft:regeneration"} 1
 setblock 7 7 7 minecraft:bedrock destroy
 function startracks:missions/m24_cave3e_00start
 scoreboard objectives setdisplay sidebar

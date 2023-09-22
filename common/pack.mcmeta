@@ -1,6 +1,6 @@
 {
  "pack":{
-  "pack_format":8,
+  "pack_format":18,
   "description":"StarTracks - Boldly mine where no blockhead has mined before",  "authors":"DrPlantabyte",  "credits":"DrPlantabyte; InspectorJ; Llexandro;  Abra; InspectorJ; Ferdinger; Theshuggie; RicherlandTV; TheHorribleJoke; DinoDilopho; Tazi; Dobroide",
   "_comment": "Licensed under Creative Commons Attribution-ShareAlike 4.0 International License"
  },

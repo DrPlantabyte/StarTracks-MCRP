@@ -9,7 +9,7 @@ destination_json = path.join(THIS_DIR, 'common', 'assets', 'minecraft', 'lang', 
 def main():
 	print(path.abspath(THIS_DIR))
 	#
-	with open(source_json, 'r') as file_in, open(destination_json,'w') as file_out:
+	with open(source_json, 'rb') as file_in, open(destination_json,'w') as file_out:
 		src_data = json.load(file_in)
 		out_data = {}
 		for key in src_data:
@@ -49,6 +49,7 @@ def change(key, val):
 	text = text.replace('Leather armor','Spacesuit')
 	if re.search('Cap|Tunic|Pants|Boots',val) != None:
 		text = text.replace('Leather','Spacesuit')
+		text = text.replace('Cap','Helmet')
 	text = text.replace('Chainmail','Cybersuit')
 	if re.search('Helmet|Chestplate|Leggings|Boots',val) != None:
 		text = text.replace('Iron','Armored Spacesuit')
@@ -59,6 +60,7 @@ def change(key, val):
 		text = text.replace('Chainmail Chestplate','Chainmail Shirt').replace('Chainmail Hemlet','Chainmail Hood')
 	
 	## plants and animals
+	text = text.replace('Frog', 'Croaker')
 	text = text.replace('Turtle', 'Turdle')
 	text = text.replace('Apple','Starfruit')
 	text = text.replace('Wheat','Space Wheat')
@@ -157,6 +159,7 @@ def change(key, val):
 	text = text.replace('Eye of Ender','Ender Seeker')
 
 	## blocks and machines
+	text = text.replace('Sculk Vein', 'Sculk Spores')
 	text = text.replace('Chipped Anvil','Aging Repair-Bot')
 	text = text.replace('Anvil','Repair-Bot')
 	text = text.replace('Bookshelf','Data Core')

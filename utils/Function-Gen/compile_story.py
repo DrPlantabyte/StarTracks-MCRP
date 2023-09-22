@@ -130,7 +130,7 @@ story_missions.append(Mission(
 	objective_scoreboard_display_name = 'Mine 32 Iron Ore',
 	objective_scoreboard_value = 32,
 	debriefing = [
-		"Interesting... These readings suggest that you may also find diamonds, cybernite, and redstone farther down in the subsurface."
+		"Interesting... These readings suggest that you may also find gold, diamonds, cybernite, and redstone farther down in the subsurface."
 	],
 	reward_items = [Item('minecraft:iron_helmet'), Item('minecraft:iron_chestplate'),
 					Item('minecraft:iron_leggings'), Item('minecraft:iron_boots')],
@@ -168,8 +168,8 @@ story_missions.append(Mission(
 		"Finally, feed the animals to stimulate the reproductive process to ensure a continued supply of nutrition."
 	],
 	objective_scoreboard_type = 'minecraft.custom:minecraft.animals_bred',
-	objective_scoreboard_display_name = 'Breed 2 Animals',
-	objective_scoreboard_value = 2,
+	objective_scoreboard_display_name = 'Breed 10 Animals',
+	objective_scoreboard_value = 10,
 	debriefing = [
 		"In case you feel particularly attached to your animals, here are some name tags and a leash."
 	],
@@ -209,7 +209,7 @@ story_missions.append(Mission(
 	debriefing = [
 		"Good work! Here's some more emeralds to trade with them."
 	],
-	reward_items = [Item('minecraft:emerald', 3)],
+	reward_items = [Item('minecraft:emerald', 5)],
 	reset_objective_score = True,
 	event_functions = None
 ))
@@ -251,7 +251,7 @@ story_missions.append(Mission(
 	],
 	reward_items = [Item('minecraft:honey_bottle', 3), Item('minecraft:blue_candle', 3)],
 	reset_objective_score = True,
-	event_functions = None
+	event_functions = ['recipe give @a beehive']
 ))
 
 story_missions.append(Mission(
@@ -334,10 +334,10 @@ story_missions.append(Mission(
 	briefer_color = 'green',
 	briefing = [
 		"Fascinating! It appears to be a bryophyte, some kind of wart, made of neutron-dense elements. It must be a netherspace native plant.",
-		"Cadet, this is a clue to the invader's dark-photon technology. You must go to netherspace collect more samples and then return to this world."
+		"Cadet, this is a clue to the invader's dark-photon technology. Go to netherspace collect more samples and then return to this world."
 	],
 	objective_scoreboard_type = 'minecraft.mined:minecraft.nether_wart',
-	objective_scoreboard_display_name = 'Bring back 10 Nano-Mold',
+	objective_scoreboard_display_name = 'Collect 10 Nano-Mold',
 	objective_scoreboard_value = 10,
 	debriefing = [
 		"I see... This organism creates nanoscopic fuels. You can use it to create nanite serums. I'd recommend making fire protection nanite serum."
@@ -353,7 +353,7 @@ story_missions.append(Mission(
 	briefer_color = 'green',
 	briefing = [
 		"But in order to make nanite serum, you will also need a source of nanites.",
-		"You should be able to, *ahem*, 'liberate' some from one of those fire-shooting probes"
+		"You should be able to, *ahem*, 'liberate' some from one of those fire-shooting netherspace probes"
 	],
 	objective_scoreboard_type = 'minecraft.picked_up:minecraft.blaze_rod',
 	objective_scoreboard_display_name = 'Collect 3 Nanite Reactors',
@@ -398,11 +398,95 @@ story_missions.append(Mission(
 	objective_scoreboard_display_name = 'Mine 20 Deepslate',
 	objective_scoreboard_value = 20,
 	debriefing = [
-		"Perfect! With this information, I'm able to craft for you a cybernetically enhanced pick that is able to more efficiently gather resources."
+		"Perfect! With this information, I'm able to craft for you a cybernetically enhanced pick that is able to more efficiently gather resources.",
+		"Wait, I'm picking up a strange signal from deep underground... Commander Steve, you need to see this!"
 	],
 	reward_items = [Item('minecraft:diamond_pickaxe',1,{'Enchantments':[{'id':'fortune','lvl':3},{'id':'unbreaking','lvl':3}]})],
 	reset_objective_score = True,
 	event_functions = ['function startracks:misc/depth_check_stop'],
+	existing_scoreboard = None,
+))
+story_missions.append(Mission(
+	mission_id='cave3c',
+	mission_name = 'Geological Survey 3C',
+	briefer = 'Commander Steve',
+	briefer_color = 'blue',
+	briefing = [
+		"Space cadet! We've detected traces of Sculk spores in those rocks you just mined!",
+		"Sculk is an invasive and hostile organism that spreads like a fungus, consuming both life and stone. It will devour the world from within!",
+		"This world has been infected with Sculk! Find the Sculk infestation and mine a sample so we can locate the source."
+	],
+	objective_scoreboard_type = 'minecraft.mined:minecraft.sculk',
+	objective_scoreboard_display_name = 'Mine 25 Sculk',
+	objective_scoreboard_value = 25,
+	debriefing = [
+		"Excelent work, clone- I mean cadet! Drink this serum to neutralize any Sculk you may have accidentally inhaled.",
+		"Dr. Alex, what is your the diagnosis?"
+	],
+	reward_items = [Item('minecraft:potion', 1, {'Potion':"minecraft:regeneration"})],
+	reset_objective_score = True,
+	event_functions = [],
+	existing_scoreboard = None,
+))
+story_missions.append(Mission(
+	mission_id='cave3d',
+	mission_name = 'Geological Survey 3d',
+	briefer = 'Chief Scientist Alex',
+	briefer_color = 'green',
+	briefing = [
+		"This is bad! The Sculk infection is maturing, producing Sculk Catalysts that are emitting spores whenever a creature dies nearby.",
+		"Cadet, I need more data. Find and break 3 Sculk Catalysts."
+	],
+	objective_scoreboard_type = 'minecraft.mined:minecraft.sculk_catalyst',
+	objective_scoreboard_display_name = 'Break 3 Sculk Catalysts',
+	objective_scoreboard_value = 3,
+	debriefing = [
+		"Unbelievable! The Sculk did not get here by accident! Some evil being has been cultivating it, protecting it, and helping it spread.",
+		"There's some kind of Sculk Warden on this world. They probably have some kind of Sculk laboratory hidden deep underground."
+	],
+	reward_items = [Item('minecraft:potion', 1, {'Potion':"minecraft:regeneration"})],
+	reset_objective_score = True,
+	event_functions = [],
+	existing_scoreboard = None,
+))
+story_missions.append(Mission(
+	mission_id='cave3e',
+	mission_name = 'Geological Survey 3E',
+	briefer = 'Commander Steve',
+	briefer_color = 'blue',
+	briefing = [
+		"Space cadet! Your mission is to find this vile Sculk Warden, and destroy them!"
+	],
+	objective_scoreboard_type = 'minecraft.killed:minecraft.warden',
+	objective_scoreboard_display_name = 'Kill the Warden',
+	objective_scoreboard_value = 1,
+	debriefing = [
+		"Another space villain brought to justice! Good work, clone! Take these blocks of diamond as your reward"
+	],
+	reward_items = [Item('minecraft:diamond_block', 3), Item('minecraft:potion', 1, {'Potion':"minecraft:regeneration"})],
+	reset_objective_score = False,
+	event_functions = [],
+	existing_scoreboard = None,
+))
+
+story_missions.append(Mission(
+	mission_id='party1',
+	mission_name = 'Party 1',
+	briefer = 'Commander Steve',
+	briefer_color = 'blue',
+	briefing = [
+		"With that dirty business out of the way, why don't you relax a little? Oh, I know!",
+		"It just so happens to be the Terran Space Union's birthday tomorrow. Your next mission is to bake a birthday cake!"
+	],
+	objective_scoreboard_type = 'minecraft.crafted:minecraft.cake',
+	objective_scoreboard_display_name = 'Bake a Cake',
+	objective_scoreboard_value = 1,
+	debriefing = [
+		"Happy birthday, Terran Space Union! Here's some fireworks to light-up the sky. Don't let anyone rain on your parade!"
+	],
+	reward_items = [Item('minecraft:firework_rocket', 7, {'Fireworks':{'Flight':2,'Explosions':[{'Type':2,'Colors':[14602026],'FadeColors':[2437522]}]}})],
+	reset_objective_score = True,
+	event_functions = [],
 	existing_scoreboard = None,
 ))
 
@@ -433,7 +517,7 @@ story_missions.append(Mission(
 	objective_scoreboard_display_name = 'Kill an Ocean Guardian',
 	objective_scoreboard_value = 1,
 	debriefing = [
-		"Fascinating! These creatures are not native to this planet. They came from somewhere else, and it appears they are trying to flood the whole planet.",
+		"Fascinating! These creatures are not native to this planet. They came from somewhere else, and it appears they are trying to flood the whole planet!",
 		"If not stopped, they may render this plannet uninhabitable to air-breathing organisms."
 	],
 	reward_items = [],
@@ -580,7 +664,7 @@ story_missions.append(Mission(
 	briefer = 'Commander Steve',
 	briefer_color = 'blue',
 	briefing = [
-		"According to intel, the Invaders of Ender are lead by the Ender Dragon, a being of great power and cunning.",
+		"According to intel, the Invaders of Ender are led by the Ender Dragon, a being of great power and cunning.",
 		"Your mission, if you choose to accept it, is to go to Ender and slay the Ender Dragon",
 		"Now prepare yourself! It will be a very difficult fight."
 	],
@@ -600,7 +684,7 @@ story_missions.append(Mission(
 	briefer = 'Chief Scientist Alex',
 	briefer_color = 'green',
 	briefing = [
-		"Without the Ender Dragon, the cyborg threat has been eliminated within 1 kilometer of the outpost. Lands farther out may still be dangerous.'",
+		"Without the Ender Dragon, the cyborg threat has been eliminated within 2.5 kilometers of the outpost. Lands farther out may still be dangerous.'",
 		"There is still much to discover. Safe journey, brave explorer. Over and out."
 	],
 	objective_scoreboard_type = None,

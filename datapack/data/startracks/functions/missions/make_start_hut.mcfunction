@@ -7,6 +7,8 @@ forceload add -20 16 20 16
 forceload add -20 -16 20 -16
 ## player spawn
 setworldspawn 8 68 8
+setblock 8 67 8 minecraft:cobblestone
+fill 8 68 8 8 69 8 minecraft:air
 ### use levitate to fix falling into ground because of server lag
 effect give @a minecraft:levitation 2
 teleport @a 8 68 8 facing 7 68 8
@@ -104,66 +106,66 @@ setblock ~12 ~ ~-16 minecraft:torch
 # internal stuff
 ## start room
 fill ~-3 ~ ~-2 ~-3 ~3 ~2 minecraft:sea_lantern
-summon minecraft:painting ~-2 ~2 ~2 {Motive:"minecraft:sunset", Facing:3}
-summon minecraft:painting ~-2 ~1 ~2 {Motive:"minecraft:aztec", Facing:3}
-summon minecraft:painting ~-2 ~1 ~1 {Motive:"minecraft:aztec2", Facing:3}
-summon minecraft:painting ~-2 ~2 ~ {Motive:"minecraft:alban", Facing:3}
-summon minecraft:painting ~-2 ~1 ~ {Motive:"minecraft:wasteland", Facing:3}
-summon minecraft:painting ~-2 ~1 ~-1 {Motive:"minecraft:wanderer", Facing:3}
-summon minecraft:painting ~-2 ~1 ~-2 {Motive:"minecraft:graham", Facing:3}
-summon minecraft:painting ~2 ~1 ~1 {Motive:"minecraft:stage", Facing:1}
-summon minecraft:painting ~2 ~1 ~-2 {Motive:"minecraft:stage", Facing:1}
-summon minecraft:painting ~8 ~2 ~-1 {Motive:"minecraft:stage", Facing:3}
-summon minecraft:painting ~8 ~2 ~2 {Motive:"minecraft:stage", Facing:3}
+summon minecraft:painting ~-2 ~2 ~2 {variant:"minecraft:sunset", facing:3}
+summon minecraft:painting ~-2 ~1 ~2 {variant:"minecraft:aztec", facing:3}
+summon minecraft:painting ~-2 ~1 ~1 {variant:"minecraft:aztec2", facing:3}
+summon minecraft:painting ~-2 ~2 ~ {variant:"minecraft:alban", facing:3}
+summon minecraft:painting ~-2 ~1 ~ {variant:"minecraft:wasteland", facing:3}
+summon minecraft:painting ~-2 ~1 ~-1 {variant:"minecraft:wanderer", facing:3}
+summon minecraft:painting ~-2 ~1 ~-2 {variant:"minecraft:graham", facing:3}
+summon minecraft:painting ~2 ~1 ~1 {variant:"minecraft:stage", facing:1}
+summon minecraft:painting ~2 ~1 ~-2 {variant:"minecraft:stage", facing:1}
+summon minecraft:painting ~8 ~2 ~-1 {variant:"minecraft:stage", facing:3}
+summon minecraft:painting ~8 ~2 ~2 {variant:"minecraft:stage", facing:3}
 setblock ~ ~ ~2 minecraft:chest[facing=north]{LootTable:"minecraft:chests/spawn_bonus_chest"}
 setblock ~2 ~ ~-2 minecraft:barrel[facing=up]{Items:[{Slot:0,id:dirt,Count:12},{Slot:1,id:oak_sapling,Count:3}]}
 setblock ~2 ~ ~-1 minecraft:barrel[facing=up]
 
 ## side rooms
-summon minecraft:painting ~5 ~1 ~-6 {Motive:"minecraft:skull_and_roses", Facing:0}
+summon minecraft:painting ~5 ~1 ~-6 {variant:"minecraft:skull_and_roses", facing:0}
 summon armor_stand ~6 ~ ~6 {Rotation:[135f],ArmorItems:[{id:"leather_boots",Count:1b,tag:{display:{color:3949738}}},{id:"leather_leggings",Count:1b,tag:{display:{color:16701501}}},{id:"leather_chestplate",Count:1b,tag:{display:{color:3949738}}},{id:"leather_helmet",Count:1b,tag:{display:{color:16701501}}}],HandItems:[{},{}]}
 setblock ~8 ~4 ~ minecraft:blue_wall_banner[facing=east]{Patterns:[{Pattern:"gra",Color:15},{Pattern:"glb",Color:4}]}
 
 ## teleport room
-setblock ~4 ~1 ~-5 minecraft:acacia_wall_sign[facing=east]{Text2:'{"text":"Teleport","color":"black"}', Text3:'{"text":"Room","color":"black"}'}
+setblock ~4 ~1 ~-5 minecraft:acacia_wall_sign[facing=east]{front_text: {color: "black", messages:['{"text":""}', '{"text":"Teleport"}', '{"text":"Room"}', '{"text":""}']}}
 fill ~2 ~ ~-5 ~-6 ~2 ~-6 minecraft:air
 fill ~2 ~ ~-4 ~-6 ~1 ~-4 minecraft:nether_bricks
 fill ~2 ~2 ~-4 ~-6 ~2 ~-4 minecraft:red_nether_bricks
-summon minecraft:painting ~-6 ~1 ~-5 {Motive:"minecraft:bust", Facing:3}
-summon minecraft:painting ~-4 ~1 ~-6 {Motive:"minecraft:fighters", Facing:0}
-summon minecraft:painting ~ ~1 ~-6 {Motive:"minecraft:donkey_kong", Facing:0}
+summon minecraft:painting ~-6 ~1 ~-5 {variant:"minecraft:bust", facing:3}
+summon minecraft:painting ~-4 ~1 ~-6 {variant:"minecraft:fighters", facing:0}
+summon minecraft:painting ~ ~1 ~-6 {variant:"minecraft:donkey_kong", facing:0}
 
-setblock ~1 ~1 ~-4 minecraft:birch_wall_sign[facing=north]{Text2:'{"text":"Sector 1","color":"black"}'}
+setblock ~1 ~1 ~-4 minecraft:birch_wall_sign[facing=north]{front_text: {color: "black", messages:['{"text":""}', '{"text":"Sector 1"}', '{"text":""}', '{"text":""}']}}
 setblock ~1 ~-1 ~-4 minecraft:command_block[facing=up]{auto:0b,powered:0b,Command:"spreadplayers -724 -724 8 64 false @p[distance=0..1]"}
 setblock ~1 ~ ~-4 minecraft:polished_blackstone_pressure_plate
 setblock ~1 ~-1 ~-5 minecraft:red_concrete
 
-setblock ~-1 ~1 ~-4 minecraft:birch_wall_sign[facing=north]{Text2:'{"text":"Sector 2","color":"black"}'}
+setblock ~-1 ~1 ~-4 minecraft:birch_wall_sign[facing=north]{front_text: {color: "black", messages:['{"text":""}', '{"text":"Sector 2"}', '{"text":""}', '{"text":""}']}}
 setblock ~-1 ~-1 ~-4 minecraft:command_block[facing=up]{auto:0b,powered:0b,Command:"spreadplayers 724 -724 8 64 false @p[distance=0..1]"}
 setblock ~-1 ~ ~-4 minecraft:polished_blackstone_pressure_plate
 setblock ~-1 ~-1 ~-5 minecraft:green_concrete
 
-setblock ~-3 ~1 ~-4 minecraft:birch_wall_sign[facing=north]{Text2:'{"text":"Sector 3","color":"black"}'}
+setblock ~-3 ~1 ~-4 minecraft:birch_wall_sign[facing=north]{front_text: {color: "black", messages:['{"text":""}', '{"text":"Sector 3"}', '{"text":""}', '{"text":""}']}}
 setblock ~-3 ~-1 ~-4 minecraft:command_block[facing=up]{auto:0b,powered:0b,Command:"spreadplayers 724 724 8 64 false @p[distance=0..1]"}
 setblock ~-3 ~ ~-4 minecraft:polished_blackstone_pressure_plate
 setblock ~-3 ~-1 ~-5 minecraft:blue_concrete
 
-setblock ~-5 ~1 ~-4 minecraft:birch_wall_sign[facing=north]{Text2:'{"text":"Sector 4","color":"black"}'}
+setblock ~-5 ~1 ~-4 minecraft:birch_wall_sign[facing=north]{front_text: {color: "black", messages:['{"text":""}', '{"text":"Sector 4"}', '{"text":""}', '{"text":""}']}}
 setblock ~-5 ~-1 ~-4 minecraft:command_block[facing=up]{auto:0b,powered:0b,Command:"spreadplayers -724 724 8 64 false @p[distance=0..1]"}
 setblock ~-5 ~ ~-4 minecraft:polished_blackstone_pressure_plate
 setblock ~-5 ~-1 ~-5 minecraft:yellow_concrete
 
 ## reactor room
-setblock ~-2 ~1 ~5 minecraft:dark_oak_wall_sign[facing=east]{Text2:'{"text":"DANGER:","color":"black"}', Text3:'{"text":"Power Reactor","color":"black"}'}
-summon minecraft:painting ~-4 ~1 ~6 {Motive:"minecraft:graham", Facing:2}
-summon minecraft:painting ~-4 ~1 ~4 {Motive:"minecraft:aztec", Facing:0}
+setblock ~-2 ~1 ~5 minecraft:dark_oak_wall_sign[facing=east]{front_text: {color: "black", messages:['{"text":""}', '{"text":"DANGER:"}', '{"text":"Power Reactor"}', '{"text":""}']}}
+summon minecraft:painting ~-4 ~1 ~6 {variant:"minecraft:graham", facing:2}
+summon minecraft:painting ~-4 ~1 ~4 {variant:"minecraft:aztec", facing:0}
 fill ~-6 ~ ~6 ~-6 ~2 ~4 minecraft:coal_block
 fill ~-6 ~1 ~6 ~-6 ~1 ~4 minecraft:tnt
 fill ~-5 ~ ~6 ~-5 ~2 ~4 minecraft:glass
 
 ## cloning room
-setblock ~4 ~1 ~5 minecraft:acacia_wall_sign[facing=east]{Text2:'{"text":"Cloning","color":"black"}', Text3:'{"text":"Facility","color":"black"}'}
-summon minecraft:painting ~ ~1 ~6 {Motive:"minecraft:bust", Facing:2}
+setblock ~4 ~1 ~5 minecraft:acacia_wall_sign[facing=east]{front_text: {color: "black", messages:['{"text":""}', '{"text":"Cloning"}', '{"text":"Facility"}', '{"text":""}']}}
+summon minecraft:painting ~ ~1 ~6 {variant:"minecraft:bust", facing:2}
 
 setblock ~2 ~ ~4 minecraft:light_blue_bed[facing=north,part=head]
 setblock ~2 ~ ~5 minecraft:light_blue_bed[facing=north,part=foot]

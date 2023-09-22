@@ -17,6 +17,7 @@ temp/**
 *.ini
 # python cache files
 __pycache__/*
+*.pyc
 # server filesbanned-ips.json
 banned-players.json
 eula.txt
